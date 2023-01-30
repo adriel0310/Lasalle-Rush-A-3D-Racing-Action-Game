@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     //For Timer Variables
     float countdowntimer = 70f;
     public Text TimerText;
-    
     void Start()
     {
         
@@ -18,6 +17,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Countdown();//Timer
+        
     }
 
     void Countdown() 
@@ -33,11 +33,11 @@ public class GameManager : MonoBehaviour
         float minutes = Mathf.FloorToInt(countdowntimer / 60);
         float seconds = Mathf.FloorToInt(countdowntimer % 60);
 
-        TimerText.text = string.Format("{0:00}:{1:00}",minutes,seconds);
+        TimerText.text = string.Format("{0:00}:{1:00} s",minutes,seconds);
         
         if(countdowntimer < 60f)
         {
-            TimerText.text = string.Format("{1:00}",minutes,seconds);
+            TimerText.text = string.Format("{1:00} s",minutes,seconds);
         }   
     }
 
