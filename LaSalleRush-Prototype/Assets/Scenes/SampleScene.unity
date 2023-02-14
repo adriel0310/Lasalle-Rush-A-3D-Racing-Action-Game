@@ -5720,7 +5720,7 @@ MonoBehaviour:
   - {fileID: 131170335}
   - {fileID: 1471896587}
   timer: {fileID: 429894696}
-  control: {fileID: 0}
+  control: {fileID: 429894691}
 --- !u!81 &429894693
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5728,7 +5728,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429894691}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &429894694
 Camera:
   m_ObjectHideFlags: 0

@@ -77,13 +77,13 @@ public class NewCarController : MonoBehaviour
         if(directionCheck.z > 0 && verticalInput == -1)
         {
             ApplyBreaking();
-            Debug.Log("PREEEEEENOOOOOOOO");
+            //Debug.Log("PREEEEEENOOOOOOOO");
         }
 
         else if(directionCheck.z < 0 && verticalInput == -1 || verticalInput == 1 || verticalInput == 0)
         {
             RemoveBreaking();
-            Debug.Log("ATRAAAAAAAAASSSSSSSSSS");
+            //Debug.Log("ATRAAAAAAAAASSSSSSSSSS");
         } 
     }
     private void ApplyBreaking()
