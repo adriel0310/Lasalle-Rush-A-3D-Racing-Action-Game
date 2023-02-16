@@ -72,7 +72,7 @@ public class NewCarController : MonoBehaviour
         rearRightWheelCollider.motorTorque = verticalInput * motorForce;
 
         var directionCheck = transform.InverseTransformDirection(carRB.velocity);
-        Debug.Log(directionCheck);
+        //Debug.Log(directionCheck);
 
         if(directionCheck.z > 0 && verticalInput == -1)
         {

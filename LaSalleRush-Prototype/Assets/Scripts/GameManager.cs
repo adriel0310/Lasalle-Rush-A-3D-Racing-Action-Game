@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     //For Timer Variables
-    float countdowntimer = 70f;
+    public float countdowntimer = 70f;
     public Text TimerText;
+
+    //DropoffPoint droppedoff;
     void Start()
     {
         
@@ -17,7 +19,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Countdown();//Timer
-        
     }
 
     void Countdown() 
@@ -38,8 +39,12 @@ public class GameManager : MonoBehaviour
         if(countdowntimer < 60f)
         {
             TimerText.text = string.Format("{1:00} s",minutes,seconds);
-        }   
+        }  
     }
 
-    
+    public void AddTime()
+    {
+        countdowntimer += 20f;
+        print("Time Added");
+    }
 }

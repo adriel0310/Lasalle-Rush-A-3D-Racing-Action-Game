@@ -7,18 +7,22 @@ public class DropoffPoint : MonoBehaviour
    public float duration = 1f;
    public bool droppedoff = false;
    public GameObject NBS;
+   
+   private int points;
    NewCarController newCarController;
    PickupPoint pickupPoint;
+   GameManager gameManagerscript;
     void Start()
     {
         newCarController = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCarController>();
         pickupPoint = GameObject.FindGameObjectWithTag("Pickup").GetComponent<PickupPoint>();
+        gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
         //newCarController.carRB = GetComponent<Rigidbody>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") & newCarController.carRB.velocity.magnitude < 12f)
+        if(other.CompareTag("Player") ) //& newCarController.carRB.velocity.magnitude < 12f)
         {  
             StartCoroutine(DropoffPassenger(other));  
         }
@@ -34,7 +38,14 @@ public class DropoffPoint : MonoBehaviour
             droppedoff = true;
             pickupPoint.pickedup = false;
             NBS.SetActive(false);
+            
+            //Add Points
+            points++;
+            print("Score " + points);
 
+            //Addtime
+            gameManagerscript.AddTime();
+            
             if(pickupPoint.pickedup == false)
             {
                 GameObject.Find("Passenger1").transform.localScale = new Vector3(1.3447f,1.575854f,1.3447f);

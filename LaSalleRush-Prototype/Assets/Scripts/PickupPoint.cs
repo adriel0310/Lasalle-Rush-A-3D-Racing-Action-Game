@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupPoint : MonoBehaviour
 {
-   public float duration = 1.5f;
+   public float duration = 1.0f;
    float speed;
    public bool pickedup = false;
    NewCarController newCarController;
@@ -19,7 +19,7 @@ public class PickupPoint : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") & newCarController.carRB.velocity.magnitude < 13f)
+        if(other.CompareTag("Player") )//& newCarController.carRB.velocity.magnitude < 13f)
         {  
             StartCoroutine(PickupPassenger(other));
             dropoffPoint.droppedoff = false;
