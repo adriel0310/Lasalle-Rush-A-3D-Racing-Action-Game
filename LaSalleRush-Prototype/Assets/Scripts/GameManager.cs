@@ -5,20 +5,23 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    //Levels
+    public int currentlevel;
+    public GameObject[] levels;
     //For Timer Variables
     public float countdowntimer = 70f;
     public Text TimerText;
 
-    //DropoffPoint droppedoff;
     void Start()
     {
-        
+        levels[currentlevel - 1].SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
         Countdown();//Timer
+        levels[currentlevel - 1].SetActive(true);
     }
 
     void Countdown() 
