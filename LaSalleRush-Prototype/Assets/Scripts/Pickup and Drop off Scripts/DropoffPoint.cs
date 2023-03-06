@@ -44,7 +44,7 @@ public class DropoffPoint : MonoBehaviour
             print("Score " + points);
 
             //Addtime
-            gameManagerscript.AddTime();
+            gameManagerscript.AddTime1();
             
             if(pickupPoint.pickedup == false)
             {

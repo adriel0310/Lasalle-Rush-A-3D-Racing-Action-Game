@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     //Levels
     public int currentlevel;
+    public int currentPassenger;
     public GameObject[] levels;
     //For Timer Variables
     public float countdowntimer = 70f;
@@ -45,9 +46,16 @@ public class GameManager : MonoBehaviour
         }  
     }
 
-    public void AddTime()
+    public void AddTime1() // time bonus for level 1 
     {
-        countdowntimer += 20f;
-        print("Time Added");
+        countdowntimer += 5f;
+        print("Time Added 1");
     }
+
+    public void AddTime23() // time bonus for level 2 & 3
+    {
+        countdowntimer += 10f;
+        print("Time Added 2");
+    }
+
 }

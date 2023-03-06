@@ -7,13 +7,16 @@ public class QuestSystem : MonoBehaviour
     public static QuestSystem instance;
     public List<Quest> quests = new List<Quest>();
     Quest activeQuest;
-    public bool PlayerIsHere;
+    public bool pickedup;
     GameManager gameManagerscript;
+    SpawnManager spawnManagerscript;
 
-
+    QuestReceiver questReceiverScript;
     void Start()
     {
         gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
+        spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        questReceiverScript = GameObject.Find("QuestReceiver").GetComponent<QuestReceiver>();
     }
     
     void Awake()
@@ -21,7 +24,7 @@ public class QuestSystem : MonoBehaviour
         instance = this;
     }
     
-    void AddQuest() //For adding quests only
+    public void AddQuest() //For adding quests only
     {
         if(activeQuest == null)
         {
@@ -45,15 +48,14 @@ public class QuestSystem : MonoBehaviour
         {
             return;
         }
+
         if(activeQuest.id == _id)
         {
             print("Quest Complete");
             print("Your points" + activeQuest.points);
-            PlayerIsHere = false;
-            activeQuest = null;
             print(activeQuest);
-            gameManagerscript.AddTime();
-            
+            gameManagerscript.AddTime1();
+            activeQuest = null;
         }
     }
     
@@ -61,23 +63,30 @@ public class QuestSystem : MonoBehaviour
     {
         if(col.CompareTag("Player"))
         {
-            AddQuest();
-            PlayerIsHere = true;
-        }
-    }
+            pickedup = true;
+            questReceiverScript.droppedoff = false;
+            print(pickedup);
+        } 
+        //Check for Current Level and Passenger and Spawn
+        if(gameManagerscript.currentlevel == 1)
+        {
+            gameManagerscript.currentPassenger = 1;
 
+            spawnManagerscript.PickupPoints[0].SetActive(false);
+            spawnManagerscript.DropOffPoints[0].SetActive(true);
+        }
+            
+        if(gameManagerscript.currentlevel == 2){
+            
+            spawnManagerscript.PickupPoints[1].SetActive(false); //Despawn CTHM
+            spawnManagerscript.DropOffPoints[1].SetActive(true); //Spawn Chapel
+            
+            gameManagerscript.currentPassenger += 1;
+            
+        } 
+    }
     void OnTriggerExit(Collider col)
     {
-        if(col.CompareTag("Player"))
-        {
-            //PlayerIsHere = false;
-            if(gameManagerscript.currentlevel == 1){
-                GameObject.FindGameObjectWithTag("Pickup").SetActive(false);
-            }
-            
-            if(gameManagerscript.currentlevel == 2){
-                GameObject.FindGameObjectWithTag("CTHM").SetActive(false);
-            }
-        }
+       
     } 
 }
