@@ -66,24 +66,58 @@ public class QuestSystem : MonoBehaviour
             pickedup = true;
             questReceiverScript.droppedoff = false;
             print(pickedup);
-        } 
+        }  
+      
         //Check for Current Level and Passenger and Spawn
         if(gameManagerscript.currentlevel == 1)
         {
+            //1st passenger
             gameManagerscript.currentPassenger = 1;
 
-            spawnManagerscript.PickupPoints[0].SetActive(false);
-            spawnManagerscript.DropOffPoints[0].SetActive(true);
+            spawnManagerscript.PickupPoints[0].SetActive(false); // Rotonda-pickup despawn
+            spawnManagerscript.DropOffPoints[0].SetActive(true); // Chapel-dropoff spawn
+
         }
             
-        if(gameManagerscript.currentlevel == 2){
+        if(gameManagerscript.currentlevel == 2)
+        {
+            //2nd passenger
+            if(gameManagerscript.currentPassenger == 1)
+            {
+                spawnManagerscript.PickupPoints[1].SetActive(false); // ERS-pickup despawn
+                spawnManagerscript.DropOffPoints[1].SetActive(true); // ICTC-dropoff spawn
+                
+                gameManagerscript.currentPassenger += 1; //currentpassenger = 2
+            }
             
-            spawnManagerscript.PickupPoints[1].SetActive(false); //Despawn CTHM
-            spawnManagerscript.DropOffPoints[1].SetActive(true); //Spawn Chapel
+            //3rd passenger 
+            if(spawnManagerscript.DropOffPoints[1].activeSelf == false & gameManagerscript.currentlevel == 2 & gameManagerscript.currentPassenger == 2 ) //Check if dropoff prefab is not active, current level and current passenger is equal
+                {
+                    spawnManagerscript.PickupPoints[2].SetActive(false); //NBS- pickup despawn
+                    spawnManagerscript.DropOffPoints[2].SetActive(true); // Square - dropoff Spawn
+                    gameManagerscript.currentPassenger += 1; //currentpassenger = 3
+                }
+        }
+         if(gameManagerscript.currentlevel == 3)
+        {
+            //4th passenger
+            if(gameManagerscript.currentPassenger == 3)
+            {
+                spawnManagerscript.PickupPoints[3].SetActive(false); // COS-pickup despawn
+                spawnManagerscript.DropOffPoints[3].SetActive(true); // Severino De Las Alas Hall -dropoff spawn
+                
+                gameManagerscript.currentPassenger += 1; //currentpassenger = 4
+            }
             
-            gameManagerscript.currentPassenger += 1;
-            
-        } 
+            //5th passenger 
+            if(spawnManagerscript.DropOffPoints[3].activeSelf == false & gameManagerscript.currentlevel == 3 & gameManagerscript.currentPassenger == 4 ) //Check if dropoff prefab is not active, current level and current passenger is equal
+                {
+                    spawnManagerscript.PickupPoints[4].SetActive(false); //Botanical Graden- pickup despawn
+                    spawnManagerscript.DropOffPoints[4].SetActive(true); // Gregoria Montoya Hall - dropoff Spawn
+                    gameManagerscript.currentPassenger += 1; //currentpassenger = 5
+                }
+        }
+           
     }
     void OnTriggerExit(Collider col)
     {
