@@ -52,7 +52,6 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 2 & gameManagerscript.currentPassenger == 2 )
                     {
                         gameManagerscript.AddTime23();
-
                     }
                 }
             }
