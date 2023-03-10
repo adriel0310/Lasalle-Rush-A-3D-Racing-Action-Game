@@ -94,9 +94,112 @@ public class QuestReceiver : MonoBehaviour
                     {
                         gameManagerscript.AddTime23();
                         spawnManagerscript.DropOffPoints[4].SetActive(false); // Gregoria Montoya Hall - dropoff despawn
-                        spawnManagerscript.PickupPoints[5].SetActive(true); //COS- pickup spawn
+                        spawnManagerscript.PickupPoints[5].SetActive(true); //CBAA- pickup spawn
                     }
-                }   
+                }  
+                //6th Passenger
+                if(gameManagerscript.currentPassenger == 6)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 3 & gameManagerscript.currentPassenger == 6)
+                    {
+                        spawnManagerscript.DropOffPoints[5].SetActive(false); //Ayuntamiento -dropoff despawn
+                        spawnManagerscript.PickupPoints[0].SetActive(true); //Rotonda - pickup spawn
+                        gameManagerscript.AddTime23();
+                        gameManagerscript.currentlevel += 1;
+                    }
+                    
+                } 
+            }
+            if(gameManagerscript.currentlevel == 4) //Level 4
+            {
+                //7th passenger
+                if(gameManagerscript.currentPassenger == 7)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 4)
+                    {
+                        spawnManagerscript.DropOffPoints[6].SetActive(false); //Clothing warehouse-dropoff despawn
+                        spawnManagerscript.PickupPoints[6].SetActive(true); //CTHM - pickup spawn
+                        gameManagerscript.AddTime4();
+                    }
+                }
+                //8th passenger
+                if(gameManagerscript.currentPassenger == 8)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 8)
+                    {
+                        spawnManagerscript.DropOffPoints[7].SetActive(false); //ULS -dropoff despawn
+                        spawnManagerscript.PickupPoints[7].SetActive(true); //Gate 3 - pickup spawn
+                        gameManagerscript.AddTime4();
+                    }    
+                }
+                //9th passenger
+                if(gameManagerscript.currentPassenger == 9)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 4)
+                    {
+                        spawnManagerscript.DropOffPoints[8].SetActive(false); //Museo -dropoff despawn
+                        spawnManagerscript.PickupPoints[8].SetActive(true); //JFH - pickup spawn
+                        gameManagerscript.AddTime4();
+                        gameManagerscript.currentlevel += 1;
+                    }   
+                }
+                }
+            if(gameManagerscript.currentlevel == 5) //Level 5
+            {
+                //10th passenger
+                if(gameManagerscript.currentPassenger == 10)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 10)
+                    {
+                        spawnManagerscript.DropOffPoints[9].SetActive(false); //Gate 3 -dropoff despawn
+                        spawnManagerscript.PickupPoints[9].SetActive(true); //University pool-pickup spawn
+                        gameManagerscript.AddTime5();
+                    }
+                }
+                //11th passenger
+                if(gameManagerscript.currentPassenger == 11)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 11)
+                    {
+                        spawnManagerscript.DropOffPoints[10].SetActive(false); //PCH-dropoff despawn
+                        spawnManagerscript.PickupPoints[10].SetActive(true); //FCH-pickup spawn
+                        gameManagerscript.AddTime5();
+                    }
+                }
+                //12th passenger
+                if(gameManagerscript.currentPassenger == 12)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 12)
+                    {
+                        spawnManagerscript.DropOffPoints[11].SetActive(false); //RCC-dropoff despawn
+                        spawnManagerscript.PickupPoints[11].SetActive(true); //ULS-pickup spawn
+                        gameManagerscript.AddTime5();
+                    }
+                }
+                //13th passenger
+                if(gameManagerscript.currentPassenger == 13)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 13)
+                    {
+                        spawnManagerscript.DropOffPoints[12].SetActive(false); //Mila's-dropoff despawn
+                        spawnManagerscript.PickupPoints[7].SetActive(true); //Gate 3-pickup spawn
+                        gameManagerscript.AddTime5();
+                        gameManagerscript.currentlevel += 1;
+                    }
+                }
+            }
+            if(gameManagerscript.currentlevel == 6) //Level 6
+            {
+                //14th passenger
+                if(gameManagerscript.currentPassenger == 14)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 14)
+                    {
+                        spawnManagerscript.DropOffPoints[13].SetActive(false); //Gate 2-dropoff despawn
+                        spawnManagerscript.PickupPoints[12].SetActive(true); //Mariano Alvarez-pickup spawn
+                        gameManagerscript.AddTime6();
+                    }
+                }
             }
     }
 }

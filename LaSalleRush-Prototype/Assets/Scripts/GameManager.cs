@@ -58,4 +58,21 @@ public class GameManager : MonoBehaviour
         print("Time Added 2");
     }
 
+    public void AddTime4() // time bonus for level 4
+    { 
+        countdowntimer += 15f;
+        print("Time Added 4");
+    }
+    public void AddTime5() // time bonus for level 5
+    { 
+        countdowntimer += 20f;
+        print("Time Added 5");
+    }
+    
+    public void AddTime6() // time bonus for level 6
+    { 
+        countdowntimer += 25f;
+        print("Time Added 6");
+    }
+
 }
