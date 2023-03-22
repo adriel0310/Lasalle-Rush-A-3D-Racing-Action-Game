@@ -33,6 +33,7 @@ public class QuestReceiver : MonoBehaviour
             {
                 //QuestSystem.instance.CompleteQuest(questId);
                 spawnManagerscript.DropOffPoints[0].SetActive(false); //Chapel-dropoff despawn
+                print("Chapel Dropoff De-spawned");
             
                 if(droppedoff == true & gameManagerscript.currentlevel == 1){
                     
@@ -41,6 +42,8 @@ public class QuestReceiver : MonoBehaviour
                     
                     // spawns for level 2
                     spawnManagerscript.PickupPoints[1].SetActive(true); //ERS-pickup Spawn
+                    print("ERS Pickup Spawned Level 2");
+
                 }
             }
             
@@ -52,7 +55,9 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 2 & gameManagerscript.currentPassenger == 2 )
                     {
                         spawnManagerscript.DropOffPoints[1].SetActive(false); //ICTC-dropoff despawn
+                        print("ICTC Dropoff De-spawned Level 2");
                         spawnManagerscript.PickupPoints[2].SetActive(true); //NBS- pickup spawn
+                        print("NBS Pickup spawned Level 2");
                         gameManagerscript.AddTime23();  
                     }
                     
@@ -65,10 +70,11 @@ public class QuestReceiver : MonoBehaviour
                     {
                         //LEVEL FINISHED 
                         //Add Score System and UI 
-
                         gameManagerscript.AddTime23();
                         spawnManagerscript.DropOffPoints[2].SetActive(false); // Square - dropoff despawn
+                        print("Square Dropoff De-spawned Level 2");
                         spawnManagerscript.PickupPoints[3].SetActive(true); //COS- pickup spawn
+                        print("COS Pickup Spawned Level 3");
                         gameManagerscript.currentlevel += 1;
                     }
                 }   
@@ -82,7 +88,10 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 3 & gameManagerscript.currentPassenger == 4)
                     {
                         spawnManagerscript.DropOffPoints[3].SetActive(false); //Severino De Las Alas Hall -dropoff despawn
+                        print("Severino De Las Alas Hall Dropoff De-spawned Level 3");
                         spawnManagerscript.PickupPoints[4].SetActive(true); //Botanical Garden - pickup spawn
+                        print("Botanical Garden Pickup Spawned Level 3");
+
                         gameManagerscript.AddTime23();
                     }
                     
@@ -94,7 +103,10 @@ public class QuestReceiver : MonoBehaviour
                     {
                         gameManagerscript.AddTime23();
                         spawnManagerscript.DropOffPoints[4].SetActive(false); // Gregoria Montoya Hall - dropoff despawn
+                        print("Gregoria Montoya Hall Dropoff De-spawned Level 3");
                         spawnManagerscript.PickupPoints[5].SetActive(true); //CBAA- pickup spawn
+                        print("CBAA Pickup Spawned Level 3");
+
                     }
                 }  
                 //6th Passenger
@@ -103,7 +115,9 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 3 & gameManagerscript.currentPassenger == 6)
                     {
                         spawnManagerscript.DropOffPoints[5].SetActive(false); //Ayuntamiento -dropoff despawn
+                        print("Ayuntamiento Dropoff De-spawned Level 3");
                         spawnManagerscript.PickupPoints[0].SetActive(true); //Rotonda - pickup spawn
+                        print("Rotonda Pickup Spawned Level 4");
                         gameManagerscript.AddTime23();
                         gameManagerscript.currentlevel += 1;
                     }
@@ -115,10 +129,12 @@ public class QuestReceiver : MonoBehaviour
                 //7th passenger
                 if(gameManagerscript.currentPassenger == 7)
                 {
-                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 4)
+                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 7)
                     {
                         spawnManagerscript.DropOffPoints[6].SetActive(false); //Clothing warehouse-dropoff despawn
+                        print("Clothing warehouse Dropoff De-Spawned Level 4");
                         spawnManagerscript.PickupPoints[6].SetActive(true); //CTHM - pickup spawn
+                        print("CTHM Pickup Spawned Level 4");
                         gameManagerscript.AddTime4();
                     }
                 }
@@ -128,17 +144,22 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 8)
                     {
                         spawnManagerscript.DropOffPoints[7].SetActive(false); //ULS -dropoff despawn
+                        print("ULS Dropoff De-Spawned Level 4");
                         spawnManagerscript.PickupPoints[7].SetActive(true); //Gate 3 - pickup spawn
+                        print("Gate 3 Pickup Spawned Level 4");
                         gameManagerscript.AddTime4();
                     }    
                 }
                 //9th passenger
                 if(gameManagerscript.currentPassenger == 9)
                 {
-                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 4)
+                    if(droppedoff == true & gameManagerscript.currentlevel == 4 & gameManagerscript.currentPassenger == 9)
                     {
                         spawnManagerscript.DropOffPoints[8].SetActive(false); //Museo -dropoff despawn
+                        print("Museo Dropoff De-Spawned Level 4");
                         spawnManagerscript.PickupPoints[8].SetActive(true); //JFH - pickup spawn
+                        print("JFH Pickup Spawned Level 5");
+
                         gameManagerscript.AddTime4();
                         gameManagerscript.currentlevel += 1;
                     }   
@@ -152,7 +173,10 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 10)
                     {
                         spawnManagerscript.DropOffPoints[9].SetActive(false); //Gate 3 -dropoff despawn
+                        print("Gate 3 Dropoff De-Spawned Level 5");
                         spawnManagerscript.PickupPoints[9].SetActive(true); //University pool-pickup spawn
+                        print("University pool Pickup Spawned Level 5");
+
                         gameManagerscript.AddTime5();
                     }
                 }
@@ -162,7 +186,10 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 11)
                     {
                         spawnManagerscript.DropOffPoints[10].SetActive(false); //PCH-dropoff despawn
+                        print("PCH Dropoff De-Spawned Level 5");
                         spawnManagerscript.PickupPoints[10].SetActive(true); //FCH-pickup spawn
+                        print("FCH Pickup Spawned Level 5");
+
                         gameManagerscript.AddTime5();
                     }
                 }
@@ -172,7 +199,9 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 12)
                     {
                         spawnManagerscript.DropOffPoints[11].SetActive(false); //RCC-dropoff despawn
+                        print("RCC Dropoff De-Spawned Level 5");
                         spawnManagerscript.PickupPoints[11].SetActive(true); //ULS-pickup spawn
+                        print("ULS Pickup Spawned Level 5");
                         gameManagerscript.AddTime5();
                     }
                 }
@@ -182,7 +211,9 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 5 & gameManagerscript.currentPassenger == 13)
                     {
                         spawnManagerscript.DropOffPoints[12].SetActive(false); //Mila's-dropoff despawn
+                        print("Mila's Dropoff De-Spawned Level 5");
                         spawnManagerscript.PickupPoints[7].SetActive(true); //Gate 3-pickup spawn
+                        print("Gate 3 Pickup Spawned Level 6");
                         gameManagerscript.AddTime5();
                         gameManagerscript.currentlevel += 1;
                     }
@@ -196,7 +227,33 @@ public class QuestReceiver : MonoBehaviour
                     if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 14)
                     {
                         spawnManagerscript.DropOffPoints[13].SetActive(false); //Gate 2-dropoff despawn
+                        print("Gate 2 Dropoff De-Spawned Level 6");
                         spawnManagerscript.PickupPoints[12].SetActive(true); //Mariano Alvarez-pickup spawn
+                        print("Gate 3 Pickup Spawned Level 6");
+                        gameManagerscript.AddTime6();
+                    }
+                }
+
+                if(gameManagerscript.currentPassenger == 15)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 15)
+                    {
+                        spawnManagerscript.DropOffPoints[14].SetActive(false); //Grandstand-dropoff despawn
+                        print("Grandstand Dropoff De-Spawned Level 6");
+                        spawnManagerscript.PickupPoints[13].SetActive(true); //Grandstand-pickup spawn
+                        print("Grandstand Pickup Spawned Level 6");
+                        gameManagerscript.AddTime6();
+                    }
+                }
+                
+                if(gameManagerscript.currentPassenger == 16)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 16)
+                    {
+                        spawnManagerscript.DropOffPoints[15].SetActive(false); //Grandstand-dropoff despawn
+                        print("Gate 1 Dropoff De-Spawned Level 6");
+                        spawnManagerscript.PickupPoints[13].SetActive(true); //Grandstand-pickup spawn
+                        print("Grandstand Pickup Spawned Level 6");
                         gameManagerscript.AddTime6();
                     }
                 }
