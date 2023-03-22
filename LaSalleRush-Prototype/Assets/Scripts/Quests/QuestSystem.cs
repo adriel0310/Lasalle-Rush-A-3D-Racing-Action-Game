@@ -242,9 +242,9 @@ public class QuestSystem : MonoBehaviour
             if(spawnManagerscript.DropOffPoints[14].activeSelf == false & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 15 ) //Check if dropoff prefab is not active, current level and current passenger is equal
                 {
                     spawnManagerscript.PickupPoints[13].SetActive(false); //Grandstand- pickup despawn
-                    print("Mariano alvarez hall Pickup De-spawned Level 6");
+                    print("Grandstand Pickup De-spawned Level 6");
                     spawnManagerscript.DropOffPoints[15].SetActive(true); //Gate 1 - dropoff Spawn
-                    print("Grandstand Drop-off Spawned Level 6");
+                    print("Gate 1 Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 16
                 }
         }   

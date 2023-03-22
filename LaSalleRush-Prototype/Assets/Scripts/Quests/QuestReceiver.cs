@@ -250,10 +250,10 @@ public class QuestReceiver : MonoBehaviour
                 {
                     if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 16)
                     {
-                        spawnManagerscript.DropOffPoints[15].SetActive(false); //Grandstand-dropoff despawn
+                        spawnManagerscript.DropOffPoints[15].SetActive(false); //Gate 1 -dropoff despawn
                         print("Gate 1 Dropoff De-Spawned Level 6");
-                        spawnManagerscript.PickupPoints[13].SetActive(true); //Grandstand-pickup spawn
-                        print("Grandstand Pickup Spawned Level 6");
+                        spawnManagerscript.PickupPoints[14].SetActive(true); //Gate 1-pickup spawn
+                        print("Gate 1 Pickup Spawned Level 6");
                         gameManagerscript.AddTime6();
                     }
                 }
