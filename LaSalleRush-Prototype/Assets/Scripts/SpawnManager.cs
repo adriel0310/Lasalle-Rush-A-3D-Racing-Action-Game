@@ -35,4 +35,12 @@ public class SpawnManager : MonoBehaviour
     {
         PickupPoints[0].SetActive(true);
     }
+
+    public void spawnAll()
+    {
+         foreach (GameObject dropoffpoints in DropOffPoints)
+        {
+            dropoffpoints.SetActive(true);
+        }
+    }
 }

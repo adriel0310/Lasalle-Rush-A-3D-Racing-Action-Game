@@ -229,7 +229,7 @@ public class QuestReceiver : MonoBehaviour
                         spawnManagerscript.DropOffPoints[13].SetActive(false); //Gate 2-dropoff despawn
                         print("Gate 2 Dropoff De-Spawned Level 6");
                         spawnManagerscript.PickupPoints[12].SetActive(true); //Mariano Alvarez-pickup spawn
-                        print("Gate 3 Pickup Spawned Level 6");
+                        print("Mariano Alvarez Pickup Spawned Level 6");
                         gameManagerscript.AddTime6();
                     }
                 }
@@ -252,7 +252,7 @@ public class QuestReceiver : MonoBehaviour
                     {
                         spawnManagerscript.DropOffPoints[15].SetActive(false); //Gate 1 -dropoff despawn
                         print("Gate 1 Dropoff De-Spawned Level 6");
-                        spawnManagerscript.PickupPoints[14].SetActive(true); //Gate 1-pickup spawn
+                        spawnManagerscript.PickupPoints[0].SetActive(true); //Rotonda-pickup spawn
                         print("Gate 1 Pickup Spawned Level 6");
                         gameManagerscript.AddTime6();
                     }

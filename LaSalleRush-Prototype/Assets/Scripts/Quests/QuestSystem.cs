@@ -220,7 +220,7 @@ public class QuestSystem : MonoBehaviour
         if(gameManagerscript.currentlevel == 6)
         {
             //14th passenger
-            if(gameManagerscript.currentPassenger == 14)
+            if(gameManagerscript.currentPassenger == 13)
             {
                 spawnManagerscript.PickupPoints[7].SetActive(false); // Gate 3-pickup despawn
                 print("Gate 3 Pickup De-spawned Level 6");
@@ -246,6 +246,16 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[15].SetActive(true); //Gate 1 - dropoff Spawn
                     print("Gate 1 Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 16
+                }
+            //17th Passenger
+            if(spawnManagerscript.DropOffPoints[15].activeSelf == false & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 16 ) //Check if dropoff prefab is not active, current level and current passenger is equal
+                {
+                    spawnManagerscript.PickupPoints[0].SetActive(false); //Rotonda- pickup despawn
+                    print("Rotonda Pickup De-spawned Level 6");
+                    //spawnManagerscript.DropOffPoints[15].SetActive(true); //Gate 1 - dropoff Spawn
+                    spawnManagerscript.spawnAll();
+                    print("All Drop off points Spawned BAHALA KA NA KUNG SAAN KA PUPUNTA BASTA HINDI KA MABANGGA Level 6 UwU");
+                    gameManagerscript.currentPassenger += 1; //currentpassenger = 17
                 }
         }   
     }
