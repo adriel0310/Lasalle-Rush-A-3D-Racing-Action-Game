@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -25,10 +26,13 @@ public class GameManager : MonoBehaviour
     //GameObjects
     public GameObject[] levels;
     public GameObject LevelCompleteUI;
+    public GameObject gameoverui;
     
     //For Timer Variables
     public float countdowntimer = 70f;
     public Text TimerText;
+
+    public UnityEvent onTimerCompleted;
     
     //Level Completion Text
     public Text LevelCompleteLRCoins;
@@ -54,6 +58,7 @@ public class GameManager : MonoBehaviour
     {
         if(countdowntimer > 0)
         {
+            gameoverui.SetActive(false);
             countdowntimer -= Time.deltaTime;
         }
         else
@@ -68,7 +73,15 @@ public class GameManager : MonoBehaviour
         if(countdowntimer < 60f)
         {
             TimerText.text = string.Format("{1:00} s",minutes,seconds);
-        }  
+        }
+        
+        // for game over ui screen
+        //if(countdowntimer <= 0f)
+        //{
+        //    Time.timeScale = 0;
+        //    onTimerCompleted?.Invoke();
+        //    countdowntimer = 0f;
+        //}  
     }
     
     //ADD TIME FUNCTIONS
@@ -144,6 +157,7 @@ public class GameManager : MonoBehaviour
     //UI Functions
     public void LevelComplete()
     {
+        Time.timeScale = 0;
         Level.text ="LEVEL " + currentlevel;
         LevelCompleteUI.SetActive(true);
         TimerText.enabled = false;
@@ -167,6 +181,7 @@ public class GameManager : MonoBehaviour
     }
     public void ProceedNextLevel()
     {
+        Time.timeScale = 1;
         LevelCompleteUI.SetActive(false);
         TimerText.enabled = true;
     }
