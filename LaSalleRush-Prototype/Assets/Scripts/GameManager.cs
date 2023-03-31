@@ -40,11 +40,14 @@ public class GameManager : MonoBehaviour
     public Text Score;
     public Text TotalScore;
 
+
     void Start()
     {
         levels[currentlevel - 1].SetActive(true);
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
+        currentlevel = 6;
+        currentPassenger = 16;
     }
 
     // Update is called once per frame

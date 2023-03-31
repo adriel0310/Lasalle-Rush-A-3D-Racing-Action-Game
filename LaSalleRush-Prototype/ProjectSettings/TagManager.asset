@@ -9,6 +9,21 @@ TagManager:
   - Dropoff
   - CTHM
   - Chapel
+  - ICTC
+  - Square
+  - Severino De Las Alas Hall
+  - Ayuntamiento
+  - Clothing Warehouse
+  - ULS(Dropoff)
+  - Museo De La Salle
+  - Gate 3
+  - 'PCH '
+  - RCC
+  - Mila's Diner
+  - Gate 2
+  - Grandstand
+  - Gate 1(Dropoff)
+  - Gregoria Montoya Hall
   layers:
   - Default
   - TransparentFX
@@ -43,9 +58,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Fire
-    uniqueID: 3804908061
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

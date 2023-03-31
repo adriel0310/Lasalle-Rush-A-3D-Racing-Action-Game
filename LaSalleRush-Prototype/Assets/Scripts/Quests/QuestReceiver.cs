@@ -11,14 +11,20 @@ public class QuestReceiver : MonoBehaviour
     QuestSystem questScript;
     GameManager gameManagerscript;
     SpawnManager spawnManagerscript;
+    DespawnManager despawnManagerscript;
 
 
     void Start()
     {
          gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
          spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+         despawnManagerscript = GameObject.Find("DespawnManager").GetComponent<DespawnManager>();
          questScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
     }
+
+
+
+    
     void OnTriggerEnter(Collider col)
     {
         
@@ -277,6 +283,26 @@ public class QuestReceiver : MonoBehaviour
 
                         gameManagerscript.AddLRCoinsFinalPassenger();
                         gameManagerscript.AddTime6();
+                    }
+                }
+
+                if(gameManagerscript.currentPassenger == 17)
+                {
+                    if(droppedoff == true & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 17)
+                    {
+                      
+                        //spawnManagerscript.despawn(); //HAYS NAKA COMMENT WAG MO KALIMUTAN TANGGALIN ANG COMMENT
+
+                        //spawnManagerscript.despawn();
+
+                        //despawnManagerscript.CheckTag();
+                        //despawnManagerscript.CheckTag1();
+                        
+                        print("Current Passenger" + gameManagerscript.currentPassenger);
+
+                        gameManagerscript.AddLRCoinsFinalPassenger();
+                        gameManagerscript.AddTime6();
+                        print("FINAL LEVEL TO");
                     }
                 }
             }

@@ -531,7 +531,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Mila's Diner
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -2176,7 +2176,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: RCC
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -2605,7 +2605,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: ULS(Dropoff)
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -4275,7 +4275,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: 'PCH '
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -4350,7 +4350,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: PCH
+      value: PCH X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -4391,6 +4391,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &230452778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230452772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: PCH
 --- !u!1 &230635202
 GameObject:
   m_ObjectHideFlags: 0
@@ -7793,7 +7823,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Clothing Warehouse
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -9366,7 +9396,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Grandstand
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -9441,7 +9471,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Grandstand
+      value: Grandstand X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -9661,7 +9691,7 @@ PrefabInstance:
     - target: {fileID: 3594091166491497868, guid: a9afd13540189344fbe44340ccc2c0a0,
         type: 3}
       propertyPath: m_Name
-      value: Mariano Alvarez Hall
+      value: Mariano Alvarez Hall X
       objectReference: {fileID: 0}
     - target: {fileID: 3594091166491497868, guid: a9afd13540189344fbe44340ccc2c0a0,
         type: 3}
@@ -10768,7 +10798,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Gate 1(Dropoff)
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -10798,7 +10828,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485525, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 202.03
+      value: 192.67
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485525, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -10808,7 +10838,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485525, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.09
+      value: 30.54
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485525, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -10848,7 +10878,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Gate 1 (Dropoff)
+      value: Gate 1 (Dropoff) X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -10889,6 +10919,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &614755298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614755291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Gate 1 (Dropoff)
 --- !u!43 &616335652
 Mesh:
   m_ObjectHideFlags: 0
@@ -12570,7 +12630,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Ayuntamiento
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -18193,7 +18253,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Gate 3
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -20779,6 +20839,7 @@ MonoBehaviour:
   - {fileID: 1095702891}
   - {fileID: 533436034}
   - {fileID: 614755291}
+  player: {fileID: 7282772007667473023}
 --- !u!4 &1068041829
 Transform:
   m_ObjectHideFlags: 0
@@ -21274,7 +21335,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Gate 2
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -21349,7 +21410,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Gate 2
+      value: Gate 2 X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -23904,7 +23965,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: ICTC
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -24112,6 +24173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226360293}
   - component: {fileID: 1226360292}
+  - component: {fileID: 1226360294}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -24187,6 +24249,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226360294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226360291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29a092a006e4ae49aefae0ca1d05088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DropOffPoints:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
 --- !u!1 &1229536413
 GameObject:
   m_ObjectHideFlags: 0
@@ -33745,7 +33836,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Gregoria Montoya Hall
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -33825,7 +33916,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245607460702, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -34760,7 +34851,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Severino De Las Alas Hall
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -38288,7 +38379,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Museo De La Salle
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -39579,7 +39670,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_TagString
-      value: Dropoff
+      value: Chapel
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147099, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}

@@ -255,6 +255,7 @@ public class QuestSystem : MonoBehaviour
                     //spawnManagerscript.DropOffPoints[15].SetActive(true); //Gate 1 - dropoff Spawn
                     spawnManagerscript.spawnAll();
                     print("All Drop off points Spawned BAHALA KA NA KUNG SAAN KA PUPUNTA BASTA HINDI KA MABANGGA Level 6 UwU");
+                    GameObject.Find("Directional Arrow").SetActive(false);
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 17
                 }
         }   
