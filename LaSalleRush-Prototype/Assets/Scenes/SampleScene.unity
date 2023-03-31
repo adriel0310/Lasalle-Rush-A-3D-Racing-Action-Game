@@ -616,7 +616,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Mila's Diner
+      value: Mila's Diner X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -657,6 +657,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &23470702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23470700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Mila's Diner
 --- !u!1 &24615282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2316,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: RCC
+      value: RCC X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -2327,6 +2357,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &80001849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80001847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: RCC
 --- !u!1 &81093381
 GameObject:
   m_ObjectHideFlags: 0
@@ -2715,7 +2775,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: ULS(Dropoff)
+      value: ULS(Dropoff)X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -2756,6 +2816,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &109902498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109902496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: ULS(Dropoff)
 --- !u!1 &112984382
 GameObject:
   m_ObjectHideFlags: 0
@@ -7898,7 +7988,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Clothing Warehouse
+      value: Clothing Warehouse X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -7939,6 +8029,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &435872769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435872767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Clothing Warehouse
 --- !u!198 &437705274 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 9147842842826587979, guid: e4e5957c11723d24e8b3458ec7533948,
@@ -9512,6 +9632,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &533436036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533436034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Grandstand
 --- !u!1001 &540269200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12705,7 +12855,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Ayuntamiento
+      value: Ayuntamiento X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -12746,6 +12896,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &717083050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717083048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Ayuntamiento
 --- !u!1 &717119853
 GameObject:
   m_ObjectHideFlags: 0
@@ -16117,7 +16297,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Square X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -16158,6 +16338,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &834503784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834503782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Square
 --- !u!1 &841161541
 GameObject:
   m_ObjectHideFlags: 0
@@ -18328,7 +18538,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Gate 3
+      value: Gate 3 X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -18369,6 +18579,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &949270945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949270943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Gate 3
 --- !u!1 &956231179
 GameObject:
   m_ObjectHideFlags: 0
@@ -21451,6 +21691,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &1095702893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095702891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Gate 2
 --- !u!1 &1097520070
 GameObject:
   m_ObjectHideFlags: 0
@@ -23460,6 +23730,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &1197310822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484447270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Chapel
 --- !u!1 &1199806780
 GameObject:
   m_ObjectHideFlags: 0
@@ -24045,7 +24345,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: ICTC
+      value: ICTC X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -24173,7 +24473,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1226360293}
   - component: {fileID: 1226360292}
-  - component: {fileID: 1226360294}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -24249,35 +24548,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1226360294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226360291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f29a092a006e4ae49aefae0ca1d05088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DropOffPoints:
-  - {fileID: 484447270}
-  - {fileID: 1272790422}
-  - {fileID: 834503782}
-  - {fileID: 1872623121}
-  - {fileID: 1773979545}
-  - {fileID: 717083048}
-  - {fileID: 435872767}
-  - {fileID: 109902496}
-  - {fileID: 2110004685}
-  - {fileID: 949270943}
-  - {fileID: 230452772}
-  - {fileID: 80001847}
-  - {fileID: 23470700}
-  - {fileID: 1095702891}
-  - {fileID: 533436034}
-  - {fileID: 614755291}
 --- !u!1 &1229536413
 GameObject:
   m_ObjectHideFlags: 0
@@ -25121,6 +25391,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &1272790424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272790422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: ICTC
 --- !u!1 &1274911718
 GameObject:
   m_ObjectHideFlags: 0
@@ -33911,7 +34211,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Gregoria Montoya Hall
+      value: Gregoria Montoya Hall X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -33952,6 +34252,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &1773979547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773979545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Gregoria Montoya Hall
 --- !u!114 &1774493536 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5342341868597424062, guid: 7c208803d62f1c643a45e142c1a0c780,
@@ -34841,7 +35171,7 @@ PrefabInstance:
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Severono De Las Alas Hall
+      value: Severino De Las Alas Hall
       objectReference: {fileID: 0}
     - target: {fileID: 320825720990147096, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -34926,7 +35256,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Severino De Las Alas Hall
+      value: Severino De Las Alas Hall X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -34967,6 +35297,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &1872623123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872623121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Severino De Las Alas Hall
 --- !u!1 &1882853815
 GameObject:
   m_ObjectHideFlags: 0
@@ -38454,7 +38814,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Museo De La Salle
+      value: Museo De La Salle X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
@@ -38495,6 +38855,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 1
   droppedoff: 0
+--- !u!114 &2110004687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110004685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f34de85fbb2b34692addacdad65987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToDespawn:
+  - {fileID: 484447270}
+  - {fileID: 1272790422}
+  - {fileID: 834503782}
+  - {fileID: 1872623121}
+  - {fileID: 1773979545}
+  - {fileID: 717083048}
+  - {fileID: 435872767}
+  - {fileID: 109902496}
+  - {fileID: 2110004685}
+  - {fileID: 949270943}
+  - {fileID: 230452772}
+  - {fileID: 80001847}
+  - {fileID: 23470700}
+  - {fileID: 1095702891}
+  - {fileID: 533436034}
+  - {fileID: 614755291}
+  objectId: Museo De La Salle
 --- !u!1 &2119885132
 GameObject:
   m_ObjectHideFlags: 0
@@ -39745,7 +40135,7 @@ PrefabInstance:
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}
       propertyPath: m_Name
-      value: Chapel
+      value: Chapel X
       objectReference: {fileID: 0}
     - target: {fileID: 6117355245361485530, guid: 0a47977b69a9b8c40ae227f519fdee75,
         type: 3}

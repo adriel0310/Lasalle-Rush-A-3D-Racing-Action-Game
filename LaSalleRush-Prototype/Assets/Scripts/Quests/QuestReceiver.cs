@@ -11,14 +11,12 @@ public class QuestReceiver : MonoBehaviour
     QuestSystem questScript;
     GameManager gameManagerscript;
     SpawnManager spawnManagerscript;
-    DespawnManager despawnManagerscript;
 
 
     void Start()
     {
          gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
          spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
-         despawnManagerscript = GameObject.Find("DespawnManager").GetComponent<DespawnManager>();
          questScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
     }
 
