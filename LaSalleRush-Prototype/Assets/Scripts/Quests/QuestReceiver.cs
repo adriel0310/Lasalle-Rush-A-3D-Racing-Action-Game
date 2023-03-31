@@ -28,6 +28,7 @@ public class QuestReceiver : MonoBehaviour
         
         if(col.CompareTag("Player"))
         {
+            gameManagerscript.LevelObjective();
             questScript.pickedup = false;
             droppedoff = true;
         }
