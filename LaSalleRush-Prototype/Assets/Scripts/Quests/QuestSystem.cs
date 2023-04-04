@@ -76,6 +76,11 @@ public class QuestSystem : MonoBehaviour
             pickedup = true;
             questReceiverScript.droppedoff = false;
             print(pickedup);
+
+            PickUpPointlbl.SetActive(false);
+            PickUpPoint.enabled = false;
+            DropOffPointlbl.SetActive(true);
+            DropOffPoint.enabled = true;
         }  
       
         //Check for Current Level and Passenger and Spawn
@@ -84,14 +89,14 @@ public class QuestSystem : MonoBehaviour
             //1st passenger
             gameManagerscript.currentPassenger = 1;
             spawnManagerscript.PickupPoints[0].SetActive(false); // Rotonda-pickup despawn
-            PickUpPointlbl.SetActive(false);
-            PickUpPoint.enabled = false;
+            //PickUpPointlbl.SetActive(false);
+            //PickUpPoint.enabled = false;
 
             print("Rotonda De-spawned");
             spawnManagerscript.DropOffPoints[0].SetActive(true); // Chapel-dropoff spawn
             print("Chapel Dropoff Spawned");
-            DropOffPointlbl.SetActive(true);
-            DropOffPoint.enabled = true;
+            //DropOffPointlbl.SetActive(true);
+            //DropOffPoint.enabled = true;
             DropOffPoint.text = "Chapel";
 
 
@@ -109,11 +114,11 @@ public class QuestSystem : MonoBehaviour
                 spawnManagerscript.DropOffPoints[1].SetActive(true); // ICTC-dropoff spawn
                 print("ICTC Dropoff Spawned Level 2");
                 
-                PickUpPointlbl.SetActive(false);
-                PickUpPoint.enabled = false;
+                //PickUpPointlbl.SetActive(false);
+                //PickUpPoint.enabled = false;
 
-                DropOffPointlbl.SetActive(true);
-                DropOffPoint.enabled = true;
+                //DropOffPointlbl.SetActive(true);
+                //DropOffPoint.enabled = true;
                 DropOffPoint.text = "ICTC";
 
 
@@ -129,11 +134,11 @@ public class QuestSystem : MonoBehaviour
                     print("Square Dropoff Spawned Level 2");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 3
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                    //PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                    //DropOffPointlbl.SetActive(true);
+                    //DropOffPoint.enabled = true;
                     DropOffPoint.text = "Food Square";
 
                 }
@@ -150,11 +155,11 @@ public class QuestSystem : MonoBehaviour
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 4
                 
-                PickUpPointlbl.SetActive(false);
-                PickUpPoint.enabled = false;
+                //PickUpPointlbl.SetActive(false);
+                //PickUpPoint.enabled = false;
 
-                DropOffPointlbl.SetActive(true);
-                DropOffPoint.enabled = true;
+                //DropOffPointlbl.SetActive(true);
+                //DropOffPoint.enabled = true;
                 DropOffPoint.text = "Severino De Las Alas Hall";
             
             }
@@ -168,11 +173,11 @@ public class QuestSystem : MonoBehaviour
                     print("Gregoria Montoya Hall Drop-off Spawned Level 3");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 5
                     
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                    //PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                    //DropOffPoint.enabled = true;
                     DropOffPoint.text = "Gregoria Montoya Hall";
 
                 }
@@ -186,11 +191,11 @@ public class QuestSystem : MonoBehaviour
                     print("Ayuntamiento Drop-off Spawned Level 3");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 6
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                    //PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                    //DropOffPointlbl.SetActive(true);
+                    //DropOffPoint.enabled = true;
                     DropOffPoint.text = "Ayuntamiento";
                 } 
         }
@@ -207,11 +212,11 @@ public class QuestSystem : MonoBehaviour
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 7
                 
-                PickUpPointlbl.SetActive(false);
-                PickUpPoint.enabled = false;
+                //PickUpPointlbl.SetActive(false);
+               // PickUpPoint.enabled = false;
 
-                DropOffPointlbl.SetActive(true);
-                DropOffPoint.enabled = true;
+                //DropOffPointlbl.SetActive(true);
+                //DropOffPoint.enabled = true;
                 DropOffPoint.text = "Clothing Warehouse";
             }
             
@@ -224,11 +229,11 @@ public class QuestSystem : MonoBehaviour
                     print("ULS Drop-off Spawned Level 4");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 8
     
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = true;
                     DropOffPoint.text = "Ugnayang La Salle";
                 }
             
@@ -241,11 +246,11 @@ public class QuestSystem : MonoBehaviour
                     print("Museo Drop-off Spawned Level 4");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 9
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = true;
                     DropOffPoint.text = "Museo De La Salle";
                 } 
         }
@@ -262,11 +267,11 @@ public class QuestSystem : MonoBehaviour
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 10
                 
-                PickUpPointlbl.SetActive(false);
-                PickUpPoint.enabled = false;
+                //PickUpPointlbl.SetActive(false);
+               // PickUpPoint.enabled = false;
 
-                DropOffPointlbl.SetActive(true);
-                DropOffPoint.enabled = true;
+               // DropOffPointlbl.SetActive(true);
+                //DropOffPoint.enabled = true;
                 DropOffPoint.text = "Gate 3";
             }
             
@@ -279,11 +284,11 @@ public class QuestSystem : MonoBehaviour
                     print("PCH Drop-off Spawned Level 5");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 11
     
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                   // PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = true;
                     DropOffPoint.text = "PCH";
                 }
             
@@ -296,11 +301,11 @@ public class QuestSystem : MonoBehaviour
                     print("RCC Drop-off Spawned Level 5");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 12
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                   // PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                    //DropOffPointlbl.SetActive(true);
+                    //DropOffPoint.enabled = true;
                     DropOffPoint.text = "RCC";
                 } 
             
@@ -314,11 +319,11 @@ public class QuestSystem : MonoBehaviour
 
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 13
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                    //PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = true;
                     DropOffPoint.text = "Mila's Diner";
                 } 
         }
@@ -334,11 +339,11 @@ public class QuestSystem : MonoBehaviour
                 print("Gate 2 Drop-off Spawned Level 6");
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 14
 
-                PickUpPointlbl.SetActive(false);
-                PickUpPoint.enabled = false;
+                //PickUpPointlbl.SetActive(false);
+               // PickUpPoint.enabled = false;
 
-                DropOffPointlbl.SetActive(true);
-                DropOffPoint.enabled = true;
+                //DropOffPointlbl.SetActive(true);
+                //DropOffPoint.enabled = true;
                 DropOffPoint.text = "Gate 2";
             }
             
@@ -351,11 +356,11 @@ public class QuestSystem : MonoBehaviour
                     print("Grandstand Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 15
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                   // PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                    //DropOffPoint.enabled = true;
                     DropOffPoint.text = "Grandstand";
 
                 }
@@ -368,11 +373,11 @@ public class QuestSystem : MonoBehaviour
                     print("Gate 1 Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 16
 
-                    PickUpPointlbl.SetActive(false);
-                    PickUpPoint.enabled = false;
+                   // PickUpPointlbl.SetActive(false);
+                   // PickUpPoint.enabled = false;
 
-                    DropOffPointlbl.SetActive(true);
-                    DropOffPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = true;
                     DropOffPoint.text = "Gate 1 Rotonda";
 
                 }

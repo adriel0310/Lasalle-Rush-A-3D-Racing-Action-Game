@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     public Text TimeLeft;
     public Text Score;
     public Text TotalScore;
+  
 
 
     void Start()
@@ -211,13 +212,15 @@ public class GameManager : MonoBehaviour
         LevelUI.enabled = true;
         PickUpPoint.enabled = true;
         TimerText.enabled = true;
+        PickUpPointlbl.SetActive(true);
+        
     }
 
     public void LevelObjective(){
         switch(currentPassenger){
             case 1:
                 Objective.text = "A CSCS professor needs to attend his class in the ICTC building. You must drop off the professor to their desired location.";
-                PickUpPoint.text = "ERS";
+                //PickUpPoint.text = "ERS";
                 LevelUI.text = "Level 2";
                 break;
             case 2:

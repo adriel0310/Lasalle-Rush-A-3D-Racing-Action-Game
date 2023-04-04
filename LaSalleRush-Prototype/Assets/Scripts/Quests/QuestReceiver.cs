@@ -37,6 +37,13 @@ public class QuestReceiver : MonoBehaviour
             gameManagerscript.LevelObjective();
             questScript.pickedup = false;
             droppedoff = true;
+
+            DropOffPointlbl.SetActive(false);
+            PickUpPointlbl.SetActive(true);
+            DropOffPoint.enabled = false;
+            PickUpPoint.enabled = true;
+
+
         }
             //1st passenger
             //For Spawning next pick up points
@@ -56,10 +63,10 @@ public class QuestReceiver : MonoBehaviour
                     // spawns for level 2
                     spawnManagerscript.PickupPoints[1].SetActive(true); //ERS-pickup Spawn
                     print("ERS Pickup Spawned Level 2");
-                    DropOffPointlbl.SetActive(false);
-                    PickUpPointlbl.SetActive(true);
-                    DropOffPoint.enabled = false;
-                    PickUpPoint.enabled = true;
+                   // DropOffPointlbl.SetActive(false);
+                   // PickUpPointlbl.SetActive(true);
+                   // DropOffPoint.enabled = false;
+                   // PickUpPoint.enabled = true;
                     PickUpPoint.text = "ERS";
 
                 }
@@ -80,10 +87,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins23();
                         gameManagerscript.AddTime23();
                           
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "National Bookstore";   
                           
                     }
@@ -106,10 +113,10 @@ public class QuestReceiver : MonoBehaviour
                         print("COS Pickup Spawned Level 3");
                         gameManagerscript.currentlevel += 1;
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                        //PickUpPoint.enabled = true;
                         PickUpPoint.text = "COS";   
                     }
                 }   
@@ -129,10 +136,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins23();
                         gameManagerscript.AddTime23();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "Botanical Garden";   
 
                     }
@@ -143,18 +150,18 @@ public class QuestReceiver : MonoBehaviour
                 {
                     if(droppedoff == true & gameManagerscript.currentlevel == 3 & gameManagerscript.currentPassenger == 5 )
                     {
-                        gameManagerscript.AddLRCoins23();
-                        gameManagerscript.AddTime23();
+                
                         spawnManagerscript.DropOffPoints[4].SetActive(false); // Gregoria Montoya Hall - dropoff despawn
                         print("Gregoria Montoya Hall Dropoff De-spawned Level 3");
                         spawnManagerscript.PickupPoints[5].SetActive(true); //CBAA- pickup spawn
                         print("CBAA Pickup Spawned Level 3");
-
+                        gameManagerscript.AddLRCoins23();
+                        gameManagerscript.AddTime23();
                         
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "CBAA";  
 
                     }
@@ -172,10 +179,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddTime23();
                         gameManagerscript.currentlevel += 1;
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "Gate 1 Rotonda";  
 
                     }
@@ -196,10 +203,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins4();
                         gameManagerscript.AddTime4();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "CTHM";  
                     }
                 }
@@ -215,10 +222,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins23();
                         gameManagerscript.AddTime4();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "Gate 3";  
                     }    
                 }
@@ -236,10 +243,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddTime4();
                         gameManagerscript.currentlevel += 1;
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "JFH";  
                     }   
                 }
@@ -259,10 +266,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins5();
                         gameManagerscript.AddTime5();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                      //  DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "University Pool";  
                     }
                 }
@@ -279,10 +286,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins5();
                         gameManagerscript.AddTime5();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "FCH";  
                     }
                 }
@@ -299,10 +306,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins5();
                         gameManagerscript.AddTime5();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = true;
                         PickUpPoint.text = "Ugnayang La Salle";  
                     }
                 }
@@ -320,10 +327,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddTime5();
                         gameManagerscript.currentlevel += 1;
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                       // DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "Gate 3"; 
                     }
                 }
@@ -343,10 +350,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins6();
                         gameManagerscript.AddTime6();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "Mariano Alvarez Hall"; 
                     }
                 }
@@ -363,10 +370,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoins6();
                         gameManagerscript.AddTime6();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                     //   DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                     //   DropOffPoint.enabled = false;
+                     //   PickUpPoint.enabled = true;
                         PickUpPoint.text = "Grandstand"; 
                     }
                 }
@@ -383,10 +390,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddLRCoinsFinalPassenger();
                         gameManagerscript.AddTime6();
 
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(true);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = true;
+                       // DropOffPointlbl.SetActive(false);
+                      //  PickUpPointlbl.SetActive(true);
+                      //  DropOffPoint.enabled = false;
+                      //  PickUpPoint.enabled = true;
                         PickUpPoint.text = "Gate 1 Rotonda"; 
                     }
                 }
@@ -409,10 +416,10 @@ public class QuestReceiver : MonoBehaviour
                         gameManagerscript.AddTime6();
                         print("FINAL LEVEL TO");
                         
-                        DropOffPointlbl.SetActive(false);
-                        PickUpPointlbl.SetActive(false);
-                        DropOffPoint.enabled = false;
-                        PickUpPoint.enabled = false;
+                      //  DropOffPointlbl.SetActive(false);
+                       // PickUpPointlbl.SetActive(false);
+                       // DropOffPoint.enabled = false;
+                       // PickUpPoint.enabled = false;
                         
                     }
                 }
