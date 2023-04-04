@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class QuestSystem : MonoBehaviour
 {
@@ -12,11 +14,19 @@ public class QuestSystem : MonoBehaviour
     SpawnManager spawnManagerscript;
 
     QuestReceiver questReceiverScript;
+
+    [SerializeField] TextMeshProUGUI PickUpPoint;
+    [SerializeField] TextMeshProUGUI DropOffPoint;
+    public GameObject PickUpPointlbl;
+    public GameObject DropOffPointlbl;
+
+
     void Start()
     {
         gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
         spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         questReceiverScript = GameObject.Find("QuestReceiver").GetComponent<QuestReceiver>();
+        DropOffPointlbl.SetActive(false);
     }
     
     void Awake()
@@ -73,11 +83,17 @@ public class QuestSystem : MonoBehaviour
         {
             //1st passenger
             gameManagerscript.currentPassenger = 1;
-
             spawnManagerscript.PickupPoints[0].SetActive(false); // Rotonda-pickup despawn
+            PickUpPointlbl.SetActive(false);
+            PickUpPoint.enabled = false;
+
             print("Rotonda De-spawned");
             spawnManagerscript.DropOffPoints[0].SetActive(true); // Chapel-dropoff spawn
-             print("Chapel Dropoff Spawned");
+            print("Chapel Dropoff Spawned");
+            DropOffPointlbl.SetActive(true);
+            DropOffPoint.enabled = true;
+            DropOffPoint.text = "Chapel";
+
 
         }
             
@@ -88,9 +104,19 @@ public class QuestSystem : MonoBehaviour
             {
                 spawnManagerscript.PickupPoints[1].SetActive(false); // ERS-pickup despawn
                 print("ERS Pickup De-spawned Level 2");
+                
+
                 spawnManagerscript.DropOffPoints[1].SetActive(true); // ICTC-dropoff spawn
                 print("ICTC Dropoff Spawned Level 2");
                 
+                PickUpPointlbl.SetActive(false);
+                PickUpPoint.enabled = false;
+
+                DropOffPointlbl.SetActive(true);
+                DropOffPoint.enabled = true;
+                DropOffPoint.text = "ICTC";
+
+
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 2
             }
             
@@ -102,6 +128,14 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[2].SetActive(true); // Square - dropoff Spawn
                     print("Square Dropoff Spawned Level 2");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 3
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Food Square";
+
                 }
         }
         if(gameManagerscript.currentlevel == 3)

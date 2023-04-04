@@ -13,7 +13,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI LevelUI;
     [SerializeField] TextMeshProUGUI Objective;
+
     [SerializeField] TextMeshProUGUI PickUpPoint;
+    [SerializeField] TextMeshProUGUI DropOffPoint;
+    public GameObject PickUpPointlbl;
+    public GameObject DropOffPointlbl;
+
     
     //Levels and Passengers
     public int currentlevel;
@@ -169,11 +174,17 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         Level.text ="LEVEL " + currentlevel;
-        LevelCompleteUI.SetActive(true);
         Objective.enabled = false;
         LevelUI.enabled = false;
         PickUpPoint.enabled = false;
         TimerText.enabled = false;
+        PickUpPointlbl.SetActive(false);
+        DropOffPointlbl.SetActive(false);
+        PickUpPoint.enabled = false;
+        DropOffPoint.enabled = false;
+
+        LevelCompleteUI.SetActive(true);
+
 
         //Compute and Show Scores in Text UI
         remainingTime = (int)countdowntimer;
@@ -211,72 +222,72 @@ public class GameManager : MonoBehaviour
                 break;
             case 2:
                 Objective.text = "A student is buying school supplies in the National Bookstore and is requesting to wait for him. Once he’s done, drop off the student at the University Square.";
-                PickUpPoint.text = "National Bookstore";
+                //PickUpPoint.text = "National Bookstore";
                 LevelUI.text = "Level 2";
                 break;
             case 3:
                 Objective.text = "A student is required to attend a seminar in Severino de las Alas Hall. The seminar starts in less than 30 seconds, you must drop off the student before time runs out.";
-                PickUpPoint.text = "COS building";
+                //PickUpPoint.text = "COS building";
                 LevelUI.text = "Level 3";
                 break;
             case 4:
                 Objective.text = "A nurse has to consult a student in Gregoria Montoya Hall. You must drop her off within the time limit.";
-                PickUpPoint.text = "Botanical Garden";
+                //PickUpPoint.text = "Botanical Garden";
                 LevelUI.text = "Level 3";
                 break;
             case 5:
                 Objective.text = "An Accounting Student needs to pay his tuition fees in the Ayuntamiento building. Drop off the student within the time limit.";
-                PickUpPoint.text = "CBAA building";
+                //PickUpPoint.text = "CBAA building";
                 LevelUI.text = "Level 3";
                 break;
             case 6:
                 Objective.text = "A freshmen student wants to buy some school uniform in the clothing warehouse beside the CBAA building. Drop off the student within the time limit.";
-                PickUpPoint.text = "Gate 1 Rotonda";
+                //PickUpPoint.text = "Gate 1 Rotonda";
                 LevelUI.text = "Level 4";
                 break;
             case 7:
                 Objective.text = "A Tourism student is required to attend PE class in Ugnayang La Salle. Drop off the student within the time limit.";
-                PickUpPoint.text = "CTHM building";
+                //PickUpPoint.text = "CTHM building";
                 LevelUI.text = "Level 4";
                 break;
             case 8:
                 Objective.text = "A freshmen student wants to view preserved items and relics of the university in Museo de La Salle. Drop off the student within the time limit.";
-                PickUpPoint.text = "Gate 3 Rotonda";
+                ///PickUpPoint.text = "Gate 3 Rotonda";
                 LevelUI.text = "Level 4";
                 break;
             case 9:
                 Objective.text = "A PolSci student has been dismissed from his class and wants to leave the campus through Gate 3. Drop off the student within the time limit.";
-                PickUpPoint.text = "JFH building";
+                //PickUpPoint.text = "JFH building";
                 LevelUI.text = "Level 5";
                 break;
             case 10:
                 Objective.text = "A student finished his swimming class and wants to go to PCH building for his next class. Drop off the student within the time limit.";
-                PickUpPoint.text = "University pool";
+                ///PickUpPoint.text = "University pool";
                 LevelUI.text = "Level 5" ;
                 break;     
             case 11:
                 Objective.text = "A CoEd student is required to attend a recollection in RCC. Drop off the student within the time limit.";
-                PickUpPoint.text = "FCH building";
+                //PickUpPoint.text = "FCH building";
                 LevelUI.text = "Level 5";
                 break;
             case 12:
                 Objective.text = "A student finished his PE class and wants to eat lunch at Mila’s Diner. Drop off the student within the time limit.";
-                PickUpPoint.text = "Ugnayang La Salle";
+                //PickUpPoint.text = "Ugnayang La Salle";
                 LevelUI.text = "Level 5";
                 break;
             case 13:
                 Objective.text = "A SWAFO Officer is tasked to guard Magpuri Gate (Gate 2). Drop him off within the time limit.";
-                PickUpPoint.text = "Gate 3 Rotonda";
+                //PickUpPoint.text = "Gate 3 Rotonda";
                 LevelUI.text = "Level 6";
                 break;
             case 14:
                 Objective.text = "An NSTP Professor needs to attend his class in the Grandstand. Drop off the professor within the time limit.";
-                PickUpPoint.text = "Mariano Alvarez Hall";
+                //PickUpPoint.text = "Mariano Alvarez Hall";
                 LevelUI.text = "Level 6";
                 break;
             case 15:
                 Objective.text = "A varsity player wants to leave the campus through Gate 1. Drop him off within the time limit.";
-                PickUpPoint.text = "Grandstand";
+                //PickUpPoint.text = "Grandstand";
                 LevelUI.text = "Level 6";
                 break;
             case 16:
