@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    public float lookSensitivity = 2.0f; // Mouse sensitivity for looking around
+    public float lookSmoothness = 1.0f; // Smoothing factor for camera movement
+
+    private Vector2 currentRotation; // Current camera rotation (in degrees)
+    private Vector2 smoothRotation; // Smoothed camera rotation (in degrees)
+    private Vector2 lookDelta; // Change in mouse position since last frame
+
+
     public enum Axel
     {
         Front,
@@ -43,6 +51,27 @@ public class CarController : MonoBehaviour
     {
         GetInputs();
         //AnimateWheels();
+
+        if (Input.GetMouseButton(1)) // If right mouse button is held down
+        {
+            // Get the change in mouse position since last frame
+            lookDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+
+            // Scale the change in mouse position by the look sensitivity
+            lookDelta *= lookSensitivity;
+
+            // Add the scaled change in mouse position to the current rotation
+            currentRotation += lookDelta;
+
+            // Clamp the rotation to prevent looking too far up or down
+            currentRotation.y = Mathf.Clamp(currentRotation.y, -90.0f, 90.0f);
+
+            // Smooth the camera rotation
+            smoothRotation = Vector2.Lerp(smoothRotation, currentRotation, lookSmoothness * Time.deltaTime);
+
+            // Apply the smoothed rotation to the camera transform
+            transform.localRotation = Quaternion.Euler(-smoothRotation.y, smoothRotation.x, 0.0f);
+        }
         
     }
 
