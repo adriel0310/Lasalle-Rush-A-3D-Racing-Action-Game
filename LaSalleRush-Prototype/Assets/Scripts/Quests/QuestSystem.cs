@@ -149,6 +149,14 @@ public class QuestSystem : MonoBehaviour
                 print("Severino De Las Alas Hall Dropoff Spawned Level 3");
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 4
+                
+                PickUpPointlbl.SetActive(false);
+                PickUpPoint.enabled = false;
+
+                DropOffPointlbl.SetActive(true);
+                DropOffPoint.enabled = true;
+                DropOffPoint.text = "Severino De Las Alas Hall";
+            
             }
             
             //5th passenger 
@@ -159,6 +167,14 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[4].SetActive(true); // Gregoria Montoya Hall - dropoff Spawn
                     print("Gregoria Montoya Hall Drop-off Spawned Level 3");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 5
+                    
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Gregoria Montoya Hall";
+
                 }
             
             //6th passenger 
@@ -169,6 +185,13 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[5].SetActive(true); //Ayuntamiento - dropoff Spawn
                     print("Ayuntamiento Drop-off Spawned Level 3");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 6
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Ayuntamiento";
                 } 
         }
 
@@ -183,6 +206,13 @@ public class QuestSystem : MonoBehaviour
                 print("Clothing warehouse Drop-off Spawned Level 4");
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 7
+                
+                PickUpPointlbl.SetActive(false);
+                PickUpPoint.enabled = false;
+
+                DropOffPointlbl.SetActive(true);
+                DropOffPoint.enabled = true;
+                DropOffPoint.text = "Clothing Warehouse";
             }
             
             //8th passenger 
@@ -193,6 +223,13 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[7].SetActive(true); //ULS - dropoff Spawn
                     print("ULS Drop-off Spawned Level 4");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 8
+    
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Ugnayang La Salle";
                 }
             
             //9th passenger 
@@ -203,6 +240,13 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[8].SetActive(true); //Museo - dropoff Spawn
                     print("Museo Drop-off Spawned Level 4");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 9
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Museo De La Salle";
                 } 
         }
 
@@ -217,6 +261,13 @@ public class QuestSystem : MonoBehaviour
                 print("Gate 3 Drop-off Spawned Level 5");
                 
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 10
+                
+                PickUpPointlbl.SetActive(false);
+                PickUpPoint.enabled = false;
+
+                DropOffPointlbl.SetActive(true);
+                DropOffPoint.enabled = true;
+                DropOffPoint.text = "Gate 3";
             }
             
             //11th passenger 
@@ -227,6 +278,13 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[10].SetActive(true); //PCH - dropoff Spawn
                     print("PCH Drop-off Spawned Level 5");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 11
+    
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "PCH";
                 }
             
             //12th passenger 
@@ -237,6 +295,13 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[11].SetActive(true); //RCC - dropoff Spawn
                     print("RCC Drop-off Spawned Level 5");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 12
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "RCC";
                 } 
             
             //13th passenger 
@@ -248,6 +313,13 @@ public class QuestSystem : MonoBehaviour
                     print("Mila's Drop-off Spawned Level 5");
 
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 13
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Mila's Diner";
                 } 
         }
 
@@ -261,6 +333,13 @@ public class QuestSystem : MonoBehaviour
                 spawnManagerscript.DropOffPoints[13].SetActive(true); // Gate 2-dropoff spawn
                 print("Gate 2 Drop-off Spawned Level 6");
                 gameManagerscript.currentPassenger += 1; //currentpassenger = 14
+
+                PickUpPointlbl.SetActive(false);
+                PickUpPoint.enabled = false;
+
+                DropOffPointlbl.SetActive(true);
+                DropOffPoint.enabled = true;
+                DropOffPoint.text = "Gate 2";
             }
             
             //15th passenger 
@@ -271,6 +350,14 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[14].SetActive(true); //Grandstand - dropoff Spawn
                     print("Grandstand Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 15
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Grandstand";
+
                 }
             //16th Passenger
             if(spawnManagerscript.DropOffPoints[14].activeSelf == false & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 15 ) //Check if dropoff prefab is not active, current level and current passenger is equal
@@ -280,6 +367,14 @@ public class QuestSystem : MonoBehaviour
                     spawnManagerscript.DropOffPoints[15].SetActive(true); //Gate 1 - dropoff Spawn
                     print("Gate 1 Drop-off Spawned Level 6");
                     gameManagerscript.currentPassenger += 1; //currentpassenger = 16
+
+                    PickUpPointlbl.SetActive(false);
+                    PickUpPoint.enabled = false;
+
+                    DropOffPointlbl.SetActive(true);
+                    DropOffPoint.enabled = true;
+                    DropOffPoint.text = "Gate 1 Rotonda";
+
                 }
             //17th Passenger
             if(spawnManagerscript.DropOffPoints[15].activeSelf == false & gameManagerscript.currentlevel == 6 & gameManagerscript.currentPassenger == 16 ) //Check if dropoff prefab is not active, current level and current passenger is equal
