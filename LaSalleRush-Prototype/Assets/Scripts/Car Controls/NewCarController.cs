@@ -129,5 +129,10 @@ public class NewCarController : MonoBehaviour
         wheelTransform.position = pos;
     }
 
+    public void Interact()
+    {
+        Input.GetKeyDown("f");
+    }
+
    
 }
