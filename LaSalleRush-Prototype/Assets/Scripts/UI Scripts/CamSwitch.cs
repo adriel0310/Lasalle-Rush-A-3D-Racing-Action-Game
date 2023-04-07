@@ -27,6 +27,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
     }
 
     void Update(){
@@ -46,6 +48,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
      }
 
      public void Back(){
@@ -63,6 +67,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
      }
 
      public void Options_Volume(){
@@ -80,6 +86,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
      }
 
      public void Options_Controls(){
@@ -97,6 +105,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
      }
 
      public void Start_Game(){
@@ -115,6 +125,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[9].SetActive(false);
         canvas[10].SetActive(false);
         canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
         timer.enabled = true;
       }
 }

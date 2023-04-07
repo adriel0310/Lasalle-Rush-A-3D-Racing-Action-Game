@@ -19,6 +19,13 @@ public class GameManager : MonoBehaviour
     public GameObject PickUpPointlbl;
     public GameObject DropOffPointlbl;
 
+    [SerializeField] TextMeshProUGUI totalLRcoins;
+    [SerializeField] TextMeshProUGUI totalTimeLeft;
+    [SerializeField] TextMeshProUGUI totalLevelScore;
+    [SerializeField] TextMeshProUGUI pinakaFinalScore;
+
+
+
     
     //Levels and Passengers
     public int currentlevel;
@@ -36,6 +43,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] levels;
     public GameObject LevelCompleteUI;
     public GameObject gameoverui;
+    public GameObject FinalLevelCompleteUI;
     
     //For Timer Variables
     public float countdowntimer = 70f;
@@ -48,7 +56,6 @@ public class GameManager : MonoBehaviour
     public Text TimeLeft;
     public Text Score;
     public Text TotalScore;
-  
 
 
     void Start()
@@ -214,6 +221,34 @@ public class GameManager : MonoBehaviour
         TimerText.enabled = true;
         PickUpPointlbl.SetActive(true);
         
+    }
+
+    public void FinalLevelComplete()
+    {
+        Time.timeScale = 0;
+        Objective.enabled = false;
+        LevelUI.enabled = false;
+        PickUpPoint.enabled = false;
+        TimerText.enabled = false;
+        PickUpPointlbl.SetActive(false);
+        DropOffPointlbl.SetActive(false);
+        PickUpPoint.enabled = false;
+        DropOffPoint.enabled = false;
+
+        FinalLevelCompleteUI.SetActive(true);
+
+
+        //Compute and Show Scores in Text UI
+        remainingTime = (int)countdowntimer;
+        score = 1000;
+        totalScore = LRCoins_earned + remainingTime + score;
+        currentInGameScore += totalScore;
+
+        totalLRcoins.text = LRCoins_earned.ToString();
+        totalTimeLeft.text = remainingTime.ToString();
+        totalLevelScore.text = totalScore.ToString();
+        pinakaFinalScore.text = "Score: " + currentInGameScore;
+
     }
 
     public void LevelObjective(){

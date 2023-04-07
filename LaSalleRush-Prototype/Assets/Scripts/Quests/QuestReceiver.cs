@@ -418,6 +418,7 @@ public class QuestReceiver : MonoBehaviour
 
                         gameManagerscript.AddLRCoinsFinalPassenger();
                         gameManagerscript.AddTime6();
+                        gameManagerscript.FinalLevelComplete();
                         print("FINAL LEVEL TO");
                         
                       //  DropOffPointlbl.SetActive(false);
