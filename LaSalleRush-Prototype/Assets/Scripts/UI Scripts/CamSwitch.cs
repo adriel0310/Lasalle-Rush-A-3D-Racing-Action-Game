@@ -23,6 +23,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(false);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
     }
 
     void Update(){
@@ -38,6 +42,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(false);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
      }
 
      public void Back(){
@@ -51,6 +59,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(false);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
      }
 
      public void Options_Volume(){
@@ -64,6 +76,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(false);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
      }
 
      public void Options_Controls(){
@@ -77,6 +93,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(false);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
      }
 
      public void Start_Game(){
@@ -91,6 +111,10 @@ public class CamSwitch : MonoBehaviour{
         canvas[5].SetActive(true);
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
         timer.enabled = true;
       }
 }
