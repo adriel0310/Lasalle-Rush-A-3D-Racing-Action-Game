@@ -24,6 +24,7 @@ TagManager:
   - Grandstand
   - Gate 1(Dropoff)
   - Gregoria Montoya Hall
+  - Waypoint
   layers:
   - Default
   - TransparentFX

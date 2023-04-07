@@ -175,6 +175,8 @@ public class QuestReceiver : MonoBehaviour
                         print("Ayuntamiento Dropoff De-spawned Level 3");
                         spawnManagerscript.PickupPoints[0].SetActive(true); //Rotonda - pickup spawn
                         print("Rotonda Pickup Spawned Level 4");
+                        
+                        gameManagerscript.LevelComplete();
                         gameManagerscript.AddLRCoins23();
                         gameManagerscript.AddTime23();
                         gameManagerscript.currentlevel += 1;
@@ -239,6 +241,7 @@ public class QuestReceiver : MonoBehaviour
                         spawnManagerscript.PickupPoints[8].SetActive(true); //JFH - pickup spawn
                         print("JFH Pickup Spawned Level 5");
                         
+                        gameManagerscript.LevelComplete();
                         gameManagerscript.AddLRCoins23();
                         gameManagerscript.AddTime4();
                         gameManagerscript.currentlevel += 1;
@@ -323,6 +326,7 @@ public class QuestReceiver : MonoBehaviour
                         spawnManagerscript.PickupPoints[7].SetActive(true); //Gate 3-pickup spawn
                         print("Gate 3 Pickup Spawned Level 6");
 
+                        gameManagerscript.LevelComplete();
                         gameManagerscript.AddLRCoins5();
                         gameManagerscript.AddTime5();
                         gameManagerscript.currentlevel += 1;
