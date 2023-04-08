@@ -24,9 +24,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI totalLevelScore;
     [SerializeField] TextMeshProUGUI pinakaFinalScore;
 
-
-
-    
     //Levels and Passengers
     public int currentlevel;
     public int currentPassenger;
@@ -57,6 +54,9 @@ public class GameManager : MonoBehaviour
     public Text Score;
     public Text TotalScore;
 
+    //For buildingtracking
+    public int buildingtracker = 0;
+
 
     void Start()
     {
@@ -66,8 +66,8 @@ public class GameManager : MonoBehaviour
         PickUpPoint.text = "Gate 1 Rotonda";
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 6;
+        currentPassenger = 16;
     }
 
     // Update is called once per frame
@@ -175,7 +175,18 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins";
         LRCoins_earned += 50;
     }
+    
+    // Add Buildingtracking for Final Level
+    public void AddBuildingtracking()
+    {
+        buildingtracker++;
+        print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
+        if(buildingtracker == 20)
+        {
+            FinalLevelComplete();
+        }    
+    }
     
     //UI Functions
     public void LevelComplete()

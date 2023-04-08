@@ -9,11 +9,18 @@ public class FinalLevelDropOff : MonoBehaviour
     public List <GameObject> objectsToDespawn;
     //The unique identifier of the GameObject to despawn
     public string objectId;
+    bool allDespawned = true;
+    public int buildingtracker;
    
    void Start()
    {
     gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
     questReceiverScript = GameObject.Find("QuestReceiver").GetComponent<QuestReceiver>();
+   }
+
+   public void trackbuilding()
+   {
+
    }
     private void OnTriggerEnter(Collider other)
     {
@@ -21,7 +28,6 @@ public class FinalLevelDropOff : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 if(gameManagerscript.currentPassenger == 17){
-
                     GameObject objectToDespawn = null;
                     foreach (GameObject obj in objectsToDespawn)
                     {
@@ -29,6 +35,7 @@ public class FinalLevelDropOff : MonoBehaviour
                         {
                             objectToDespawn = obj;
                             print(objectToDespawn);
+                            gameManagerscript.AddBuildingtracking();
                             break;
                         }
                     }
@@ -37,6 +44,15 @@ public class FinalLevelDropOff : MonoBehaviour
                     if (objectToDespawn != null)
                     {
                         objectToDespawn.SetActive(false);
+                    }
+
+                    foreach (GameObject obj in objectsToDespawn)
+                    {
+                        if (obj.activeSelf)
+                        {
+                            allDespawned = false;
+                        }
+                        
                     }
             }
         }       

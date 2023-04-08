@@ -19,6 +19,8 @@ public class QuestReceiver : MonoBehaviour
     public GameObject PickUpPointlbl;
     public GameObject DropOffPointlbl;
 
+    public int buildingtracker;
+
 
     void Start()
     {
@@ -418,7 +420,7 @@ public class QuestReceiver : MonoBehaviour
 
                         gameManagerscript.AddLRCoinsFinalPassenger();
                         gameManagerscript.AddTime6();
-                        gameManagerscript.FinalLevelComplete();
+                        //gameManagerscript.FinalLevelComplete();
                         print("FINAL LEVEL TO");
                         
                       //  DropOffPointlbl.SetActive(false);

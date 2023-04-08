@@ -66,7 +66,6 @@ public class Waypoint : MonoBehaviour
    }
    public void ExitWaypointUI()
    {
-        
         foreach (GameObject UI in waypointUI)
         {
             UI.SetActive(false);
