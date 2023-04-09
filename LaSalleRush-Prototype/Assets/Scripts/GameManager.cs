@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
     public int newScore;
     public int LREarned;
 
+    public bool isCountdownEnabled = true;
+
 
     void Start()
     {
@@ -78,11 +80,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Countdown();//Timer
+
+        if (isCountdownEnabled)
+        {
+            Countdown();
+        }
+
         levels[currentlevel - 1].SetActive(true);
     }
 
-    void Countdown() 
+    public void Countdown() 
     {
         if(countdowntimer > 0)
         {

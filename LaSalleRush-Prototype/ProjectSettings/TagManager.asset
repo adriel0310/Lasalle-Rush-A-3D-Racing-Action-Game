@@ -25,6 +25,7 @@ TagManager:
   - Gate 1(Dropoff)
   - Gregoria Montoya Hall
   - Waypoint
+  - Powerup2
   layers:
   - Default
   - TransparentFX
