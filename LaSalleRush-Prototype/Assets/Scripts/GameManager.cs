@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI totalTimeLeft;
     [SerializeField] TextMeshProUGUI totalLevelScore;
     [SerializeField] TextMeshProUGUI pinakaFinalScore;
+    [SerializeField] TextMeshProUGUI newScoretxt;
+    [SerializeField] TextMeshProUGUI LREarnedtxt;
 
     //Levels and Passengers
     public int currentlevel;
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
     public GameObject LevelCompleteUI;
     public GameObject gameoverui;
     public GameObject FinalLevelCompleteUI;
+    public GameObject GameCompletedUI;
     
     //For Timer Variables
     public float countdowntimer = 70f;
@@ -56,6 +59,8 @@ public class GameManager : MonoBehaviour
 
     //For buildingtracking
     public int buildingtracker = 0;
+    public int newScore;
+    public int LREarned;
 
 
     void Start()
@@ -182,9 +187,9 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 20)
+        if(buildingtracker == 5)
         {
-            FinalLevelComplete();
+            FinalLevelComplete(); 
         }    
     }
     
@@ -236,7 +241,6 @@ public class GameManager : MonoBehaviour
 
     public void FinalLevelComplete()
     {
-        Time.timeScale = 0;
         Objective.enabled = false;
         LevelUI.enabled = false;
         PickUpPoint.enabled = false;
@@ -246,7 +250,6 @@ public class GameManager : MonoBehaviour
         PickUpPoint.enabled = false;
         DropOffPoint.enabled = false;
 
-        FinalLevelCompleteUI.SetActive(true);
 
 
         //Compute and Show Scores in Text UI
@@ -259,6 +262,27 @@ public class GameManager : MonoBehaviour
         totalTimeLeft.text = remainingTime.ToString();
         totalLevelScore.text = totalScore.ToString();
         pinakaFinalScore.text = "Score: " + currentInGameScore;
+
+        FinalLevelCompleteUI.SetActive(true);
+        Time.timeScale = 0;
+
+    }
+
+    public void NextBtn()
+    {
+
+
+    FinalLevelCompleteUI.SetActive(false);
+    GameCompletedUI.SetActive(true);
+
+
+    newScore += currentInGameScore;
+    LREarned += LRCoins_earned;
+
+    newScoretxt.text = newScore.ToString();
+    LREarnedtxt.text = LREarned.ToString();
+
+    Time.timeScale = 0;
 
     }
 

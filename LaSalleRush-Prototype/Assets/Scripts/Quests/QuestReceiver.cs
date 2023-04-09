@@ -420,6 +420,7 @@ public class QuestReceiver : MonoBehaviour
 
                         gameManagerscript.AddLRCoinsFinalPassenger();
                         gameManagerscript.AddTime6();
+                        gameManagerscript.AddBuildingtracking();
                         //gameManagerscript.FinalLevelComplete();
                         print("FINAL LEVEL TO");
                         

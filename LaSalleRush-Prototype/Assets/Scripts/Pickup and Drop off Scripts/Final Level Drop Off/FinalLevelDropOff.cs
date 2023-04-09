@@ -35,7 +35,6 @@ public class FinalLevelDropOff : MonoBehaviour
                         {
                             objectToDespawn = obj;
                             print(objectToDespawn);
-                            gameManagerscript.AddBuildingtracking();
                             break;
                         }
                     }
