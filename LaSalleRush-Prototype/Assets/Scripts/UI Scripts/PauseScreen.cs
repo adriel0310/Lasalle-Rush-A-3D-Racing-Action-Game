@@ -55,5 +55,5 @@ public class PauseScreen : MonoBehaviour
             pauseui.SetActive(true);
             optionsvolumeui.SetActive(false);
             optionscontrolsui.SetActive(false);
-        }   
+        }
 }

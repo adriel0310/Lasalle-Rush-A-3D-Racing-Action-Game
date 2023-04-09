@@ -17,6 +17,8 @@ public class QuestSystem : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI PickUpPoint;
     [SerializeField] TextMeshProUGUI DropOffPoint;
+    [SerializeField] TextMeshProUGUI PickDrop;
+
     public GameObject PickUpPointlbl;
     public GameObject DropOffPointlbl;
 
@@ -27,6 +29,8 @@ public class QuestSystem : MonoBehaviour
         spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         questReceiverScript = GameObject.Find("QuestReceiver").GetComponent<QuestReceiver>();
         DropOffPointlbl.SetActive(false);
+        PickDrop.enabled = false;
+
     }
     
     void Awake()
@@ -69,10 +73,15 @@ public class QuestSystem : MonoBehaviour
         }
     }
     
-    void OnTriggerEnter(Collider col)
+    IEnumerator OnTriggerEnter(Collider col)
     {
         if(col.CompareTag("Player"))
         {
+            PickDrop.text = "PICKING UP PASSENGER...";
+            PickDrop.enabled = true;
+            yield return new WaitForSeconds(2f);
+            PickDrop.enabled = false;
+
             pickedup = true;
             questReceiverScript.droppedoff = false;
             print(pickedup);
@@ -107,8 +116,8 @@ public class QuestSystem : MonoBehaviour
             //2nd passenger
             if(gameManagerscript.currentPassenger == 1)
             {
-                spawnManagerscript.PickupPoints[1].SetActive(false); // ERS-pickup despawn
-                print("ERS Pickup De-spawned Level 2");
+                spawnManagerscript.PickupPoints[1].SetActive(false); // Aklatang Emilio Aguinaldo-pickup despawn
+                print("Aklatang Emilio Aguinaldo Pickup De-spawned Level 2");
                 
 
                 spawnManagerscript.DropOffPoints[1].SetActive(true); // ICTC-dropoff spawn
@@ -397,5 +406,6 @@ public class QuestSystem : MonoBehaviour
     void OnTriggerExit(Collider col)
     {
        
-    } 
+    }
+
 }

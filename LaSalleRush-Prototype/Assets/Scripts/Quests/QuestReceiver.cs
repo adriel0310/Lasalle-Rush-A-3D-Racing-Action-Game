@@ -16,6 +16,10 @@ public class QuestReceiver : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI PickUpPoint;
     [SerializeField] TextMeshProUGUI DropOffPoint;
+    [SerializeField] TextMeshProUGUI PickDrop;
+
+    
+
     public GameObject PickUpPointlbl;
     public GameObject DropOffPointlbl;
 
@@ -27,15 +31,21 @@ public class QuestReceiver : MonoBehaviour
          gameManagerscript = GameObject.Find("GameManager").GetComponent<GameManager>();
          spawnManagerscript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
          questScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
+         PickDrop.enabled = false;
     }
 
 
     
-    void OnTriggerEnter(Collider col)
+    IEnumerator OnTriggerEnter(Collider col)
     {
         
         if(col.CompareTag("Player"))
         {
+            PickDrop.text = "DROPPING OFF PASSENGER...";
+            PickDrop.enabled = true;
+            yield return new WaitForSeconds(2f);
+            PickDrop.enabled = false;
+
             gameManagerscript.LevelObjective();
             questScript.pickedup = false;
             droppedoff = true;
@@ -63,13 +73,13 @@ public class QuestReceiver : MonoBehaviour
                     gameManagerscript.currentlevel += 1;
                     
                     // spawns for level 2
-                    spawnManagerscript.PickupPoints[1].SetActive(true); //ERS-pickup Spawn
-                    print("ERS Pickup Spawned Level 2");
+                    spawnManagerscript.PickupPoints[1].SetActive(true); //Aklatang Emilio Aguinaldo-pickup Spawn
+                    print("Aklatang Emilio Aguinaldo Pickup Spawned Level 2");
                    // DropOffPointlbl.SetActive(false);
                    // PickUpPointlbl.SetActive(true);
                    // DropOffPoint.enabled = false;
                    // PickUpPoint.enabled = true;
-                    PickUpPoint.text = "ERS";
+                    PickUpPoint.text = "Aklatang Emilio Aguinaldo";
 
                 }
             }

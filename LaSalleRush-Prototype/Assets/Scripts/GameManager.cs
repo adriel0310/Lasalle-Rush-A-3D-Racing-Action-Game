@@ -73,8 +73,8 @@ public class GameManager : MonoBehaviour
         PickUpPoint.text = "Gate 1 Rotonda";
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
-        currentlevel = 6;
-        currentPassenger = 16;
+        //currentlevel = 6;
+        //currentPassenger = 16;
     }
 
     // Update is called once per frame

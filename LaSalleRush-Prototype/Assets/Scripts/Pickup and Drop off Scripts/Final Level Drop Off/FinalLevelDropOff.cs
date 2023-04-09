@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FinalLevelDropOff : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class FinalLevelDropOff : MonoBehaviour
     public string objectId;
     bool allDespawned = true;
     public int buildingtracker;
+
+    [SerializeField] TextMeshProUGUI PickDrop;
    
    void Start()
    {
@@ -22,12 +25,18 @@ public class FinalLevelDropOff : MonoBehaviour
    {
 
    }
-    private void OnTriggerEnter(Collider other)
+    IEnumerator OnTriggerEnter(Collider other)
     {
-
             if (other.CompareTag("Player"))
             {
+                PickDrop.text = "+1 BUILDING";
+                PickDrop.enabled = true;
+                yield return new WaitForSeconds(2f);
+                PickDrop.enabled = false;
+
+                Debug.Log("may delay dapat");
                 if(gameManagerscript.currentPassenger == 17){
+                    
                     GameObject objectToDespawn = null;
                     foreach (GameObject obj in objectsToDespawn)
                     {
@@ -56,4 +65,5 @@ public class FinalLevelDropOff : MonoBehaviour
             }
         }       
     }
+
 }
