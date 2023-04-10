@@ -694,7 +694,7 @@ MonoBehaviour:
   - {fileID: 614755291}
   objectId: Mila's Diner
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &24615282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3001,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: RCC
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &81093381
 GameObject:
   m_ObjectHideFlags: 0
@@ -6157,7 +6157,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: PCH
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &230635202
 GameObject:
   m_ObjectHideFlags: 0
@@ -11872,7 +11872,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Clothing Warehouse
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!198 &437705274 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 9147842842826587979, guid: e4e5957c11723d24e8b3458ec7533948,
@@ -13899,7 +13899,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Grandstand
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1001 &540269200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15730,7 +15730,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Gate 1 (Dropoff)
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!43 &616335652
 Mesh:
   m_ObjectHideFlags: 0
@@ -18188,7 +18188,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Ayuntamiento
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &717119853
 GameObject:
   m_ObjectHideFlags: 0
@@ -25187,7 +25187,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Gate 3
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &949740957
 GameObject:
   m_ObjectHideFlags: 0
@@ -25357,7 +25357,7 @@ MonoBehaviour:
   droppedoff: 0
   PickUpPoint: {fileID: 1674013909}
   DropOffPoint: {fileID: 1189933533}
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
   PickUpPointlbl: {fileID: 1748985378}
   DropOffPointlbl: {fileID: 678060939}
   buildingtracker: 0
@@ -29098,7 +29098,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Gate 2
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &1097520070
 GameObject:
   m_ObjectHideFlags: 0
@@ -31509,7 +31509,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Chapel
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &1199806780
 GameObject:
   m_ObjectHideFlags: 0
@@ -33919,7 +33919,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: ICTC
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1001 &1273227260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45610,7 +45610,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Gregoria Montoya Hall
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!114 &1774493536 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5342341868597424062, guid: 7c208803d62f1c643a45e142c1a0c780,
@@ -47486,7 +47486,7 @@ MonoBehaviour:
   - {fileID: 377880015}
   objectId: Severino De Las Alas Hall
   buildingtracker: 0
-  PickDrop: {fileID: 0}
+  PickDrop: {fileID: 508487302}
 --- !u!1 &1875273040
 GameObject:
   m_ObjectHideFlags: 0
@@ -53660,6 +53660,7 @@ GameObject:
   - component: {fileID: 7951749605113053383}
   - component: {fileID: 7951749605113053382}
   - component: {fileID: 7951749605113053384}
+  - component: {fileID: 7951749605113053385}
   m_Layer: 0
   m_Name: Car
   m_TagString: Player
@@ -53795,6 +53796,19 @@ MonoBehaviour:
   multiplier: 1.4
   duration: 3
   gameManagerScript: {fileID: 1226360292}
+--- !u!114 &7951749605113053385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282772007667473023}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aacf6006e554e340a8c63eda0e85b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 100
 --- !u!1 &7975904994616915162
 GameObject:
   m_ObjectHideFlags: 0

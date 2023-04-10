@@ -27,6 +27,9 @@ public class FinalLevelDropOff : MonoBehaviour
    }
     IEnumerator OnTriggerEnter(Collider other)
     {
+        if(gameManagerscript.currentPassenger == 17){
+
+        
             if (other.CompareTag("Player"))
             {
                 PickDrop.text = "+1 BUILDING";
@@ -62,7 +65,9 @@ public class FinalLevelDropOff : MonoBehaviour
                         }
                         
                     }
+                }
             }
+        
         }       
     }
 
