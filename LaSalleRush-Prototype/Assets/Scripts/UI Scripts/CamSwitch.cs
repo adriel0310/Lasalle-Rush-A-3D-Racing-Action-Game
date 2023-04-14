@@ -9,7 +9,7 @@ public class CamSwitch : MonoBehaviour{
     public GameManager timer;
     public GameObject control;
 
-    void Start(){
+    public void Start(){
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;
         control.SetActive(false);
@@ -110,6 +110,7 @@ public class CamSwitch : MonoBehaviour{
      }
 
      public void Start_Game(){
+         Time.timeScale = 1;
         control.SetActive(true);
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);
@@ -128,5 +129,27 @@ public class CamSwitch : MonoBehaviour{
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
         timer.enabled = true;
+      }
+
+      public void SplashScreen(){
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible =true;
+        control.SetActive(false);
+        cameras[0].SetActive(false);
+        cameras[1].SetActive(true);
+        canvas[0].SetActive(true);
+        canvas[1].SetActive(false);
+        canvas[2].SetActive(false);
+        canvas[3].SetActive(false);
+        canvas[4].SetActive(false);
+        canvas[5].SetActive(false);
+        canvas[6].SetActive(false);
+        canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
       }
 }

@@ -38,15 +38,22 @@ public class GameManager : MonoBehaviour
     public int totalScore;
     public int currentInGameScore;
 
+
+    private Vector3 originalPosition;
+    public Quaternion originalRotation;
+
     //GameObjects
+    public GameObject player;
+    //public GameObject position;
     public GameObject[] levels;
     public GameObject LevelCompleteUI;
     public GameObject gameoverui;
+    public GameObject leavegameui;
     public GameObject FinalLevelCompleteUI;
     public GameObject GameCompletedUI;
     
     //For Timer Variables
-    public float countdowntimer = 70f;
+    public float countdowntimer = 60f;
     public Text TimerText;
 
     public UnityEvent onTimerCompleted;
@@ -64,15 +71,23 @@ public class GameManager : MonoBehaviour
 
     public bool isCountdownEnabled = true;
 
+    public QuestSystem questSystemScript;
+    public CamSwitch camSwitch;
 
     void Start()
     {
+        questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
+        CamSwitch camSwitch = GetComponent<CamSwitch>();
+
+        originalRotation = player.transform.rotation;
+        originalPosition = player.transform.position;
         levels[currentlevel - 1].SetActive(true);
         LevelUI.text = "Level " + currentlevel;
         Objective.text = "A student wants to attend mass in Our Lady of the Most Holy Rosary Chapel. You must drop off the student to the location in less than 20 seconds.";
         PickUpPoint.text = "Gate 1 Rotonda";
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
+        //player.GetComponent<Transform>();
         //currentlevel = 6;
         //currentPassenger = 16;
     }
@@ -93,7 +108,6 @@ public class GameManager : MonoBehaviour
     {
         if(countdowntimer > 0)
         {
-            gameoverui.SetActive(false);
             countdowntimer -= Time.deltaTime;
         }
         else
@@ -110,14 +124,55 @@ public class GameManager : MonoBehaviour
             TimerText.text = string.Format("{1:00} s",minutes,seconds);
         }
         
-        // for game over ui screen
-        //if(countdowntimer <= 0f)
-        //{
-        //    Time.timeScale = 0;
-        //    onTimerCompleted?.Invoke();
-        //    countdowntimer = 0f;
-        //}  
+        //for game over ui screen
+        if (countdowntimer <= 0f && !leavegameui.activeSelf) {
+            Time.timeScale = 0;
+            onTimerCompleted?.Invoke();
+            gameoverui.SetActive(true);
+        } 
     }
+
+    public void RepeatLevel(){
+        player.transform.rotation = originalRotation;
+        player.transform.position = originalPosition;
+        Time.timeScale = 1;
+        //questSystemScript.OnTriggerEnter(col);
+
+        gameoverui.SetActive(false);
+        
+
+        //Restart timer
+        countdowntimer = 60f;
+
+        //Reset LR coins and score for that level only
+        LRCoins_earned = 0;
+        score = 1000;
+
+    }
+
+    // pag pinindot "No" sa repeat level & exit to main menu sa pause screen
+    public void LeaveGame(){
+        leavegameui.SetActive(true);
+        gameoverui.SetActive(false);
+
+        countdowntimer = 120f;
+    }
+
+    // babalik yung player sa start screen
+    public void ExitToMainMenu(CamSwitch camSwitch)
+    {
+        player.transform.rotation = originalRotation;
+        player.transform.position = originalPosition;
+        camSwitch.SplashScreen();
+
+        //currentlevel = 0;
+        currentLRCoins = 0;
+        remainingTime = 0;
+        totalScore = 0;
+        currentInGameScore = 0;
+
+    }
+
     
     //ADD TIME FUNCTIONS
     public void AddTime1() // time bonus for level 1 

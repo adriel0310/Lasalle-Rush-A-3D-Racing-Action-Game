@@ -25,7 +25,7 @@ public class FinalLevelDropOff : MonoBehaviour
    {
 
    }
-    IEnumerator OnTriggerEnter(Collider other)
+    public IEnumerator OnTriggerEnter(Collider other)
     {
         if(gameManagerscript.currentPassenger == 17){
 

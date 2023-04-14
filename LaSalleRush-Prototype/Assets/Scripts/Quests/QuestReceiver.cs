@@ -36,7 +36,7 @@ public class QuestReceiver : MonoBehaviour
 
 
     
-    IEnumerator OnTriggerEnter(Collider col)
+    public IEnumerator OnTriggerEnter(Collider col)
     {
         
         if(col.CompareTag("Player"))
