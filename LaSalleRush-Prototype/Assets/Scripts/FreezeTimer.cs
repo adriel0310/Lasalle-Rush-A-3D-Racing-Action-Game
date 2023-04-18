@@ -23,7 +23,7 @@ public class FreezeTimer : MonoBehaviour
    }
 
     IEnumerator Pickup(Collider Player)
-   {
+    {
        Debug.Log("Power up picked up!");
 
         gameManagerScript.isCountdownEnabled = false; // Pause the game
