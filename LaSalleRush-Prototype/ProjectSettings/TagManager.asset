@@ -26,6 +26,8 @@ TagManager:
   - Gregoria Montoya Hall
   - Waypoint
   - Powerup2
+  - Human
+  - Powerup3
   layers:
   - Default
   - TransparentFX
