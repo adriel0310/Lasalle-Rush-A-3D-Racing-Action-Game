@@ -7,6 +7,12 @@ public class Waypoint : MonoBehaviour
     public List<GameObject> Waypoints;
     public List<GameObject> waypointUI;
     
+    public GameObject waypointDetectUI; // Reference to the UI object to be shown
+
+    private GameObject detectedObject; // The game object that triggers the UI to be shown
+
+
+
     private bool canInteract = false;
 
     public string Waypointid;
@@ -14,22 +20,33 @@ public class Waypoint : MonoBehaviour
     GameObject waypointinteractUI = null; //empty initial value for storing
     GameObject activeUI;//Empty initial value to check for any active or inactive UI Game Objects
 
+
+
    void OnTriggerEnter(Collider col)
    {
         if(col.CompareTag("Player")) 
         {
             canInteract = true;
+            detectedObject = col.gameObject;
+            float distance = Vector3.Distance(transform.position, detectedObject.transform.position);
  
             foreach (GameObject waypoint in Waypoints)
             {
-                if(waypoint.name == Waypointid)
-                {
-                    waypointinteractUI = waypoint;
-                    print(waypointinteractUI);
-                    break;
+                if (distance < 20f) // 3 cm in Unity units
+                {   
+                    if(waypoint.name == Waypointid)
+                    {
+                        waypointDetectUI.SetActive(true);
+                        waypointinteractUI = waypoint;
+                        print(waypointinteractUI);
+                        break;
+                    }
+                    else
+                    {
+                    waypointDetectUI.SetActive(false); // Hide the UI when the player is too far away from the object
+                    }      
                 }
             }
-
         }
 
    }
@@ -38,6 +55,8 @@ public class Waypoint : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             canInteract = false;
+            detectedObject = null;
+            waypointDetectUI.SetActive(false);
         }
    }
 
@@ -47,6 +66,7 @@ public class Waypoint : MonoBehaviour
         {
             if(waypointinteractUI != null)
             {
+                waypointDetectUI.SetActive(false);
                 print("VROOM VROOM SKKRRT SKKRRT INTERACTED WITH DA WAYPOINT FR FR " + waypointinteractUI);
                 
                 foreach (GameObject UI in waypointUI)
@@ -55,7 +75,10 @@ public class Waypoint : MonoBehaviour
                     {
                         waypointinteractUI = UI;
                         print(UI + "UI TO BE SET");
+                        
+
                         UI.SetActive(true);
+                        
                         Time.timeScale = 0f;
                         break;
                     }
@@ -64,8 +87,10 @@ public class Waypoint : MonoBehaviour
             }
         }
    }
+
    public void ExitWaypointUI()
    {
+
         foreach (GameObject UI in waypointUI)
         {
             UI.SetActive(false);
