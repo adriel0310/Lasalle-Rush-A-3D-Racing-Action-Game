@@ -90,7 +90,7 @@ public class Waypoint : MonoBehaviour
 
    public void ExitWaypointUI()
    {
-
+        //GameObject[] waypointUI = GameObject.FindGameObjectsWithTag("WaypointUI");
         foreach (GameObject UI in waypointUI)
         {
             UI.SetActive(false);

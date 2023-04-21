@@ -28,6 +28,7 @@ TagManager:
   - Powerup2
   - Human
   - Powerup3
+  - WaypointUI
   layers:
   - Default
   - TransparentFX

@@ -584,6 +584,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 865839}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &865847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: 'AyuntamientoWaypoint '
 --- !u!1 &6008080
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +683,7 @@ GameObject:
   - component: {fileID: 6008082}
   m_Layer: 5
   m_Name: CTHWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2116,6 +2202,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 30193607}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &30193615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30193609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: OvalWaypoint
 --- !u!1 &33945168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,6 +3052,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 39035694}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &39035702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39035696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: HotelRafaelWaypoint
 --- !u!1 &41967916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,6 +3712,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 42680728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &42680736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42680730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: LaPorteriaSanBenildoWaypoint
 --- !u!1 &43351244
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,6 +4759,7 @@ GameObject:
   - component: {fileID: 66662773}
   - component: {fileID: 66662772}
   - component: {fileID: 66662771}
+  - component: {fileID: 66662774}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -4486,7 +4831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -4536,6 +4881,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66662769}
   m_CullTransparentMesh: 1
+--- !u!114 &66662774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66662769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints: []
+  waypointUI: []
+  waypointDetectUI: {fileID: 0}
+  Waypointid: 
 --- !u!1 &67365129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,6 +8436,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 137300715}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &137300723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137300717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: GregoriaMontoyaHallWaypoint
 --- !u!1 &138433951
 GameObject:
   m_ObjectHideFlags: 0
@@ -8659,6 +9106,7 @@ GameObject:
   - component: {fileID: 148739219}
   - component: {fileID: 148739218}
   - component: {fileID: 148739217}
+  - component: {fileID: 148739220}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -8730,7 +9178,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 148739220}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -8780,6 +9228,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148739215}
   m_CullTransparentMesh: 1
+--- !u!114 &148739220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148739215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ChapelWaypoint
 --- !u!1 &149562589
 GameObject:
   m_ObjectHideFlags: 0
@@ -9073,7 +9607,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &165204523
 GameObject:
@@ -9299,7 +9833,7 @@ GameObject:
   - component: {fileID: 168399987}
   m_Layer: 5
   m_Name: Mila'sDinerWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10227,6 +10761,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5258582755337476380}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &186069460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186069450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: RotondaWaypoint
 --- !u!1 &188913039
 GameObject:
   m_ObjectHideFlags: 0
@@ -11396,7 +12016,7 @@ GameObject:
   - component: {fileID: 224448704}
   m_Layer: 5
   m_Name: ULSWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13103,7 +13723,7 @@ GameObject:
   - component: {fileID: 245137622}
   m_Layer: 5
   m_Name: OvalWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13256,7 +13876,7 @@ GameObject:
   - component: {fileID: 246085385}
   m_Layer: 5
   m_Name: WarehouseBuildingWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15307,6 +15927,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 270617566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &270617574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270617568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: COSWaypoint
 --- !u!1 &271202230
 GameObject:
   m_ObjectHideFlags: 3
@@ -16035,6 +16741,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 283333538}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &283333546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283333540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: HighschoolBuildingWaypoint
 --- !u!1 &283693545
 GameObject:
   m_ObjectHideFlags: 0
@@ -17354,6 +18146,7 @@ GameObject:
   - component: {fileID: 317362878}
   - component: {fileID: 317362877}
   - component: {fileID: 317362876}
+  - component: {fileID: 317362879}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -17425,7 +18218,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 317362879}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -17475,6 +18268,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317362874}
   m_CullTransparentMesh: 1
+--- !u!114 &317362879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317362874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: COSWaypoint
 --- !u!1 &317943853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3594091166656474481, guid: a9afd13540189344fbe44340ccc2c0a0,
@@ -18548,6 +19427,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 326915751}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &326915759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326915753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: POLCAWaypoint
 --- !u!1 &330796387
 GameObject:
   m_ObjectHideFlags: 0
@@ -18696,6 +19661,7 @@ GameObject:
   - component: {fileID: 341753686}
   - component: {fileID: 341753685}
   - component: {fileID: 341753684}
+  - component: {fileID: 341753687}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -18767,7 +19733,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 341753687}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -18817,6 +19783,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341753682}
   m_CullTransparentMesh: 1
+--- !u!114 &341753687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341753682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Gate3Waypoint
 --- !u!1001 &350561068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20573,6 +21625,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 384337691}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &384337699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384337693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: PCHWaypoint
 --- !u!1 &385694320
 GameObject:
   m_ObjectHideFlags: 0
@@ -20852,6 +21990,7 @@ GameObject:
   - component: {fileID: 392828830}
   - component: {fileID: 392828829}
   - component: {fileID: 392828828}
+  - component: {fileID: 392828831}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -20923,7 +22062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 392828831}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -20973,6 +22112,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392828826}
   m_CullTransparentMesh: 1
+--- !u!114 &392828831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392828826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: POLCAWaypoint
 --- !u!1 &393452419
 GameObject:
   m_ObjectHideFlags: 0
@@ -21255,7 +22480,7 @@ GameObject:
   - component: {fileID: 399836301}
   m_Layer: 5
   m_Name: HighschoolBuildingWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22058,6 +23283,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 420208872}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &420208880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420208874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: AyuntamientoWaypoint
 --- !u!1 &421565387
 GameObject:
   m_ObjectHideFlags: 0
@@ -22747,7 +24058,7 @@ GameObject:
   - component: {fileID: 430249755}
   m_Layer: 5
   m_Name: 'ICTCWaypoint '
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23633,7 +24944,7 @@ GameObject:
   - component: {fileID: 453068724}
   m_Layer: 5
   m_Name: CBAAWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25094,6 +26405,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 473425201}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &473425209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473425203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: LDHWaypoint
 --- !u!1 &476990307
 GameObject:
   m_ObjectHideFlags: 0
@@ -25107,7 +26504,7 @@ GameObject:
   - component: {fileID: 476990309}
   m_Layer: 5
   m_Name: BotanicalGardenWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25667,6 +27064,7 @@ GameObject:
   - component: {fileID: 495206779}
   - component: {fileID: 495206778}
   - component: {fileID: 495206777}
+  - component: {fileID: 495206780}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -25738,7 +27136,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 495206780}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -25788,6 +27186,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495206775}
   m_CullTransparentMesh: 1
+--- !u!114 &495206780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495206775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: MuseoDeLaSalleWaypoint
 --- !u!1 &499848360
 GameObject:
   m_ObjectHideFlags: 0
@@ -26711,7 +28195,7 @@ GameObject:
   - component: {fileID: 529472685}
   m_Layer: 5
   m_Name: ChapelWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27430,7 +28914,7 @@ PrefabInstance:
     - target: {fileID: 5258582755489720534, guid: 39988647155a7b3439355f6b5ac731b5,
         type: 3}
       propertyPath: m_Name
-      value: 'ChapelWaypoint '
+      value: ChapelWaypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39988647155a7b3439355f6b5ac731b5, type: 3}
@@ -27446,6 +28930,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 538004228}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &538004236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538004230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ChapelWaypoint
 --- !u!1 &539420767
 GameObject:
   m_ObjectHideFlags: 0
@@ -27983,6 +29553,7 @@ GameObject:
   - component: {fileID: 543903020}
   - component: {fileID: 543903019}
   - component: {fileID: 543903018}
+  - component: {fileID: 543903021}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -28054,7 +29625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 543903021}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -28104,6 +29675,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543903016}
   m_CullTransparentMesh: 1
+--- !u!114 &543903021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543903016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CTHMWaypoint
 --- !u!1 &546488652
 GameObject:
   m_ObjectHideFlags: 0
@@ -29365,6 +31022,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 567104939}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &567104947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567104941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: MarianoAlvarezHallWaypoint
 --- !u!1 &571212749
 GameObject:
   m_ObjectHideFlags: 0
@@ -30073,6 +31816,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 574003385}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &574003393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574003387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Gate2Waypoint
 --- !u!1 &575757632
 GameObject:
   m_ObjectHideFlags: 0
@@ -31200,6 +33029,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 586063521}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &586063529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586063523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ULSWaypoint
 --- !u!1 &589693188
 GameObject:
   m_ObjectHideFlags: 0
@@ -31296,7 +33211,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594521742
 GameObject:
@@ -33392,7 +35307,7 @@ GameObject:
   - component: {fileID: 642235368}
   m_Layer: 5
   m_Name: SquareWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34330,7 +36245,7 @@ GameObject:
   - component: {fileID: 677573366}
   m_Layer: 5
   m_Name: LDHWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36958,6 +38873,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 731034944}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &731034952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731034946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: UniversityPoolWaypoint
 --- !u!1 &734194691
 GameObject:
   m_ObjectHideFlags: 0
@@ -37417,6 +39418,7 @@ GameObject:
   - component: {fileID: 738162361}
   - component: {fileID: 738162360}
   - component: {fileID: 738162359}
+  - component: {fileID: 738162362}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -37488,7 +39490,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 738162362}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -37538,6 +39540,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738162357}
   m_CullTransparentMesh: 1
+--- !u!114 &738162362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738162357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ULSWaypoint
 --- !u!1 &738388582
 GameObject:
   m_ObjectHideFlags: 0
@@ -38487,6 +40575,7 @@ GameObject:
   - component: {fileID: 758387842}
   - component: {fileID: 758387841}
   - component: {fileID: 758387840}
+  - component: {fileID: 758387843}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -38558,7 +40647,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 758387843}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -38608,6 +40697,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758387838}
   m_CullTransparentMesh: 1
+--- !u!114 &758387843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758387838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Mila'sDinerWaypoint
 --- !u!1 &758760267
 GameObject:
   m_ObjectHideFlags: 0
@@ -40396,6 +42571,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 777933941}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &777933949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777933943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: MuseoDeLaSalleWaypoint
 --- !u!1 &778828536
 GameObject:
   m_ObjectHideFlags: 0
@@ -42582,6 +44843,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 808935442}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &808935450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808935444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: SquareWaypoint
 --- !u!1 &809140238
 GameObject:
   m_ObjectHideFlags: 0
@@ -44887,58 +47234,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
---- !u!1 &865439753
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 865439755}
-  - component: {fileID: 865439754}
-  m_Layer: 0
-  m_Name: Waypoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &865439754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865439753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Waypoints:
-  - {fileID: 186069450}
-  - {fileID: 0}
-  waypointUI:
-  - {fileID: 734194691}
-  - {fileID: 1875273040}
-  waypointDetectUI: {fileID: 0}
-  Waypointid: RotondaWaypoint
---- !u!4 &865439755
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865439753}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -208.948, y: -476.83133, z: 116.114075}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &865521116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45415,6 +47710,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 865521116}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &865521124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865521118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Gate3Waypoint
 --- !u!1001 &865666006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45891,6 +48272,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 865666006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &865666014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865666008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: RCCWaypoint
 --- !u!1001 &866302224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46046,7 +48513,7 @@ GameObject:
   - component: {fileID: 868607033}
   m_Layer: 5
   m_Name: MarianoAlvarezHallWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46402,6 +48869,7 @@ GameObject:
   - component: {fileID: 876653349}
   - component: {fileID: 876653348}
   - component: {fileID: 876653347}
+  - component: {fileID: 876653350}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -46473,7 +48941,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 876653350}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -46523,6 +48991,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876653345}
   m_CullTransparentMesh: 1
+--- !u!114 &876653350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876653345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: OvalWaypoint
 --- !u!1001 &881521282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47659,7 +50213,7 @@ GameObject:
   - component: {fileID: 902184264}
   m_Layer: 5
   m_Name: ERSWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49777,6 +52331,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 954901475}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &954901483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954901476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: NBSWaypoint
 --- !u!1 &956231179
 GameObject:
   m_ObjectHideFlags: 0
@@ -50172,7 +52812,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06452031, y: -0.700318, z: 0.06381672, w: 0.70803905}
+  m_LocalRotation: {x: 0.06452033, y: -0.700318, z: 0.06381674, w: 0.70803905}
   m_LocalPosition: {x: 348.51544, y: 36.44388, z: 50.05084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -51242,6 +53882,7 @@ GameObject:
   - component: {fileID: 996039714}
   - component: {fileID: 996039713}
   - component: {fileID: 996039712}
+  - component: {fileID: 996039715}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -51313,7 +53954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 996039715}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -51363,6 +54004,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996039710}
   m_CullTransparentMesh: 1
+--- !u!114 &996039715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996039710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CBAAWaypoint
 --- !u!1 &997664773
 GameObject:
   m_ObjectHideFlags: 0
@@ -51703,7 +54430,7 @@ GameObject:
   - component: {fileID: 1007868278}
   m_Layer: 5
   m_Name: GregoriaMontoyaHallWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52673,6 +55400,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1029904104}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1029904112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029904106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: GrandstandWaypoint
 --- !u!1 &1031279669
 GameObject:
   m_ObjectHideFlags: 0
@@ -52685,6 +55498,7 @@ GameObject:
   - component: {fileID: 1031279673}
   - component: {fileID: 1031279672}
   - component: {fileID: 1031279671}
+  - component: {fileID: 1031279674}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -52756,7 +55570,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1031279674}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -52806,6 +55620,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031279669}
   m_CullTransparentMesh: 1
+--- !u!114 &1031279674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031279669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: HotelRafaelWaypoint
 --- !u!1001 &1031372437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53057,6 +55957,7 @@ GameObject:
   - component: {fileID: 1035019034}
   - component: {fileID: 1035019033}
   - component: {fileID: 1035019032}
+  - component: {fileID: 1035019035}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -53128,7 +56029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1035019035}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -53178,6 +56079,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035019030}
   m_CullTransparentMesh: 1
+--- !u!114 &1035019035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035019030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: BotanicalGardenWaypoint
 --- !u!1 &1039778570
 GameObject:
   m_ObjectHideFlags: 0
@@ -57583,7 +60570,7 @@ GameObject:
   - component: {fileID: 1126664984}
   m_Layer: 5
   m_Name: POLCAWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57666,7 +60653,7 @@ GameObject:
   - component: {fileID: 1130392051}
   m_Layer: 5
   m_Name: PCHWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58347,6 +61334,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1135049443}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1135049451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135049445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CTHWaypoint
 --- !u!1 &1135495343
 GameObject:
   m_ObjectHideFlags: 0
@@ -58651,7 +61724,7 @@ GameObject:
   - component: {fileID: 1138399468}
   m_Layer: 5
   m_Name: AyuntamientoWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58903,6 +61976,7 @@ GameObject:
   - component: {fileID: 1152130437}
   - component: {fileID: 1152130436}
   - component: {fileID: 1152130435}
+  - component: {fileID: 1152130438}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -58974,7 +62048,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1152130438}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -59024,6 +62098,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152130433}
   m_CullTransparentMesh: 1
+--- !u!114 &1152130438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152130433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: RotondaWaypoint
 --- !u!1 &1155282768
 GameObject:
   m_ObjectHideFlags: 0
@@ -59631,6 +62791,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1158563523}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1158563531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158563525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: AklatangEmilioAguinaldoWaypoint
 --- !u!1 &1161951119
 GameObject:
   m_ObjectHideFlags: 0
@@ -59740,6 +62986,7 @@ GameObject:
   - component: {fileID: 1164834543}
   - component: {fileID: 1164834542}
   - component: {fileID: 1164834541}
+  - component: {fileID: 1164834544}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -59811,7 +63058,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1164834544}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -59861,6 +63108,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164834539}
   m_CullTransparentMesh: 1
+--- !u!114 &1164834544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164834539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: WarehouseBuildingWaypoint
 --- !u!1 &1168120399
 GameObject:
   m_ObjectHideFlags: 0
@@ -60539,6 +63872,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1992912979}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1192884039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192884032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ERSWaypoint
 --- !u!1 &1192982007
 GameObject:
   m_ObjectHideFlags: 0
@@ -61835,7 +65254,7 @@ GameObject:
   - component: {fileID: 1209582119}
   m_Layer: 5
   m_Name: JFHWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63111,7 +66530,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235722612
 GameObject:
@@ -63822,6 +67241,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1239065095}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1239065103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239065097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CBAAWaypoint
 --- !u!1 &1240755509
 GameObject:
   m_ObjectHideFlags: 0
@@ -64601,6 +68106,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1253468264}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1253468272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253468266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: WarehouseBuildingWaypoint
 --- !u!1 &1253960580
 GameObject:
   m_ObjectHideFlags: 0
@@ -67199,7 +70790,7 @@ GameObject:
   - component: {fileID: 1301587900}
   m_Layer: 5
   m_Name: AklatangEmilioAguinaldoWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68205,6 +71796,7 @@ GameObject:
   - component: {fileID: 1333021153}
   - component: {fileID: 1333021152}
   - component: {fileID: 1333021151}
+  - component: {fileID: 1333021154}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -68276,7 +71868,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1333021154}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -68326,6 +71918,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333021149}
   m_CullTransparentMesh: 1
+--- !u!114 &1333021154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333021149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: AklatangEmilioAguinaldoWaypoint
 --- !u!1 &1333131729
 GameObject:
   m_ObjectHideFlags: 0
@@ -68672,7 +72350,7 @@ GameObject:
   - component: {fileID: 1342520896}
   m_Layer: 5
   m_Name: FCHWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70182,6 +73860,7 @@ GameObject:
   - component: {fileID: 1394142122}
   - component: {fileID: 1394142121}
   - component: {fileID: 1394142120}
+  - component: {fileID: 1394142123}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -70253,7 +73932,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1394142123}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -70303,6 +73982,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394142118}
   m_CullTransparentMesh: 1
+--- !u!114 &1394142123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394142118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: GregoriaMontoyaHallWaypoint
 --- !u!1 &1398337555
 GameObject:
   m_ObjectHideFlags: 0
@@ -71601,7 +75366,7 @@ GameObject:
   - component: {fileID: 1429248791}
   m_Layer: 5
   m_Name: SeverinoDeLasAlasHallWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71684,7 +75449,7 @@ GameObject:
   - component: {fileID: 1431175446}
   m_Layer: 5
   m_Name: CTHMWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72500,6 +76265,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1444320429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444320437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444320431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CTHMWaypoint
 --- !u!1 &1457082286
 GameObject:
   m_ObjectHideFlags: 0
@@ -74152,6 +78003,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1476789204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1476789212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476789206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: FCHWaypoint
 --- !u!1001 &1483751408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74613,6 +78550,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1483751408}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1483751416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483751410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ICTCWaypoint
 --- !u!1001 &1484095078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77396,7 +81419,7 @@ GameObject:
   - component: {fileID: 1545185108}
   m_Layer: 5
   m_Name: COSWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77479,7 +81502,7 @@ GameObject:
   - component: {fileID: 1545283509}
   m_Layer: 5
   m_Name: UniversityPoolWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77794,6 +81817,7 @@ GameObject:
   - component: {fileID: 1551767856}
   - component: {fileID: 1551767855}
   - component: {fileID: 1551767854}
+  - component: {fileID: 1551767857}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -77865,7 +81889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1551767857}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -77915,6 +81939,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551767852}
   m_CullTransparentMesh: 1
+--- !u!114 &1551767857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551767852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: SeverinoDeLasAlasHallWaypoint
 --- !u!1 &1554649864
 GameObject:
   m_ObjectHideFlags: 0
@@ -80022,6 +84132,7 @@ GameObject:
   - component: {fileID: 1591037184}
   - component: {fileID: 1591037183}
   - component: {fileID: 1591037182}
+  - component: {fileID: 1591037185}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -80093,7 +84204,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1591037185}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -80143,6 +84254,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591037180}
   m_CullTransparentMesh: 1
+--- !u!114 &1591037185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591037180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: UniversityPoolWaypoint
 --- !u!1 &1596549651
 GameObject:
   m_ObjectHideFlags: 0
@@ -81623,6 +85820,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1629089299}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1629089307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629089301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: JFHWaypoint
 --- !u!1 &1631334069
 GameObject:
   m_ObjectHideFlags: 0
@@ -82314,6 +86597,7 @@ GameObject:
   - component: {fileID: 1638423302}
   - component: {fileID: 1638423301}
   - component: {fileID: 1638423300}
+  - component: {fileID: 1638423303}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -82385,7 +86669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1638423303}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -82435,6 +86719,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638423298}
   m_CullTransparentMesh: 1
+--- !u!114 &1638423303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638423298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: FCHWaypoint
 --- !u!1 &1639572991
 GameObject:
   m_ObjectHideFlags: 0
@@ -83219,6 +87589,7 @@ GameObject:
   - component: {fileID: 1656509281}
   - component: {fileID: 1656509280}
   - component: {fileID: 1656509279}
+  - component: {fileID: 1656509282}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -83290,7 +87661,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1656509282}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -83340,6 +87711,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656509277}
   m_CullTransparentMesh: 1
+--- !u!114 &1656509282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656509277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: HighschoolBuildingWaypoint
 --- !u!1 &1660145826
 GameObject:
   m_ObjectHideFlags: 0
@@ -84258,6 +88715,7 @@ GameObject:
   - component: {fileID: 1676555612}
   - component: {fileID: 1676555611}
   - component: {fileID: 1676555610}
+  - component: {fileID: 1676555613}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -84329,7 +88787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1676555613}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -84379,6 +88837,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676555608}
   m_CullTransparentMesh: 1
+--- !u!114 &1676555613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676555608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: GrandstandWaypoint
 --- !u!1 &1680364388
 GameObject:
   m_ObjectHideFlags: 0
@@ -84488,6 +89032,7 @@ GameObject:
   - component: {fileID: 1680461806}
   - component: {fileID: 1680461805}
   - component: {fileID: 1680461804}
+  - component: {fileID: 1680461807}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -84559,7 +89104,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1680461807}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -84609,6 +89154,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680461802}
   m_CullTransparentMesh: 1
+--- !u!114 &1680461807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680461802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: RCCWaypoint
 --- !u!1 &1686149710
 GameObject:
   m_ObjectHideFlags: 0
@@ -84871,7 +89502,7 @@ GameObject:
   - component: {fileID: 1691361884}
   m_Layer: 5
   m_Name: RCCWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85187,7 +89818,7 @@ GameObject:
   - component: {fileID: 1699697633}
   m_Layer: 5
   m_Name: Gate2Waypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85392,7 +90023,7 @@ GameObject:
   - component: {fileID: 1702159118}
   m_Layer: 5
   m_Name: GrandstandWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85877,7 +90508,7 @@ GameObject:
   - component: {fileID: 1719709420}
   m_Layer: 5
   m_Name: HotelRafaelWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86687,7 +91318,7 @@ GameObject:
   - component: {fileID: 1744872878}
   m_Layer: 5
   m_Name: MuseoDeLaSalleWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87774,7 +92405,7 @@ GameObject:
   - component: {fileID: 1774431582}
   m_Layer: 5
   m_Name: Gate3Waypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88062,6 +92693,7 @@ GameObject:
   - component: {fileID: 1776505257}
   - component: {fileID: 1776505256}
   - component: {fileID: 1776505255}
+  - component: {fileID: 1776505258}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -88133,7 +92765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1776505258}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -88183,6 +92815,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776505253}
   m_CullTransparentMesh: 1
+--- !u!114 &1776505258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776505253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: LDHWaypoint
 --- !u!1 &1777153057
 GameObject:
   m_ObjectHideFlags: 0
@@ -88268,6 +92986,7 @@ GameObject:
   - component: {fileID: 1789967264}
   - component: {fileID: 1789967263}
   - component: {fileID: 1789967262}
+  - component: {fileID: 1789967265}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -88339,7 +93058,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1789967265}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -88389,6 +93108,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789967260}
   m_CullTransparentMesh: 1
+--- !u!114 &1789967265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789967260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: PCHWaypoint
 --- !u!1 &1791504675
 GameObject:
   m_ObjectHideFlags: 0
@@ -89463,6 +94268,7 @@ GameObject:
   - component: {fileID: 1826864268}
   - component: {fileID: 1826864267}
   - component: {fileID: 1826864266}
+  - component: {fileID: 1826864269}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -89534,7 +94340,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1826864269}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -89584,6 +94390,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826864264}
   m_CullTransparentMesh: 1
+--- !u!114 &1826864269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826864264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: ICTCWaypoint
 --- !u!1001 &1828019376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89791,7 +94683,7 @@ GameObject:
   - component: {fileID: 1833218242}
   m_Layer: 5
   m_Name: LaPorteriaSanBenildoWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89873,6 +94765,7 @@ GameObject:
   - component: {fileID: 1833624067}
   - component: {fileID: 1833624066}
   - component: {fileID: 1833624065}
+  - component: {fileID: 1833624068}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -89944,7 +94837,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1833624068}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -89994,6 +94887,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833624063}
   m_CullTransparentMesh: 1
+--- !u!114 &1833624068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833624063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: LaPorteriaSanBenildoWaypoint
 --- !u!1 &1837701512
 GameObject:
   m_ObjectHideFlags: 0
@@ -91732,7 +96711,7 @@ GameObject:
   - component: {fileID: 1875273042}
   m_Layer: 5
   m_Name: NBSWaypoint
-  m_TagString: Untagged
+  m_TagString: WaypointUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92446,6 +97425,7 @@ GameObject:
   - component: {fileID: 1892942389}
   - component: {fileID: 1892942388}
   - component: {fileID: 1892942387}
+  - component: {fileID: 1892942390}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -92517,7 +97497,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1892942390}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -92567,6 +97547,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892942385}
   m_CullTransparentMesh: 1
+--- !u!114 &1892942390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892942385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: CTHWaypoint
 --- !u!1 &1894918980
 GameObject:
   m_ObjectHideFlags: 0
@@ -92879,6 +97945,7 @@ GameObject:
   - component: {fileID: 1906634557}
   - component: {fileID: 1906634556}
   - component: {fileID: 1906634555}
+  - component: {fileID: 1906634558}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -92950,7 +98017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1906634558}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -93000,6 +98067,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906634553}
   m_CullTransparentMesh: 1
+--- !u!114 &1906634558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906634553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: MarianoAlvarezHallWaypoint
 --- !u!1 &1907628872
 GameObject:
   m_ObjectHideFlags: 0
@@ -94396,6 +99549,7 @@ GameObject:
   - component: {fileID: 1945848922}
   - component: {fileID: 1945848921}
   - component: {fileID: 1945848920}
+  - component: {fileID: 1945848923}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -94467,7 +99621,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 1945848923}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -94517,6 +99671,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945848918}
   m_CullTransparentMesh: 1
+--- !u!114 &1945848923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945848918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Gate2Waypoint
 --- !u!1 &1946413878
 GameObject:
   m_ObjectHideFlags: 0
@@ -95650,7 +100890,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979006724}
-  m_LocalRotation: {x: 0.064520314, y: -0.700318, z: 0.063816726, w: 0.70803905}
+  m_LocalRotation: {x: 0.06452032, y: -0.700318, z: 0.06381673, w: 0.70803905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -96874,6 +102114,7 @@ GameObject:
   - component: {fileID: 2014110664}
   - component: {fileID: 2014110663}
   - component: {fileID: 2014110662}
+  - component: {fileID: 2014110665}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -96945,7 +102186,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 2014110665}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -96995,6 +102236,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014110660}
   m_CullTransparentMesh: 1
+--- !u!114 &2014110665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014110660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: 'AyuntamientoWaypoint '
 --- !u!1 &2014780284
 GameObject:
   m_ObjectHideFlags: 0
@@ -97746,6 +103073,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2019499471}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2019499479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019499473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: SeverinoDeLasAlasHallWaypoint
 --- !u!1 &2022931204
 GameObject:
   m_ObjectHideFlags: 0
@@ -97806,6 +103219,7 @@ GameObject:
   - component: {fileID: 2024480102}
   - component: {fileID: 2024480101}
   - component: {fileID: 2024480100}
+  - component: {fileID: 2024480103}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -97877,7 +103291,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 2024480103}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -97927,6 +103341,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024480098}
   m_CullTransparentMesh: 1
+--- !u!114 &2024480103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024480098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: NBSWaypoint
 --- !u!1001 &2027024307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98403,6 +103903,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2027024307}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2027024315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027024309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: BotanicalGardenWaypoint
 --- !u!1 &2027441941
 GameObject:
   m_ObjectHideFlags: 0
@@ -99495,6 +105081,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2053737190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2053737198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053737192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: Mila'sDinerWaypoint
 --- !u!1 &2056553266
 GameObject:
   m_ObjectHideFlags: 0
@@ -99701,6 +105373,7 @@ GameObject:
   - component: {fileID: 2064128597}
   - component: {fileID: 2064128596}
   - component: {fileID: 2064128595}
+  - component: {fileID: 2064128598}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -99772,7 +105445,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 2064128598}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -99822,6 +105495,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064128593}
   m_CullTransparentMesh: 1
+--- !u!114 &2064128598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064128593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: 'SquareWaypoint '
 --- !u!1 &2064811690
 GameObject:
   m_ObjectHideFlags: 0
@@ -102272,6 +108031,7 @@ GameObject:
   - component: {fileID: 2137887306}
   - component: {fileID: 2137887305}
   - component: {fileID: 2137887304}
+  - component: {fileID: 2137887307}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -102343,7 +108103,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865439754}
+      - m_Target: {fileID: 2137887307}
         m_TargetAssemblyTypeName: Waypoint, Assembly-CSharp
         m_MethodName: ExitWaypointUI
         m_Mode: 1
@@ -102393,6 +108153,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137887302}
   m_CullTransparentMesh: 1
+--- !u!114 &2137887307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137887302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c3a87e7d1b484b9d3cd45b18e2e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 186069450}
+  - {fileID: 954901476}
+  - {fileID: 538004230}
+  - {fileID: 1483751410}
+  - {fileID: 808935444}
+  - {fileID: 2019499473}
+  - {fileID: 137300717}
+  - {fileID: 420208874}
+  - {fileID: 1253468266}
+  - {fileID: 586063523}
+  - {fileID: 777933943}
+  - {fileID: 865521118}
+  - {fileID: 865841}
+  - {fileID: 384337693}
+  - {fileID: 865666008}
+  - {fileID: 2053737192}
+  - {fileID: 574003387}
+  - {fileID: 1029904106}
+  - {fileID: 42680730}
+  - {fileID: 39035696}
+  - {fileID: 567104941}
+  - {fileID: 1444320431}
+  - {fileID: 1629089301}
+  - {fileID: 270617568}
+  - {fileID: 2027024309}
+  - {fileID: 1158563525}
+  - {fileID: 326915753}
+  - {fileID: 1476789206}
+  - {fileID: 473425203}
+  - {fileID: 1135049445}
+  - {fileID: 30193609}
+  - {fileID: 283333540}
+  - {fileID: 731034946}
+  - {fileID: 1239065097}
+  - {fileID: 1192884032}
+  waypointUI:
+  - {fileID: 734194691}
+  - {fileID: 1875273040}
+  - {fileID: 529472683}
+  - {fileID: 430249753}
+  - {fileID: 642235366}
+  - {fileID: 1429248789}
+  - {fileID: 1007868276}
+  - {fileID: 1138399466}
+  - {fileID: 246085383}
+  - {fileID: 224448702}
+  - {fileID: 1744872876}
+  - {fileID: 1774431580}
+  - {fileID: 1138399466}
+  - {fileID: 1130392049}
+  - {fileID: 1691361882}
+  - {fileID: 168399985}
+  - {fileID: 1699697631}
+  - {fileID: 1702159116}
+  - {fileID: 1833218240}
+  - {fileID: 1719709418}
+  - {fileID: 868607031}
+  - {fileID: 1431175444}
+  - {fileID: 1209582117}
+  - {fileID: 1545185106}
+  - {fileID: 476990307}
+  - {fileID: 1301587898}
+  - {fileID: 1126664982}
+  - {fileID: 1342520894}
+  - {fileID: 677573364}
+  - {fileID: 6008080}
+  - {fileID: 245137620}
+  - {fileID: 399836299}
+  - {fileID: 1545283507}
+  - {fileID: 453068722}
+  - {fileID: 902184262}
+  waypointDetectUI: {fileID: 973755731}
+  Waypointid: JFHWaypoint
 --- !u!1 &2139027809
 GameObject:
   m_ObjectHideFlags: 0
