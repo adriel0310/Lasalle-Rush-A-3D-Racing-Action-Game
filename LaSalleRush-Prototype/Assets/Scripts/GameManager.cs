@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using System.Text;
+using System.Linq;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -44,12 +47,12 @@ public class GameManager : MonoBehaviour
 
     //GameObjects
     public GameObject player;
-    //public GameObject position;
     public GameObject[] levels;
     public GameObject LevelCompleteUI;
     public GameObject gameoverui;
     public GameObject leavegameui;
     public GameObject FinalLevelCompleteUI;
+    public GameObject InputNameUI;
     public GameObject GameCompletedUI;
     
     //For Timer Variables
@@ -74,6 +77,16 @@ public class GameManager : MonoBehaviour
     public QuestSystem questSystemScript;
     public CamSwitch camSwitch;
 
+
+    // for scoreboard
+    [SerializeField] TextMeshProUGUI scoreText;
+    public TextMeshProUGUI allScoresTextComponent;
+    public TMP_InputField nameInputField;
+
+
+
+    
+
     void Start()
     {
         questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
@@ -88,8 +101,9 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 6;
+        currentPassenger = 16;
+        newScore = PlayerPrefs.GetInt("NewScore", 0);
     }
 
     // Update is called once per frame
@@ -249,7 +263,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 5)
+        if(buildingtracker == 3)
         {
             FinalLevelComplete(); 
         }    
@@ -330,22 +344,72 @@ public class GameManager : MonoBehaviour
 
     }
 
+
     public void NextBtn()
     {
+        FinalLevelCompleteUI.SetActive(false);
+        InputNameUI.SetActive(true);
 
+        newScore = currentInGameScore;
+        LREarned += LRCoins_earned;
+        PlayerPrefs.SetInt("NewScore", newScore);
 
-    FinalLevelCompleteUI.SetActive(false);
-    GameCompletedUI.SetActive(true);
+        newScoretxt.text = newScore.ToString();
+        LREarnedtxt.text = LREarned.ToString();
+        Time.timeScale = 0;
+    }
 
+    public void SubmitBtn()
+    {
+        string playerName = nameInputField.text;
 
-    newScore += currentInGameScore;
-    LREarned += LRCoins_earned;
+        // Save the new player's score
+        PlayerPrefs.SetInt(playerName, newScore);
 
-    newScoretxt.text = newScore.ToString();
-    LREarnedtxt.text = LREarned.ToString();
+        InputNameUI.SetActive(false);
+        GameCompletedUI.SetActive(true);
 
-    Time.timeScale = 0;
+        // Display the new player's score
+        scoreText.text = $"{playerName}: {newScore}";
 
+        // Display all the previous players and their scores, including the new player's score
+        string allScoresText = "";
+        var playerScores = PlayerPrefs.GetString("PlayerNames").Split(',')
+            .Select(key => new { Name = key, Score = PlayerPrefs.GetInt(key) })
+            .Where(ps => ps.Score > 0) // Only include players with a score greater than 0
+            .OrderByDescending(ps => ps.Score)
+            .Take(10)
+            .ToList();
+
+        // Add current player's score to list of player scores
+        playerScores.Add(new { Name = playerName, Score = newScore });
+        playerScores = playerScores.OrderByDescending(ps => ps.Score).ToList();
+
+        int currentPlayerRank = playerScores.FindIndex(ps => ps.Name == playerName) + 1;
+
+        int rank = 1;
+        foreach (var ps in playerScores.Take(10))
+        {
+            allScoresText += $"{rank}. {ps.Name}   {ps.Score}\n";
+
+            rank++;
+        }
+
+        allScoresText = allScoresText.TrimEnd(); // Remove the last newline character
+        allScoresTextComponent.text = allScoresText;
+
+        // Display the current player's rank at the bottom
+        allScoresTextComponent.text += $"\n\nYour rank: {currentPlayerRank}";
+
+        // Update the list of player names
+        string playerNames = PlayerPrefs.GetString("PlayerNames");
+        if (!playerNames.Contains(playerName))
+        {
+            playerNames += playerName + ",";
+            PlayerPrefs.SetString("PlayerNames", playerNames);
+        }
+
+        Time.timeScale = 0;
     }
 
     public void LevelObjective(){
