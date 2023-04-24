@@ -7738,7 +7738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &131170336
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9143,7 +9143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &145193058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10182,7 +10182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171358293}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e76143a4aa2e5764eaccd3e586262e36, type: 3}
   m_Name: 
@@ -10211,6 +10211,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 7282772007667473023}
   levels:
   - {fileID: 2006846895}
@@ -10221,9 +10222,9 @@ MonoBehaviour:
   - {fileID: 541876061}
   LevelCompleteUI: {fileID: 714076187}
   gameoverui: {fileID: 321315684}
-  leavegameui: {fileID: 0}
+  leavegameui: {fileID: 1919174794}
   FinalLevelCompleteUI: {fileID: 1884128706}
-  InputNameUI: {fileID: 0}
+  InputNameUI: {fileID: 1484506362}
   GameCompletedUI: {fileID: 1554649864}
   countdowntimer: 120
   TimerText: {fileID: 1774493536}
@@ -10252,6 +10253,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 0}
   camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 0}
   allScoresTextComponent: {fileID: 0}
   nameInputField: {fileID: 0}
@@ -15570,6 +15572,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 0}
   levels:
   - {fileID: 2006846895}
@@ -15611,6 +15614,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 0}
   camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 0}
   allScoresTextComponent: {fileID: 0}
   nameInputField: {fileID: 0}
@@ -18951,7 +18955,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321315684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e76143a4aa2e5764eaccd3e586262e36, type: 3}
   m_Name: 
@@ -18980,6 +18984,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 7282772007667473023}
   levels:
   - {fileID: 2006846895}
@@ -19021,6 +19026,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 0}
   camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 0}
   allScoresTextComponent: {fileID: 0}
   nameInputField: {fileID: 0}
@@ -24132,6 +24138,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 0}
   levels:
   - {fileID: 2006846895}
@@ -24173,6 +24180,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 0}
   camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 0}
   allScoresTextComponent: {fileID: 0}
   nameInputField: {fileID: 0}
@@ -37994,7 +38002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &714076188
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44306,6 +44314,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 0}
   levels:
   - {fileID: 2006846895}
@@ -44347,6 +44356,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 0}
   camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 0}
   allScoresTextComponent: {fileID: 0}
   nameInputField: {fileID: 0}
@@ -45843,7 +45853,8 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: baa1107e694ef7348ba1a6fcee5fadcf, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8784345619659050578, guid: baa1107e694ef7348ba1a6fcee5fadcf,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -45906,7 +45917,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &812564643
@@ -47087,7 +47098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &851533858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53413,7 +53424,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06452031, y: -0.700318, z: 0.06381672, w: 0.70803905}
+  m_LocalRotation: {x: 0.06452033, y: -0.700318, z: 0.06381674, w: 0.70803905}
   m_LocalPosition: {x: 348.51544, y: 36.44388, z: 50.05084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -64668,6 +64679,7 @@ GameObject:
   - component: {fileID: 1196010892}
   - component: {fileID: 1196010891}
   - component: {fileID: 1196010890}
+  - component: {fileID: 1196010893}
   m_Layer: 5
   m_Name: no btn
   m_TagString: Untagged
@@ -64789,6 +64801,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196010888}
   m_CullTransparentMesh: 1
+--- !u!114 &1196010893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196010888}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76143a4aa2e5764eaccd3e586262e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCoins: {fileID: 0}
+  currentScore: {fileID: 0}
+  Level: {fileID: 0}
+  LevelUI: {fileID: 0}
+  Objective: {fileID: 0}
+  PickUpPoint: {fileID: 0}
+  DropOffPoint: {fileID: 0}
+  PickUpPointlbl: {fileID: 0}
+  DropOffPointlbl: {fileID: 0}
+  totalLRcoins: {fileID: 0}
+  totalTimeLeft: {fileID: 0}
+  totalLevelScore: {fileID: 0}
+  pinakaFinalScore: {fileID: 0}
+  newScoretxt: {fileID: 0}
+  LREarnedtxt: {fileID: 0}
+  currentlevel: 0
+  currentPassenger: 0
+  remainingTime: 0
+  currentLRCoins: 0
+  LRCoins_earned: 0
+  score: 0
+  totalScore: 0
+  currentInGameScore: 0
+  originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
+  player: {fileID: 7282772007667473023}
+  levels: []
+  LevelCompleteUI: {fileID: 714076187}
+  gameoverui: {fileID: 321315684}
+  leavegameui: {fileID: 1919174794}
+  FinalLevelCompleteUI: {fileID: 0}
+  InputNameUI: {fileID: 0}
+  GameCompletedUI: {fileID: 0}
+  countdowntimer: 10
+  TimerText: {fileID: 0}
+  onTimerCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  LevelCompleteLRCoins: {fileID: 0}
+  TimeLeft: {fileID: 0}
+  Score: {fileID: 0}
+  TotalScore: {fileID: 0}
+  buildingtracker: 0
+  newScore: 0
+  LREarned: 0
+  isCountdownEnabled: 1
+  questSystemScript: {fileID: 0}
+  camSwitch: {fileID: 0}
+  spawnManagerScript: {fileID: 0}
+  scoreText: {fileID: 0}
+  allScoresTextComponent: {fileID: 0}
+  nameInputField: {fileID: 0}
 --- !u!1 &1196897687
 GameObject:
   m_ObjectHideFlags: 0
@@ -66775,6 +66851,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 7282772007667473023}
   levels:
   - {fileID: 2006846895}
@@ -66789,7 +66866,7 @@ MonoBehaviour:
   FinalLevelCompleteUI: {fileID: 1884128706}
   InputNameUI: {fileID: 1484506362}
   GameCompletedUI: {fileID: 1554649864}
-  countdowntimer: 120
+  countdowntimer: 10
   TimerText: {fileID: 1774493536}
   onTimerCompleted:
     m_PersistentCalls:
@@ -66816,6 +66893,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 547522557}
   camSwitch: {fileID: 1226360294}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 112396791}
   allScoresTextComponent: {fileID: 1465336792}
   nameInputField: {fileID: 752015090}
@@ -83668,7 +83746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1571755706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -83924,7 +84002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1576976522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88046,7 +88124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1647899389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -97876,7 +97954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1884128707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99413,7 +99491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1919174795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -101745,6 +101823,7 @@ MonoBehaviour:
   totalScore: 0
   currentInGameScore: 0
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  savedRotation: {x: 0, y: 0, z: 0, w: 0}
   player: {fileID: 7282772007667473023}
   levels:
   - {fileID: 2006846895}
@@ -101786,6 +101865,7 @@ MonoBehaviour:
   isCountdownEnabled: 1
   questSystemScript: {fileID: 547522557}
   camSwitch: {fileID: 1226360294}
+  spawnManagerScript: {fileID: 0}
   scoreText: {fileID: 112396791}
   allScoresTextComponent: {fileID: 1465336792}
   nameInputField: {fileID: 752015090}
@@ -102084,7 +102164,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979006724}
-  m_LocalRotation: {x: 0.064520314, y: -0.700318, z: 0.063816726, w: 0.70803905}
+  m_LocalRotation: {x: 0.06452032, y: -0.700318, z: 0.06381673, w: 0.70803905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -106929,7 +107009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2068082320
 MonoBehaviour:
   m_ObjectHideFlags: 0

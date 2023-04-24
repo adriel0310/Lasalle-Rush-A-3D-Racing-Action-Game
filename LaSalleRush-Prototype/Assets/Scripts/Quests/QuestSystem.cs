@@ -81,7 +81,6 @@ public class QuestSystem : MonoBehaviour
             PickDrop.enabled = true;
             yield return new WaitForSeconds(2f);
             PickDrop.enabled = false;
-
             pickedup = true;
             questReceiverScript.droppedoff = false;
             print(pickedup);
@@ -97,6 +96,7 @@ public class QuestSystem : MonoBehaviour
         {
             //1st passenger
             gameManagerscript.currentPassenger = 1;
+            spawnManagerscript.SavePickupPoint(0);//This will save the first PickupPoint for Level 1
             spawnManagerscript.PickupPoints[0].SetActive(false); // Rotonda-pickup despawn
             //PickUpPointlbl.SetActive(false);
             //PickUpPoint.enabled = false;
@@ -116,6 +116,7 @@ public class QuestSystem : MonoBehaviour
             //2nd passenger
             if(gameManagerscript.currentPassenger == 1)
             {
+                 spawnManagerscript.SavePickupPoint(1);//This will save the first PickupPoint for Level 2
                 spawnManagerscript.PickupPoints[1].SetActive(false); // Aklatang Emilio Aguinaldo-pickup despawn
                 print("Aklatang Emilio Aguinaldo Pickup De-spawned Level 2");
                 
@@ -157,6 +158,7 @@ public class QuestSystem : MonoBehaviour
             //4th passenger
             if(gameManagerscript.currentPassenger == 3)
             {
+                spawnManagerscript.SavePickupPoint(3);//This will save the first PickupPoint for Level 3
                 spawnManagerscript.PickupPoints[3].SetActive(false); // COS-pickup despawn
                 print("COS Pickup De-spawned Level 3");
                 spawnManagerscript.DropOffPoints[3].SetActive(true); // Severino De Las Alas Hall -dropoff spawn
@@ -214,6 +216,7 @@ public class QuestSystem : MonoBehaviour
             //7th passenger
             if(gameManagerscript.currentPassenger == 6)
             {
+                spawnManagerscript.SavePickupPoint(0);//This will save the first PickupPoint for Level 4
                 spawnManagerscript.PickupPoints[0].SetActive(false); // Rotonda-pickup despawn
                 print("Rotonda Pickup De-spawned Level 4");
                 spawnManagerscript.DropOffPoints[6].SetActive(true); // Clothing warehouse-dropoff spawn
@@ -269,6 +272,7 @@ public class QuestSystem : MonoBehaviour
             //10th passenger
             if(gameManagerscript.currentPassenger == 9)
             {
+                 spawnManagerscript.SavePickupPoint(8);//This will save the first PickupPoint for Level 5
                 spawnManagerscript.PickupPoints[8].SetActive(false); // JFH-pickup despawn
                 print("JFH Pickup De-spawned Level 5");
                 spawnManagerscript.DropOffPoints[9].SetActive(true); // Gate 3-dropoff spawn
@@ -342,6 +346,7 @@ public class QuestSystem : MonoBehaviour
             //14th passenger
             if(gameManagerscript.currentPassenger == 13)
             {
+                spawnManagerscript.SavePickupPoint(7);//This will save the first PickupPoint for Level 1
                 spawnManagerscript.PickupPoints[7].SetActive(false); // Gate 3-pickup despawn
                 print("Gate 3 Pickup De-spawned Level 6");
                 spawnManagerscript.DropOffPoints[13].SetActive(true); // Gate 2-dropoff spawn

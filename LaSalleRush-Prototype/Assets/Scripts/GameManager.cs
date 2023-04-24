@@ -41,10 +41,13 @@ public class GameManager : MonoBehaviour
     public int totalScore;
     public int currentInGameScore;
 
-
+    //Car Positions/Locations
     private Vector3 originalPosition;
     public Quaternion originalRotation;
 
+    private Vector3 savedPosition;
+    public Quaternion savedRotation;
+    
     //GameObjects
     public GameObject player;
     public GameObject[] levels;
@@ -56,7 +59,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameCompletedUI;
     
     //For Timer Variables
-    public float countdowntimer = 60f;
+    public float countdowntimer = 10f;
     public Text TimerText;
 
     public UnityEvent onTimerCompleted;
@@ -77,6 +80,8 @@ public class GameManager : MonoBehaviour
     public QuestSystem questSystemScript;
     public CamSwitch camSwitch;
 
+    public SpawnManager spawnManagerScript;
+
 
     // for scoreboard
     [SerializeField] TextMeshProUGUI scoreText;
@@ -90,6 +95,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
+        spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         CamSwitch camSwitch = GetComponent<CamSwitch>();
 
         originalRotation = player.transform.rotation;
@@ -101,9 +107,11 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        currentlevel = 6;
-        currentPassenger = 16;
+        //currentlevel = 6;
+        //currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
+
+        SaveCurrentData();
     }
 
     // Update is called once per frame
@@ -139,42 +147,39 @@ public class GameManager : MonoBehaviour
         }
         
         //for game over ui screen
-        if (countdowntimer <= 0f && !leavegameui.activeSelf) {
-            Time.timeScale = 0;
+        if (countdowntimer == 0f & !leavegameui.activeSelf) {
             onTimerCompleted?.Invoke();
+            Time.timeScale = 0;
             gameoverui.SetActive(true);
         } 
     }
 
     public void RepeatLevel(){
-        player.transform.rotation = originalRotation;
-        player.transform.position = originalPosition;
-        Time.timeScale = 1;
-        //questSystemScript.OnTriggerEnter(col);
-
-        gameoverui.SetActive(false);
-        
-
-        //Restart timer
-        countdowntimer = 60f;
-
+        //player.transform.rotation = originalRotation;
+        //player.transform.position = originalPosition;
         //Reset LR coins and score for that level only
+        spawnManagerScript.despawnAll();
         LRCoins_earned = 0;
-        score = 1000;
+        Time.timeScale = 1;
+        gameoverui.SetActive(false);
+
+        //Load Data from SaveCurrentData() Function
+        LoadPreviousData();
 
     }
 
     // pag pinindot "No" sa repeat level & exit to main menu sa pause screen
     public void LeaveGame(){
+        
         leavegameui.SetActive(true);
         gameoverui.SetActive(false);
-
-        countdowntimer = 120f;
+        countdowntimer = 60f;
     }
 
     // babalik yung player sa start screen
     public void ExitToMainMenu(CamSwitch camSwitch)
     {
+        gameoverui.SetActive(false);
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
@@ -187,6 +192,53 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void SaveCurrentData()
+
+    {
+    PlayerPrefs.SetInt("SavedLRCoins", currentLRCoins);
+    
+    PlayerPrefs.SetInt("SavedGameScore", currentInGameScore);
+
+    PlayerPrefs.SetFloat ("SavedCountdownTime", countdowntimer);
+
+    PlayerPrefs.SetInt("SavedCurrentLevel", currentlevel);
+
+    PlayerPrefs.SetInt("SavedCurrentPassenger", currentPassenger);
+
+    // Save the player's position and rotation
+    savedPosition = player.transform.position;
+    savedRotation = player.transform.rotation;
+
+    print("SavedPosition " + savedPosition);
+    print("SavedRotation " + savedRotation);
+    print("SavedLRCoins " + currentLRCoins);
+    print("SavedGameScore " + currentInGameScore);
+    print("SavedCountdownTime " + countdowntimer);
+    print("SavedCurrentLevel " + currentlevel);
+    print("SavedCurrentPassenger " + currentPassenger);
+    }
+
+    public void LoadPreviousData()
+    {
+    //Load all Previous Values Saved from SaveCurrentData() function
+    currentLRCoins = PlayerPrefs.GetInt("SavedLRCoins");
+    
+    currentInGameScore = PlayerPrefs.GetInt("SavedGameScore");
+
+    countdowntimer = PlayerPrefs.GetFloat("SavedCountdownTime");
+
+    currentlevel = PlayerPrefs.GetInt("SavedCurrentLevel");
+
+    currentPassenger = PlayerPrefs.GetInt("SavedCurrentPassenger");
+
+     // Load the player's position and rotation
+    player.transform.position = savedPosition;
+    player.transform.rotation = savedRotation;
+
+    spawnManagerScript.LoadPickupPoint();
+    print("CurrentPassenger "+ currentPassenger);
+
+    }
     
     //ADD TIME FUNCTIONS
     public void AddTime1() // time bonus for level 1 
@@ -301,7 +353,6 @@ public class GameManager : MonoBehaviour
         //Reset value for next Level Completion
         LRCoins_earned = 0; 
 
-
     }
     public void ProceedNextLevel()
     {
@@ -312,6 +363,9 @@ public class GameManager : MonoBehaviour
         PickUpPoint.enabled = true;
         TimerText.enabled = true;
         PickUpPointlbl.SetActive(true);
+        
+        //Saving Values using PlayerPrefs
+        SaveCurrentData();
         
     }
 

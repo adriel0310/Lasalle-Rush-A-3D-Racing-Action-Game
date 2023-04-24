@@ -13,10 +13,8 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject player;
     
+    private int firstPickupIndex = 0;
     int index;
-
-
-
 
     void Start()
     {
@@ -32,6 +30,8 @@ public class SpawnManager : MonoBehaviour
         }
         
         FirstLevel();
+
+
     }
 
     // Update is called once per frame
@@ -53,28 +53,32 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-   public void despawn()
-   {    
-      
-       // foreach (GameObject dropoffpoints in DropOffPoints)
-       // {
-               // if (dropoffpoints != null)
-               // {
-                  //   dropoffpoints.SetActive(false);
-               // }
-
-        //}
-
-        // Check if index is within list range
-        if (index >= 0 && index < DropOffPoints.Count) 
+    public void despawnAll()
+    {
+        foreach (GameObject pickuppoints in PickupPoints)
         {
-            // Destroy the dropoff point at the given index
-            DropOffPoints[index].SetActive(false);
-            
-            // Remove the dropoff point from the list
-            DropOffPoints.RemoveAt(index);
+            pickuppoints.SetActive(false);
         }
+
+        foreach (GameObject dropoffpoints in DropOffPoints)
+        {
+            dropoffpoints.SetActive(false);
+        }
+    }
+
+    //Save PickupPoints
+    public void SavePickupPoint(int index)
+    {
+         // Save the index of the current pickup point as the first pickup point for the current level
+        firstPickupIndex = index;
+        PlayerPrefs.SetInt("FirstPickupIndexLevel", firstPickupIndex);
         
-   }
+    }
+
+    public void LoadPickupPoint()
+    {
+        firstPickupIndex = PlayerPrefs.GetInt("FirstPickupIndexLevel");
+        PickupPoints[firstPickupIndex].SetActive(true);
+    }
 
 }
