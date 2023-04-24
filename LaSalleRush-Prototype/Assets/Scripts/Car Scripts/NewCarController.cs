@@ -14,13 +14,14 @@ public class NewCarController : MonoBehaviour
     private float removebreakForce;
     private bool isBreaking;
     private bool removeBreak;
-    public float maxSpeed = 25f; //Speed Limiter
+    public float maxSpeed = 100f; //Speed Limiter
 
     //public ParticleSystem pickupEffect;
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
     [SerializeField] private float maxSteerAngle;
+    [SerializeField] private float frictionCoefficient;
 
     [SerializeField] private WheelCollider frontLeftWheelCollider;
     [SerializeField] private WheelCollider frontRightWheelCollider;
@@ -57,22 +58,36 @@ public class NewCarController : MonoBehaviour
         //Forward Acceleration Input with Max Speed Limiter
         if(carRB.velocity.magnitude <= maxSpeed)
         {
-        verticalInput = Input.GetAxisRaw(VERTICAL);
+            verticalInput = Input.GetAxisRaw(VERTICAL);
+            carRB.AddForce(transform.forward * 100, ForceMode.Impulse);
         }
+
         else
         {
-        verticalInput =  -1f;
+            verticalInput = -1f;
         }
   
     }
 
     private void HandleMotor()
-    {           
-        rearLeftWheelCollider.motorTorque = verticalInput * motorForce;
+    {   
+        //Rear Wheel Drive        
+        rearLeftWheelCollider.motorTorque = verticalInput * motorForce; 
         rearRightWheelCollider.motorTorque = verticalInput * motorForce;
 
         var directionCheck = transform.InverseTransformDirection(carRB.velocity);
         //Debug.Log(directionCheck);
+       
+       if(carRB.velocity.magnitude > 0 && verticalInput == 0 || carRB.velocity.magnitude <= 0 && verticalInput == -1 || carRB.velocity.magnitude >= maxSpeed )
+        {
+            float frictionForce = carRB.velocity.magnitude * frictionCoefficient;
+            carRB.AddForce(-carRB.velocity.normalized * frictionForce, ForceMode.Force);
+             
+            if(carRB.velocity.magnitude < 0.3f)
+            {
+                carRB.velocity = Vector3.zero;
+            }
+        }
 
         if(directionCheck.z > 0 && verticalInput == -1)
         {
@@ -80,15 +95,20 @@ public class NewCarController : MonoBehaviour
             //Debug.Log("PREEEEEENOOOOOOOO");
         }
 
-        else if(directionCheck.z < 0 && verticalInput == -1 || verticalInput == 1 || verticalInput == 0)
+
+        else if(directionCheck.z < 0 && verticalInput == -1 || verticalInput == 0)
         {
             RemoveBreaking();
+            carRB.AddForce(-transform.forward * 100, ForceMode.Impulse);
             //Debug.Log("ATRAAAAAAAAASSSSSSSSSS");
         } 
+
+        
     }
     private void ApplyBreaking()
     {
-        currentbreakForce = 200 * breakForce * Time.deltaTime;  
+        currentbreakForce = 200 * breakForce * Time.deltaTime;
+        carRB.AddForce(-transform.forward * 15 * Time.deltaTime,ForceMode.VelocityChange);  
         frontRightWheelCollider.brakeTorque = currentbreakForce;
         frontLeftWheelCollider.brakeTorque = currentbreakForce;
         rearLeftWheelCollider.brakeTorque = currentbreakForce;

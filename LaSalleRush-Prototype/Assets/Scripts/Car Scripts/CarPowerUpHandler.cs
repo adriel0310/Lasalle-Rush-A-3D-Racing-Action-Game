@@ -28,7 +28,7 @@ public class CarPowerUpHandler : MonoBehaviour
 
        //Apply Effect to Player
        //Player.transform.localScale *= multiplier;
-        newCarController.maxSpeed = 50f;
+        newCarController.maxSpeed += 50f;
         newCarController.carRB.AddForce(transform.forward * 10000, ForceMode.Impulse); // Use Impulse to see an immediate effect 
 
         //wait for seconds
@@ -36,7 +36,7 @@ public class CarPowerUpHandler : MonoBehaviour
 
         //Reverse the effect on player
         //Player.transform.localScale /= multiplier;
-        newCarController.maxSpeed = 40f;
+        newCarController.maxSpeed = 120f;
         newCarController.carRB.AddForce(-transform.forward * 200, ForceMode.Acceleration);
         
 

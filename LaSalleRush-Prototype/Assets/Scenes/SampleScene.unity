@@ -16233,7 +16233,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271202230}
-  m_LocalRotation: {x: 0.0661449, y: -0.70016974, z: 0.06542359, w: 0.70788914}
+  m_LocalRotation: {x: 0.06614489, y: -0.70016974, z: 0.06542359, w: 0.7078891}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24201,6 +24201,7 @@ MonoBehaviour:
   motorForce: 2000
   breakForce: 400
   maxSteerAngle: 16
+  frictionCoefficient: 0
   frontLeftWheelCollider: {fileID: 7878892769547733099}
   frontRightWheelCollider: {fileID: 750726510879464076}
   rearLeftWheelCollider: {fileID: 7152711881566928153}
@@ -66866,7 +66867,7 @@ MonoBehaviour:
   FinalLevelCompleteUI: {fileID: 1884128706}
   InputNameUI: {fileID: 1484506362}
   GameCompletedUI: {fileID: 1554649864}
-  countdowntimer: 10
+  countdowntimer: 120
   TimerText: {fileID: 1774493536}
   onTimerCompleted:
     m_PersistentCalls:
@@ -109736,9 +109737,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7282772007667473023}
   serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 2100
+  m_Drag: 0.08
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -111559,10 +111560,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalInput: 0
-  maxSpeed: 40
-  motorForce: 2000
+  maxSpeed: 120
+  motorForce: 4300
   breakForce: 400
-  maxSteerAngle: 20
+  maxSteerAngle: 40
+  frictionCoefficient: 300
   frontLeftWheelCollider: {fileID: 7878892769547733099}
   frontRightWheelCollider: {fileID: 750726510879464076}
   rearLeftWheelCollider: {fileID: 7152711881566928153}
