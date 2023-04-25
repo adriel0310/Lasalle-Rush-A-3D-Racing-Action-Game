@@ -108,7 +108,7 @@ public class NewCarController : MonoBehaviour
     private void ApplyBreaking()
     {
         currentbreakForce = 200 * breakForce * Time.deltaTime;
-        carRB.AddForce(-transform.forward * 15 * Time.deltaTime,ForceMode.VelocityChange);  
+        carRB.AddForce(-transform.forward * 20 * Time.deltaTime,ForceMode.VelocityChange);  
         frontRightWheelCollider.brakeTorque = currentbreakForce;
         frontLeftWheelCollider.brakeTorque = currentbreakForce;
         rearLeftWheelCollider.brakeTorque = currentbreakForce;
