@@ -173,7 +173,6 @@ public class GameManager : MonoBehaviour
         
         leavegameui.SetActive(true);
         gameoverui.SetActive(false);
-        countdowntimer = 60f;
     }
 
     // babalik yung player sa start screen
@@ -184,12 +183,18 @@ public class GameManager : MonoBehaviour
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
 
-        //currentlevel = 0;
+        ResetAllValues();
+    }
+    public void ResetAllValues()
+    {
         currentLRCoins = 0;
         remainingTime = 0;
         totalScore = 0;
         currentInGameScore = 0;
-
+        currentPassenger = 0;
+        currentlevel = 1;
+        countdowntimer = 60f;
+        spawnManagerScript.despawnAll();
     }
 
     public void SaveCurrentData()

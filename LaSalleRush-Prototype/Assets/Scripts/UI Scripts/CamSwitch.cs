@@ -7,9 +7,11 @@ public class CamSwitch : MonoBehaviour{
     public GameObject [] cameras;
     public GameObject [] canvas;
     public GameManager timer;
-    public GameObject control;
+    public GameObject control; 
+    SpawnManager spawnManagerScript;
 
     public void Start(){
+        spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;
         control.SetActive(false);
@@ -110,7 +112,8 @@ public class CamSwitch : MonoBehaviour{
      }
 
      public void Start_Game(){
-         Time.timeScale = 1;
+        Time.timeScale = 1;
+        spawnManagerScript.FirstLevel();
         control.SetActive(true);
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);

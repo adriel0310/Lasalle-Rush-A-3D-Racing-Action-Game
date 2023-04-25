@@ -14,6 +14,7 @@ public class MouseLook : MonoBehaviour
     private float _yRotation = 0f;
     private float _defaultXValue;
     private float _defaultYValue;
+    private bool _isMouseLookMode = false;
     private void Start()
     {
        _defaultXValue = _freeLookCamera.m_XAxis.Value;
@@ -22,7 +23,24 @@ public class MouseLook : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButton(1))
+       if (Input.GetMouseButtonDown(1))
+        {
+        _isMouseLookMode = !_isMouseLookMode; // Toggle the mouse look mode
+
+        if (_isMouseLookMode)
+        {
+            // Enter mouse look mode
+            Cursor.lockState = CursorLockMode.Locked; // Hide the cursor
+        }
+        else
+        {
+            // Exit mouse look mode
+            Cursor.lockState = CursorLockMode.None; // Show the cursor
+            ResetCameraPosition(); // Reset camera position
+        }
+        } 
+
+        if (_isMouseLookMode)
         {
 
             float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivityX;
@@ -39,10 +57,10 @@ public class MouseLook : MonoBehaviour
             _freeLookCamera.m_YAxis.Value = _xRotation;//mouseY;
           
         }
-        else if(Input.GetMouseButtonUp(1))
-        {
-            ResetCameraPosition();
-        }
+        //else if(Input.GetMouseButtonDown(1))
+        //{
+            //ResetCameraPosition();
+        //}
     }
 
      private void ResetCameraPosition()
@@ -58,7 +76,7 @@ public class MouseLook : MonoBehaviour
         
         Quaternion currentRotation = transform.localRotation;
 
-        while (elapsedTime < 1f / _lerpSpeed)
+        while (elapsedTime < 0.1f / _lerpSpeed)
         {
             float newXValue = Mathf.Lerp(currentXValue, _defaultXValue, elapsedTime * _lerpSpeed);
             float newYValue = Mathf.Lerp(currentYValue, _defaultYValue, elapsedTime * _lerpSpeed);

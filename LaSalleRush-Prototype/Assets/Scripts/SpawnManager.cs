@@ -16,10 +16,9 @@ public class SpawnManager : MonoBehaviour
     private int firstPickupIndex = 0;
     int index;
 
-    void Start()
+    public void Start()
     {
-
-        foreach (GameObject pickuppoints in PickupPoints)
+         foreach (GameObject pickuppoints in PickupPoints)
         {
             pickuppoints.SetActive(false);
         }
@@ -28,9 +27,6 @@ public class SpawnManager : MonoBehaviour
         {
             dropoffpoints.SetActive(false);
         }
-        
-        FirstLevel();
-
 
     }
 
@@ -40,8 +36,18 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    void FirstLevel()
+    public void FirstLevel()
     {
+         foreach (GameObject pickuppoints in PickupPoints)
+        {
+            pickuppoints.SetActive(false);
+        }
+
+        foreach (GameObject dropoffpoints in DropOffPoints)
+        {
+            dropoffpoints.SetActive(false);
+        }
+
         PickupPoints[0].SetActive(true);
     }
 
