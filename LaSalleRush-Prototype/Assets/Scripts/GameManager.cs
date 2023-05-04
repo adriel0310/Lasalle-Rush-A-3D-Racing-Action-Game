@@ -94,6 +94,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        nameInputField.characterLimit = 10;
+
         questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         CamSwitch camSwitch = GetComponent<CamSwitch>();
@@ -107,8 +109,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 6;
+        currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -198,29 +200,28 @@ public class GameManager : MonoBehaviour
     }
 
     public void SaveCurrentData()
-
     {
-    PlayerPrefs.SetInt("SavedLRCoins", currentLRCoins);
-    
-    PlayerPrefs.SetInt("SavedGameScore", currentInGameScore);
+        PlayerPrefs.SetInt("SavedLRCoins", currentLRCoins);
+        
+        PlayerPrefs.SetInt("SavedGameScore", currentInGameScore);
 
-    PlayerPrefs.SetFloat ("SavedCountdownTime", countdowntimer);
+        PlayerPrefs.SetFloat ("SavedCountdownTime", countdowntimer);
 
-    PlayerPrefs.SetInt("SavedCurrentLevel", currentlevel);
+        PlayerPrefs.SetInt("SavedCurrentLevel", currentlevel);
 
-    PlayerPrefs.SetInt("SavedCurrentPassenger", currentPassenger);
+        PlayerPrefs.SetInt("SavedCurrentPassenger", currentPassenger);
 
-    // Save the player's position and rotation
-    savedPosition = player.transform.position;
-    savedRotation = player.transform.rotation;
+        // Save the player's position and rotation
+        savedPosition = player.transform.position;
+        savedRotation = player.transform.rotation;
 
-    print("SavedPosition " + savedPosition);
-    print("SavedRotation " + savedRotation);
-    print("SavedLRCoins " + currentLRCoins);
-    print("SavedGameScore " + currentInGameScore);
-    print("SavedCountdownTime " + countdowntimer);
-    print("SavedCurrentLevel " + currentlevel);
-    print("SavedCurrentPassenger " + currentPassenger);
+        print("SavedPosition " + savedPosition);
+        print("SavedRotation " + savedRotation);
+        print("SavedLRCoins " + currentLRCoins);
+        print("SavedGameScore " + currentInGameScore);
+        print("SavedCountdownTime " + countdowntimer);
+        print("SavedCurrentLevel " + currentlevel);
+        print("SavedCurrentPassenger " + currentPassenger);
     }
 
     public void LoadPreviousData()
@@ -320,7 +321,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 3)
+        if(buildingtracker == 1)
         {
             FinalLevelComplete(); 
         }    
