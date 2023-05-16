@@ -12,6 +12,7 @@ public class Invisibility : MonoBehaviour
     void Start()
     {
         newCarController = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCarController>();
+        
         // Get the player's collider
         playerCollider = newCarController.GetComponent<Collider>();
 
