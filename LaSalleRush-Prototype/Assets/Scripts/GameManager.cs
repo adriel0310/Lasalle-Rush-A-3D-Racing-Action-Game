@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
 
         if (isCountdownEnabled)
         {
-            Countdown();
+            //Countdown();
         }
 
         levels[currentlevel - 1].SetActive(true);
