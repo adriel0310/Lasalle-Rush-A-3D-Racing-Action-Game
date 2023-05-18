@@ -1,3 +1,5 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +13,6 @@ public class FinalLevelDropOff : MonoBehaviour
     //The unique identifier of the GameObject to despawn
     public string objectId;
     bool allDespawned = true;
-    public int buildingtracker;
 
     [SerializeField] TextMeshProUGUI PickDrop;
    
@@ -21,10 +22,6 @@ public class FinalLevelDropOff : MonoBehaviour
     questReceiverScript = GameObject.Find("QuestReceiver").GetComponent<QuestReceiver>();
    }
 
-   public void trackbuilding()
-   {
-
-   }
     public IEnumerator OnTriggerEnter(Collider other)
     {
         if(gameManagerscript.currentPassenger == 17){
@@ -32,12 +29,17 @@ public class FinalLevelDropOff : MonoBehaviour
         
             if (other.CompareTag("Player"))
             {
-                PickDrop.text = "+1 BUILDING";
                 PickDrop.enabled = true;
+                PickDrop.text = "+1 BUILDING";
                 yield return new WaitForSeconds(2f);
                 PickDrop.enabled = false;
+                
+                gameManagerscript.AddTime6();
+                gameManagerscript.AddBuildingtracking();
+                gameManagerscript.AddLRCoinsFinalPassenger();
 
                 Debug.Log("may delay dapat");
+                
                 if(gameManagerscript.currentPassenger == 17){
                     
                     GameObject objectToDespawn = null;

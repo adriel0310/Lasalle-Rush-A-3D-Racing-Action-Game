@@ -41,8 +41,12 @@ public class QuestReceiver : MonoBehaviour
         
         if(col.CompareTag("Player"))
         {
-            PickDrop.text = "DROPPING OFF PASSENGER...";
-            PickDrop.enabled = true;
+            if(gameManagerscript.currentPassenger != 17)
+            {
+                PickDrop.text = "DROPPING OFF PASSENGER...";
+                PickDrop.enabled = true;
+            }
+
             yield return new WaitForSeconds(2f);
             PickDrop.enabled = false;
 
@@ -427,11 +431,6 @@ public class QuestReceiver : MonoBehaviour
                         //despawnManagerscript.CheckTag1();
                         
                         print("Current Passenger" + gameManagerscript.currentPassenger);
-
-                        gameManagerscript.AddLRCoinsFinalPassenger();
-                        gameManagerscript.AddTime6();
-                        gameManagerscript.AddBuildingtracking();
-                        //gameManagerscript.FinalLevelComplete();
                         print("FINAL LEVEL TO");
                         
                       //  DropOffPointlbl.SetActive(false);

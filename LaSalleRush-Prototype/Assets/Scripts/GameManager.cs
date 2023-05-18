@@ -57,9 +57,15 @@ public class GameManager : MonoBehaviour
     public GameObject FinalLevelCompleteUI;
     public GameObject InputNameUI;
     public GameObject GameCompletedUI;
+    public GameObject timebonus5;
+    public GameObject timebonus10;
+    public GameObject timebonus15;
+    public GameObject timebonus20;
     
     //For Timer Variables
     public float countdowntimer = 10f;
+    
+    public float timebonusDuration = 3f;
     public Text TimerText;
 
     public UnityEvent onTimerCompleted;
@@ -88,9 +94,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI allScoresTextComponent;
     public TMP_InputField nameInputField;
 
-
-
-    
 
     void Start()
     {
@@ -122,7 +125,7 @@ public class GameManager : MonoBehaviour
 
         if (isCountdownEnabled)
         {
-            //Countdown();
+            Countdown();
         }
 
         levels[currentlevel - 1].SetActive(true);
@@ -195,7 +198,7 @@ public class GameManager : MonoBehaviour
         currentInGameScore = 0;
         currentPassenger = 0;
         currentlevel = 1;
-        countdowntimer = 60f;
+        countdowntimer = 300f;
         spawnManagerScript.despawnAll();
     }
 
@@ -250,31 +253,45 @@ public class GameManager : MonoBehaviour
     public void AddTime1() // time bonus for level 1 
     {
         countdowntimer += 5f;
+        StartCoroutine(ActivateAndDeactivateTimeBonus(timebonus5));
         print("Time Added 1");
     }
 
     public void AddTime23() // time bonus for level 2 & 3
     {
         countdowntimer += 10f;
+        StartCoroutine(ActivateAndDeactivateTimeBonus(timebonus10));
         print("Time Added 2");
     }
 
     public void AddTime4() // time bonus for level 4
     { 
         countdowntimer += 15f;
+        StartCoroutine(ActivateAndDeactivateTimeBonus(timebonus15));
         print("Time Added 4");
     }
     public void AddTime5() // time bonus for level 5
     { 
         countdowntimer += 20f;
+        StartCoroutine(ActivateAndDeactivateTimeBonus(timebonus20));
         print("Time Added 5");
     }
     
     public void AddTime6() // time bonus for level 6
     { 
-        countdowntimer += 25f;
+        countdowntimer += 15f;
+        StartCoroutine(ActivateAndDeactivateTimeBonus(timebonus15));
         print("Time Added 6");
     }
+
+    //DELAY FOR TIME BONUS UI
+    private IEnumerator ActivateAndDeactivateTimeBonus(GameObject timebonus)
+    {
+        timebonus.SetActive(true);
+        yield return new WaitForSeconds(timebonusDuration);
+        timebonus.SetActive(false);
+    }
+
 
     //ADD SCORE FUNCTIONS
     public void AddLRCoins1()
@@ -321,7 +338,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 1)
+        if(buildingtracker == 20)
         {
             FinalLevelComplete(); 
         }    
@@ -346,13 +363,13 @@ public class GameManager : MonoBehaviour
 
         //Compute and Show Scores in Text UI
         remainingTime = (int)countdowntimer;
-        score = 1000;
-        totalScore = LRCoins_earned + remainingTime + score;
+        //score = 1000;
+        totalScore = LRCoins_earned + remainingTime;
         currentInGameScore += totalScore;
 
         LevelCompleteLRCoins.text = LRCoins_earned.ToString();
         TimeLeft.text = remainingTime.ToString();
-        Score.text = score.ToString();
+        //Score.text = score.ToString();
         TotalScore.text = totalScore.ToString();
         currentScore.text = "Score: " + currentInGameScore;
         
@@ -369,7 +386,7 @@ public class GameManager : MonoBehaviour
         PickUpPoint.enabled = true;
         TimerText.enabled = true;
         PickUpPointlbl.SetActive(true);
-        
+        countdowntimer += 120f;
         //Saving Values using PlayerPrefs
         SaveCurrentData();
         
@@ -390,8 +407,8 @@ public class GameManager : MonoBehaviour
 
         //Compute and Show Scores in Text UI
         remainingTime = (int)countdowntimer;
-        score = 1000;
-        totalScore = LRCoins_earned + remainingTime + score;
+        //score = 1000;
+        totalScore = LRCoins_earned + remainingTime;
         currentInGameScore += totalScore;
 
         totalLRcoins.text = LRCoins_earned.ToString();
