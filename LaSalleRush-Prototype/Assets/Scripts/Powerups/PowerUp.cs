@@ -36,7 +36,7 @@ public class PowerUp : MonoBehaviour
        //Apply Effect to Player
       //Player.transform.localScale *= multiplier;
        
-    
+        
 
         //Disable Graphics
         GetComponent<MeshRenderer>().enabled = false;
