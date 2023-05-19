@@ -8,14 +8,21 @@ public class CamSwitch : MonoBehaviour{
 
       public GameObject [] cameras;
       public GameObject [] canvas;
+      public GameObject [] tutorial; 
+
+      public GameObject arrow;
+
       public GameManager timer;
       public GameObject control; 
+      public GameObject tutorialButton;
       SpawnManager spawnManagerScript;
+      public TutorialScript tutorialScript;
       public TextMeshProUGUI allScoresTextComponent;
       public TMP_InputField nameInputField;
 
     public void Start(){
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        tutorialScript = GameObject.Find("TutorialMode").GetComponent<TutorialScript>();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;
         control.SetActive(false);
@@ -41,7 +48,7 @@ public class CamSwitch : MonoBehaviour{
     }
 
     void Update(){
-    }
+      }
 
     public void Play(){
         Debug.Log("hi");
@@ -140,6 +147,47 @@ public class CamSwitch : MonoBehaviour{
         canvas[16].SetActive(false);
      }
 
+     public void Tutorial(){
+        GameObject tutorialBtn = GameObject.Find("TutorialBtn");
+         if (tutorialBtn != null)
+         {
+            tutorialBtn.SetActive(true); // Set the TutorialBtn game object to active temporarily
+
+            TutorialScript tutorialScript = tutorialBtn.GetComponent<TutorialScript>();
+            if (tutorialScript != null)
+            {
+               Debug.Log("access");
+               tutorialScript.StartTutorial();
+            }
+
+            tutorialBtn.SetActive(false); // Set the TutorialBtn game object back to inactive
+         }
+
+        Time.timeScale = 1;
+        control.SetActive(true);
+        cameras[0].SetActive(true);
+        cameras[1].SetActive(false);
+        canvas[0].SetActive(false);
+        canvas[1].SetActive(false);
+        canvas[2].SetActive(false);
+        canvas[3].SetActive(false);
+        canvas[4].SetActive(false);
+        canvas[5].SetActive(false);
+        canvas[6].SetActive(false);
+        canvas[7].SetActive(false);
+        canvas[8].SetActive(false);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
+        canvas[11].SetActive(false);
+        canvas[12].SetActive(false);
+        canvas[13].SetActive(false);
+        canvas[16].SetActive(false);
+        canvas[17].SetActive(true);
+        arrow.SetActive(false);
+        timer.enabled = false;
+
+      }
+
    public void DisplayAllScoresBtn()
    {
       const int rankWidth = 5;
@@ -197,6 +245,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
+        arrow.SetActive(true);
         timer.enabled = true;
       }
 
