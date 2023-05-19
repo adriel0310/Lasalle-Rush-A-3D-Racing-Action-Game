@@ -1,62 +1,172 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialScript : MonoBehaviour
 {
-    public GameObject[] tutorial;
-    public GameObject[] keys;
-    public GameObject tutorialButton;
+    public GameObject player;
 
-    int currentTutorialIndex = 0;
+    public GameObject tutorialPick;
+    public GameObject tutorialDrop;
+
+    public GameObject tutorialscreen;
+    public GameObject[] tutorial;
+    public GameObject continueImage;
+    public GameObject exitImage;
+    public GameObject tutorialButton;
+    public float continueImageDelay = 2f;
+    public float exitImageDelay = 3f;
+
+    private int currentTutorialIndex = 0;
+    private bool exitTutorial = false;
+
+    // Car Positions/Locations
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
+
+    public CamSwitch camSwitch;
+    private AudioManager audioManagerScript;
+
+    private void Start()
+    {
+        camSwitch = GetComponent<CamSwitch>();
+        audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
+        originalRotation = player.transform.rotation;
+        originalPosition = player.transform.position;
+
+        tutorialPick.SetActive(true);
+    }
+
+    private void Update()
+    {
+        // Check for input during the tutorial
+        if (currentTutorialIndex < tutorial.Length && !exitTutorial)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ProceedToNextTutorial();
+            }
+            else if (Input.GetKeyDown(KeyCode.Y))
+            {
+                ExitTutorial();
+                exitImage.SetActive(false);
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider col)
+        {
+            if (col.CompareTag("Player"))
+            {
+                Debug.Log("pickup");
+                if (tutorialPick != null)
+                {
+                    tutorialPick.SetActive(false);
+                    Debug.Log(tutorialButton.activeSelf);
+                }
+                if (tutorialDrop != null)
+                {
+                    tutorialDrop.SetActive(true);
+                }
+            }
+        }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            if (tutorialDrop != null)
+            {
+                tutorialDrop.SetActive(false);
+            }
+        }
+    }
 
     public void StartTutorial()
     {
+        Time.timeScale = 1;
+
         if (tutorialButton.activeSelf)
         {
-            StartCoroutine(ShowNextTutorial(2f));
-            Debug.Log("access sa tutorial script");
-            
-            StartCoroutine(StartTutorialCoroutine());
-            Debug.Log("nagstart tutorial coroutine");
-        }
-        else
-        {
-            StartCoroutine(StartTutorialCoroutine());
+            StartCoroutine(ShowNextTutorial());
         }
     }
 
-    public IEnumerator StartTutorialCoroutine()
+    private void ProceedToNextTutorial()
     {
-        Debug.Log("access start tutorial");
-        yield return new WaitUntil(() => !tutorialButton.activeSelf);
-
-        StartCoroutine(ShowNextTutorial(2f));
-        //Debug.Log("access start tutorial");
-    }
-
-    public IEnumerator ShowNextTutorial(float delay)
-    {
-        Debug.Log("ShowNextTutorial");
         if (currentTutorialIndex < tutorial.Length)
         {
-            Debug.Log(currentTutorialIndex);
-            tutorial[currentTutorialIndex].SetActive(true);
+            tutorial[currentTutorialIndex].SetActive(false);
+            continueImage.SetActive(false);
 
-            if (currentTutorialIndex == 0 && keys.Length > 0)
+            currentTutorialIndex++;
+
+            if (currentTutorialIndex < tutorial.Length)
             {
-                yield return new WaitForSeconds(delay); // Wait for the specified delay
-                keys[0].SetActive(true); // Show the first key after the delay
-                Debug.Log("First key is active");
+                tutorial[currentTutorialIndex].SetActive(true);
+                continueImage.SetActive(true);
+
+                if (currentTutorialIndex == tutorial.Length - 1)
+                {
+                    continueImage.SetActive(false);
+                    exitImage.SetActive(true);
+                }
+                else if (currentTutorialIndex == 0)
+                {
+                    tutorialPick.SetActive(true);
+                }
             }
-
-            if (currentTutorialIndex == tutorial.Length - 1 && keys.Length > 1)
+            else
             {
-                keys[1].SetActive(true); // Show the second key on the final tutorial
-                Debug.Log("Second key is active");
+                ExitTutorial();
             }
         }
     }
 
+    private void ExitTutorial()
+    {
+        if (currentTutorialIndex < tutorial.Length)
+        {
+            tutorial[currentTutorialIndex].SetActive(false);
+            continueImage.SetActive(false);
+        }
 
+        exitTutorial = true;
+
+        // Return to menu or perform desired action
+        Debug.Log("Returning to menu...");
+
+        ExitToMainMenu(camSwitch);
+    }
+
+    private IEnumerator ShowNextTutorial()
+    {
+        if (tutorial.Length > 0)
+        {
+            tutorial[0].SetActive(true);
+            continueImage.SetActive(true);
+
+            if (tutorial.Length == 1)
+            {
+                exitImage.SetActive(true);
+            }
+        }
+
+        yield return null;
+    }
+
+    public void ExitToMainMenu(CamSwitch camSwitch)
+    {
+        continueImage.SetActive(false);
+        exitImage.SetActive(false);
+        player.transform.rotation = originalRotation;
+        player.transform.position = originalPosition;
+
+        tutorialscreen.SetActive(false);
+        camSwitch.SplashScreen();
+        Time.timeScale = 0;
+        audioManagerScript.ToggleEngineSound(false);
+    }
 }

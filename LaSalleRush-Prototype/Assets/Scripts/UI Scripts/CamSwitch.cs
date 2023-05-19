@@ -9,6 +9,9 @@ public class CamSwitch : MonoBehaviour{
       public GameObject [] cameras;
       public GameObject [] canvas;
       public GameObject [] tutorial; 
+      public GameObject continueImage;
+      public GameObject exitImage;
+      
 
       public GameObject arrow;
 
@@ -47,7 +50,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[13].SetActive(false);
         canvas[15].SetActive(false);
         canvas[15].SetActive(false);
-        
+        continueImage.SetActive(false);
+        exitImage.SetActive(false);
     }
 
     void Update(){
@@ -69,6 +73,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
+        tutorialButton.SetActive(true);
      }
 
      public void Back(){
@@ -160,6 +165,7 @@ public class CamSwitch : MonoBehaviour{
             if (tutorialScript != null)
             {
                Debug.Log("access");
+               Time.timeScale = 1;
                tutorialScript.StartTutorial();
             }
 
