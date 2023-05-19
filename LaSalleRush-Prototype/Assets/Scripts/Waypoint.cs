@@ -6,12 +6,12 @@ public class Waypoint : MonoBehaviour
 {
     public List<GameObject> Waypoints;
     public List<GameObject> waypointUI;
+
+    AudioManager audioManagerScript;
     
     public GameObject waypointDetectUI; // Reference to the UI object to be shown
 
     private GameObject detectedObject; // The game object that triggers the UI to be shown
-
-
 
     private bool canInteract = false;
 
@@ -21,6 +21,10 @@ public class Waypoint : MonoBehaviour
     GameObject activeUI;//Empty initial value to check for any active or inactive UI Game Objects
 
 
+   void Start()
+   {
+        audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+   }
 
    void OnTriggerEnter(Collider col)
    {
@@ -78,6 +82,8 @@ public class Waypoint : MonoBehaviour
                         
 
                         UI.SetActive(true);
+                        audioManagerScript.ToggleEngineSound(false);
+                        audioManagerScript.SetBackgroundMusicVolume(0.05f); //Between 0-1 only
                         
                         Time.timeScale = 0f;
                         break;
@@ -94,6 +100,8 @@ public class Waypoint : MonoBehaviour
         foreach (GameObject UI in waypointUI)
         {
             UI.SetActive(false);
+            audioManagerScript.ToggleEngineSound(true);
+            audioManagerScript.SetBackgroundMusicVolume(0.5f); //Between 0-1 only
             Time.timeScale = 1f;
         }
         

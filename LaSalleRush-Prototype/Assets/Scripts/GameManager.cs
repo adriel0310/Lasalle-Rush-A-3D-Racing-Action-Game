@@ -85,8 +85,8 @@ public class GameManager : MonoBehaviour
 
     public QuestSystem questSystemScript;
     public CamSwitch camSwitch;
-
     public SpawnManager spawnManagerScript;
+    AudioManager audioManagerScript;
 
 
     // for scoreboard
@@ -97,8 +97,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
         nameInputField.characterLimit = 10;
 
+        audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         CamSwitch camSwitch = GetComponent<CamSwitch>();
@@ -187,6 +189,7 @@ public class GameManager : MonoBehaviour
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
+        audioManagerScript.ToggleEngineSound(false);
 
         ResetAllValues();
     }

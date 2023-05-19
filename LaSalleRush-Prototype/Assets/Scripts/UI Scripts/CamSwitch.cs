@@ -20,7 +20,10 @@ public class CamSwitch : MonoBehaviour{
       public TextMeshProUGUI allScoresTextComponent;
       public TMP_InputField nameInputField;
 
+      AudioManager audioManagerScript;
+
     public void Start(){
+        audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         tutorialScript = GameObject.Find("TutorialMode").GetComponent<TutorialScript>();
         Cursor.lockState = CursorLockMode.None;
@@ -224,7 +227,6 @@ public class CamSwitch : MonoBehaviour{
       Time.timeScale = 0;
    }
 
-
      public void Start_Game(){
         Time.timeScale = 1;
         spawnManagerScript.FirstLevel();
@@ -247,6 +249,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[13].SetActive(false);
         arrow.SetActive(true);
         timer.enabled = true;
+        
+        audioManagerScript.ToggleEngineSound(true);
       }
 
       public void Free_Mode(){
