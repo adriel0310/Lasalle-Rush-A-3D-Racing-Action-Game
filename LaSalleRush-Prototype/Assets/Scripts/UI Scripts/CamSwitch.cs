@@ -20,6 +20,8 @@ public class CamSwitch : MonoBehaviour{
       public GameObject tutorialButton;
       SpawnManager spawnManagerScript;
       public TutorialScript tutorialScript;
+      public TextMeshProUGUI allRanksTextComponent;
+      public TextMeshProUGUI allNamesTextComponent;
       public TextMeshProUGUI allScoresTextComponent;
       public TMP_InputField nameInputField;
 
@@ -204,7 +206,10 @@ public class CamSwitch : MonoBehaviour{
 
       int nameWidth = nameInputField.characterLimit;
 
+      string allRanksText = "";
+      string allNamesText = "";
       string allScoresText = "";
+
       var playerScores = PlayerPrefs.GetString("PlayerNames").Split(',')
          .Select(key => new { Name = key, Score = PlayerPrefs.GetInt(key) })
          .Where(ps => ps.Score > 0) // Only include players with a score greater than 0
@@ -214,7 +219,10 @@ public class CamSwitch : MonoBehaviour{
       int rank = 1;
       foreach (var ps in playerScores)
       {
-         string rankText = $"{rank}.";
+         if (rank > 20)
+               break;
+
+         string rankText = $"{rank}";
          string nameText = $"{ps.Name}";
          string scoreText = $"{ps.Score}";
 
@@ -222,16 +230,20 @@ public class CamSwitch : MonoBehaviour{
          nameText = nameText.PadRight(nameWidth);
          scoreText = scoreText.PadLeft(scoreWidth);
 
-         allScoresText += $"{rankText} {nameText} {scoreText}\n";
+         allRanksText += $"{rankText}\n";
+         allNamesText += $"{nameText}\n";
+         allScoresText += $"{scoreText}\n";
 
          rank++;
       }
 
-      allScoresText = allScoresText.TrimEnd(); // Remove the last newline character
-      allScoresTextComponent.text = allScoresText;
+      allRanksTextComponent.text = allRanksText.TrimEnd();
+      allNamesTextComponent.text = allNamesText.TrimEnd();
+      allScoresTextComponent.text = allScoresText.TrimEnd();
 
       Time.timeScale = 0;
    }
+
 
      public void Start_Game(){
         Time.timeScale = 1;
@@ -302,5 +314,6 @@ public class CamSwitch : MonoBehaviour{
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
+        canvas[15].SetActive(false);
       }
 }

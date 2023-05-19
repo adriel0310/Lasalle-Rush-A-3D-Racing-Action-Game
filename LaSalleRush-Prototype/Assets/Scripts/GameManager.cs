@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI newScoretxt;
     [SerializeField] TextMeshProUGUI LREarnedtxt;
 
+    public TextMeshProUGUI allRankTextComponent;
+    public TextMeshProUGUI allNameTextComponent;
+    public TextMeshProUGUI allScoresTextComponent;
+    public TextMeshProUGUI playerRankTextComponent;
+
+
     //Levels and Passengers
     public int currentlevel;
     public int currentPassenger;
@@ -91,7 +97,6 @@ public class GameManager : MonoBehaviour
 
     // for scoreboard
     [SerializeField] TextMeshProUGUI scoreText;
-    public TextMeshProUGUI allScoresTextComponent;
     public TMP_InputField nameInputField;
 
 
@@ -193,6 +198,7 @@ public class GameManager : MonoBehaviour
 
         ResetAllValues();
     }
+    
     public void ResetAllValues()
     {
         currentLRCoins = 0;
@@ -341,7 +347,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 20)
+        if(buildingtracker == 1)
         {
             FinalLevelComplete(); 
         }    
@@ -453,6 +459,8 @@ public class GameManager : MonoBehaviour
         scoreText.text = $"{playerName}: {newScore}";
 
         // Display all the previous players and their scores, including the new player's score
+        string allRanksText = "";
+        string allNamesText = "";
         string allScoresText = "";
         var playerScores = PlayerPrefs.GetString("PlayerNames").Split(',')
             .Select(key => new { Name = key, Score = PlayerPrefs.GetInt(key) })
@@ -470,16 +478,19 @@ public class GameManager : MonoBehaviour
         int rank = 1;
         foreach (var ps in playerScores.Take(10))
         {
-            allScoresText += $"{rank}. {ps.Name}   {ps.Score}\n";
+            allRanksText += $"{rank}.\n";
+            allNamesText += $"{ps.Name}\n";
+            allScoresText += $"{ps.Score}\n";
 
             rank++;
         }
 
-        allScoresText = allScoresText.TrimEnd(); // Remove the last newline character
-        allScoresTextComponent.text = allScoresText;
+        allRankTextComponent.text = allRanksText.TrimEnd();
+        allNameTextComponent.text = allNamesText.TrimEnd();
+        allScoresTextComponent.text = allScoresText.TrimEnd();
 
-        // Display the current player's rank at the bottom
-        allScoresTextComponent.text += $"\n\nYour rank: {currentPlayerRank}";
+        // Display the current player's rank in the playerRankTextComponent
+        playerRankTextComponent.text = $"Your rank: {currentPlayerRank}";
 
         // Update the list of player names
         string playerNames = PlayerPrefs.GetString("PlayerNames");
@@ -491,6 +502,9 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 0;
     }
+
+
+
 
     public void LevelObjective(){
         switch(currentPassenger){
