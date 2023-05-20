@@ -166,6 +166,14 @@ public class GameManager : MonoBehaviour
         } 
     }
 
+    public void PauseCountdown(){
+        isCountdownEnabled = false;
+    }
+
+    public void ResumeCountdown(){
+        isCountdownEnabled = true;
+    }
+
     public void RepeatLevel(){
         //player.transform.rotation = originalRotation;
         //player.transform.position = originalPosition;
