@@ -18,7 +18,7 @@ public class TutorialScript : MonoBehaviour
     public float continueImageDelay = 2f;
     public float exitImageDelay = 3f;
 
-    private int currentTutorialIndex = 0;
+    public int currentTutorialIndex = 0;
     private bool exitTutorial = false;
 
     // Car Positions/Locations
@@ -36,19 +36,20 @@ public class TutorialScript : MonoBehaviour
         originalRotation = player.transform.rotation;
         originalPosition = player.transform.position;
 
-        tutorialPick.SetActive(true);
+        //tutorialPick.SetActive(true);
     }
 
     private void Update()
     {
         // Check for input during the tutorial
-        if (currentTutorialIndex < tutorial.Length && !exitTutorial)
+        if (currentTutorialIndex < tutorial.Length && !exitTutorial )
         {
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ProceedToNextTutorial();
             }
-            else if (Input.GetKeyDown(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.Y))
             {
                 ExitTutorial();
                 exitImage.SetActive(false);
@@ -103,20 +104,24 @@ public class TutorialScript : MonoBehaviour
 
             currentTutorialIndex++;
 
+
             if (currentTutorialIndex < tutorial.Length)
             {
                 tutorial[currentTutorialIndex].SetActive(true);
                 continueImage.SetActive(true);
-
+                
                 if (currentTutorialIndex == tutorial.Length - 1)
                 {
                     continueImage.SetActive(false);
                     exitImage.SetActive(true);
                 }
-                else if (currentTutorialIndex == 0)
+
+                if (currentTutorialIndex == 4 )
                 {
-                    tutorialPick.SetActive(true);
+                  tutorialPick.SetActive(true);
                 }
+                
+                
             }
             else
             {
@@ -132,7 +137,7 @@ public class TutorialScript : MonoBehaviour
             tutorial[currentTutorialIndex].SetActive(false);
             continueImage.SetActive(false);
         }
-
+        currentTutorialIndex = 0;
         exitTutorial = true;
 
         // Return to menu or perform desired action
