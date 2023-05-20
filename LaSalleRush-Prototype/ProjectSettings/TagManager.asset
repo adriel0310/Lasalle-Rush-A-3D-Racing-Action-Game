@@ -33,11 +33,13 @@ TagManager:
   - sittingpoint
   - pickuppoint
   - waypoint
+  - Nitro
+  - Wheels
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Particle System
   - Water
   - UI
   - Navmesh

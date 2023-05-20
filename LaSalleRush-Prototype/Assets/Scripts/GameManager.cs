@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
     public CamSwitch camSwitch;
     public SpawnManager spawnManagerScript;
     AudioManager audioManagerScript;
-
+    PowerUpManager powerUpManagerScript;
 
     // for scoreboard
     [SerializeField] TextMeshProUGUI scoreText;
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
     {
 
         nameInputField.characterLimit = 10;
-
+        powerUpManagerScript = GameObject.Find("PowerUpManager").GetComponent<PowerUpManager>();
         audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         questSystemScript = GameObject.Find("QuestSystem").GetComponent<QuestSystem>();
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
@@ -119,8 +119,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 4;
+        currentPassenger = 7;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -190,12 +190,12 @@ public class GameManager : MonoBehaviour
     // babalik yung player sa start screen
     public void ExitToMainMenu(CamSwitch camSwitch)
     {
+        powerUpManagerScript.DeactivatePowerUps();
         gameoverui.SetActive(false);
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
         audioManagerScript.ToggleEngineSound(false);
-
         ResetAllValues();
     }
     
@@ -411,7 +411,7 @@ public class GameManager : MonoBehaviour
         DropOffPointlbl.SetActive(false);
         PickUpPoint.enabled = false;
         DropOffPoint.enabled = false;
-
+        powerUpManagerScript.DeactivatePowerUps();
 
 
         //Compute and Show Scores in Text UI

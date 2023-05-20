@@ -9,6 +9,9 @@ public class Spinner : MonoBehaviour
     public float minFloatHeight = 0f;
     public float floatSpeed = 4f;
     public float floatAmplitude = 0.2f;
+    private bool isSpinning = true;
+
+    
 
     void Start()
     {
@@ -16,7 +19,8 @@ public class Spinner : MonoBehaviour
         StartCoroutine(SpinAndFloat());
     }
 
-    IEnumerator SpinAndFloat()
+    
+    public IEnumerator SpinAndFloat()
     {
         while (true)
         {
@@ -34,5 +38,14 @@ public class Spinner : MonoBehaviour
 
             yield return null;
         }
+    }
+     public void StartSpinning()
+    {
+        isSpinning = true;
+    }
+
+    public void StopSpinning()
+    {
+        isSpinning = false;
     }
 }

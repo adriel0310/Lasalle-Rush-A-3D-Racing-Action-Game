@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PowerUp : MonoBehaviour
 {
     //For Testing Only
     public float multiplier = 1.4f;
     public float duration = 3f;
+    
     //NewCarController newCarController;
 
     public ParticleSystem pickupEffect;
@@ -15,42 +17,36 @@ public class PowerUp : MonoBehaviour
    {
        //newCarController = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCarController>();
    }
+
+   void Update()
+   {
+
+   }
    
    
    void OnTriggerEnter(Collider other) //Function that get's called when we collide with something
    {
        if(other.CompareTag("Player"))
        {
-           StartCoroutine( Pickup(other) );
+           //StartCoroutine( Pickup(other) );
+           Pickup(other);
        }
    }
 
-   IEnumerator Pickup(Collider Player)
+   public void Pickup (Collider Player)
    {
-       Debug.Log("Power up picked up!");
+       Debug.Log("Power Up Picked up!");
 
        // Cool Effects
        pickupEffect.Play();
-       //Instantiate (pickupEffect,transform.position, transform.rotation);
-
-       //Apply Effect to Player
-      //Player.transform.localScale *= multiplier;
        
-        
+       gameObject.SetActive(false);
 
         //Disable Graphics
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Collider>().enabled = false;
-
+        //GetComponent<MeshRenderer>().enabled = false;
+        //GetComponent<Collider>().enabled = false;
+        //gameObject.SetActive(false);
         //wait for seconds
-        yield return new WaitForSeconds(duration);
-
-        //Reverse the effect on player
-        //Player.transform.localScale /= multiplier;
-     
-
-       //Remove Power Up Object
-       Destroy(gameObject);
        
    }
 }
