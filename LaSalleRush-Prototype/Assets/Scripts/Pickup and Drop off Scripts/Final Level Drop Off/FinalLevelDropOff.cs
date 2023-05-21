@@ -32,11 +32,12 @@ public class FinalLevelDropOff : MonoBehaviour
                 PickDrop.enabled = true;
                 PickDrop.text = "+1 BUILDING";
                 yield return new WaitForSeconds(2f);
-                PickDrop.enabled = false;
                 
+                gameManagerscript.AddLRCoinsFinalPassenger();
                 gameManagerscript.AddTime6();
                 gameManagerscript.AddBuildingtracking();
-                gameManagerscript.AddLRCoinsFinalPassenger();
+                PickDrop.enabled = false;
+                
 
                 Debug.Log("may delay dapat");
                 

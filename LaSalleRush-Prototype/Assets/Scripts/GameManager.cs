@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
     public int totalScore;
     public int currentInGameScore;
 
+    public int customizationLRCoins;
+
     //Car Positions/Locations
     private Vector3 originalPosition;
     public Quaternion originalRotation;
@@ -119,8 +121,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 3;
-        //currentPassenger = 3;
+        //currentlevel = 6;
+        //currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -411,18 +413,6 @@ public class GameManager : MonoBehaviour
 
     public void FinalLevelComplete()
     {
-        Objective.enabled = false;
-        LevelUI.enabled = false;
-        PickUpPoint.enabled = false;
-        TimerText.enabled = false;
-        PickUpPointlbl.SetActive(false);
-        DropOffPointlbl.SetActive(false);
-        PickUpPoint.enabled = false;
-        DropOffPoint.enabled = false;
-        powerUpManagerScript.DeactivatePowerUps();
-        PlayerPrefs.SetInt("SavedLRCoins", currentLRCoins);
-
-
         //Compute and Show Scores in Text UI
         remainingTime = (int)countdowntimer;
         //score = 1000;
@@ -432,8 +422,20 @@ public class GameManager : MonoBehaviour
         totalLRcoins.text = LRCoins_earned.ToString();
         totalTimeLeft.text = remainingTime.ToString();
         totalLevelScore.text = totalScore.ToString();
-        pinakaFinalScore.text = "Score: " + currentInGameScore;
+        pinakaFinalScore.text = " " + currentInGameScore;
 
+        Objective.enabled = false;
+        LevelUI.enabled = false;
+        PickUpPoint.enabled = false;
+        TimerText.enabled = false;
+        PickUpPointlbl.SetActive(false);
+        DropOffPointlbl.SetActive(false);
+        PickUpPoint.enabled = false;
+        DropOffPoint.enabled = false;
+        powerUpManagerScript.DeactivatePowerUps();
+
+
+        
         FinalLevelCompleteUI.SetActive(true);
         Time.timeScale = 0;
 
@@ -452,6 +454,9 @@ public class GameManager : MonoBehaviour
         newScoretxt.text = newScore.ToString();
         LREarnedtxt.text = LREarned.ToString();
         Time.timeScale = 0;
+
+        customizationLRCoins += LREarned;
+        PlayerPrefs.SetInt("CustomizationLRCoins", customizationLRCoins);
     }
 
     public void SubmitBtn()

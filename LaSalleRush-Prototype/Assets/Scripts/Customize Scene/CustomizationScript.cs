@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CustomizationScript : MonoBehaviour
 {
+    public int customizeLRCoins;
+
     public Button switchButton;  // Reference to the UI button in the Unity Editor
-    public Camera desiredCamera;  // Specify the camera you want to switch to in the Unity Editor
-    public Camera mainCamera;
+    public GameObject desiredCamera;  // Specify the camera you want to switch to in the Unity Editor
+    public GameObject mainCamera;
     public GameObject  SplashScreen;
     public GameObject enableCustomizationPanel;
+    public TextMeshProUGUI customizeLRCoinsText;
+
 
     AudioManager audioManagerScript;
 
@@ -24,15 +29,19 @@ public class CustomizationScript : MonoBehaviour
 
     public void SwitchToCamera()
     {
-        if (desiredCamera != null)
+        if (desiredCamera != null || desiredCamera == null )
         {
             audioManagerScript.ToggleEngineSound(false);
             Car.SetActive(true);
             Time.timeScale = 0;
-            mainCamera.enabled = false;// Disable the current camera  
-            desiredCamera.enabled = true;  // Enable the desired camera
+            mainCamera.SetActive(false);// Disable the current camera  
+            desiredCamera.SetActive(true);  // Enable the desired camera
             SplashScreen.SetActive(false);
             enableCustomizationPanel.SetActive(true);
+
+            customizeLRCoins = PlayerPrefs.GetInt("CustomizationLRCoins");
+            customizeLRCoinsText.text = customizeLRCoins + " LR Coins";
+            Debug.Log("customizeLRCoins " + customizeLRCoins);
         }
         else
         {
@@ -47,10 +56,13 @@ public class CustomizationScript : MonoBehaviour
             audioManagerScript.ToggleEngineSound(false);
             Car.SetActive(false);
             Time.timeScale = 1;
-            mainCamera.enabled = true;// Disable the current camera  
-            desiredCamera.enabled = false;  // Enable the desired camera
+            mainCamera.SetActive(true);/// Disable the current camera  
+            desiredCamera.SetActive(false); // Enable the desired camera
             SplashScreen.SetActive(true);
             enableCustomizationPanel.SetActive(false);
         }
     }
+
+
+
 }
