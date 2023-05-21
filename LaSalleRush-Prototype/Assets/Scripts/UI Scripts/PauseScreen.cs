@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PauseScreen : MonoBehaviour
 {
     public GameObject pauseui;
     public GameObject optionsvolumeui;
     public GameObject optionscontrolsui;
-
 
     void Start()
     {
