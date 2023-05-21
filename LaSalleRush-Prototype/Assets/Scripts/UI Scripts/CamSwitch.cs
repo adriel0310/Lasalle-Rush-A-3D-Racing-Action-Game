@@ -33,9 +33,9 @@ public class CamSwitch : MonoBehaviour{
         control.SetActive(false);
         cameras[0].SetActive(false);
         cameras[1].SetActive(true);
+        canvas[2].SetActive(false);
         //canvas[0].SetActive(true);
         /*canvas[1].SetActive(false);
-        canvas[2].SetActive(false);
         canvas[3].SetActive(false);
         canvas[4].SetActive(false);
         canvas[5].SetActive(false);
@@ -73,6 +73,8 @@ public class CamSwitch : MonoBehaviour{
         cameras[1].SetActive(true);
         canvas[0].SetActive(false);
         canvas[1].SetActive(true);
+        canvas[9].SetActive(false);
+        canvas[10].SetActive(false);
         /*canvas[2].SetActive(false);
         canvas[3].SetActive(false);
         canvas[4].SetActive(false);
@@ -80,8 +82,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[6].SetActive(false);
         canvas[7].SetActive(false);
         canvas[8].SetActive(false);
-        canvas[9].SetActive(false);
-        canvas[10].SetActive(false);
+        
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);*/

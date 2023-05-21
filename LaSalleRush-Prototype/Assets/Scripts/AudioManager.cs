@@ -1,12 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager: MonoBehaviour
 {
    // References to individual audio sources
     public AudioSource engineSound;
     public AudioSource backgroundMusic;
+
+    //VOLUME SLIDER
+    [SerializeField] Slider volumeSlider; 
+    [SerializeField] Slider sfxSlider; 
+
+    void Start(){
+        if(!PlayerPrefs.HasKey("musicVolume")){
+            PlayerPrefs.SetFloat("musicVolume",1);
+            Load();
+        }
+        else{
+            Load();
+        }
+
+        if(!PlayerPrefs.HasKey("sfxVolume")){
+            PlayerPrefs.SetFloat("sfxVolume",1);
+            Load();
+        }
+        else{
+            Load();
+        }
+    }
 
     public void Initialize(AudioSource engine, AudioSource music)
     {
@@ -31,12 +54,31 @@ public class AudioManager: MonoBehaviour
     }
 
     public void SetBackgroundMusicVolume(float volume)
-{
-    if (backgroundMusic != null)
     {
-        backgroundMusic.volume = volume;
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.volume = volume;
+        }
     }
-}
+
+    public void ChangeMusicVolume(){
+        backgroundMusic.volume = volumeSlider.value;
+        Save();
+    }
+    public void ChangeSFXVolume(){
+        engineSound.volume = sfxSlider.value;
+        Save();
+    }
+
+    private void Load(){
+        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+    }
+
+    private void Save(){
+        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
+    }
 
 }
 
