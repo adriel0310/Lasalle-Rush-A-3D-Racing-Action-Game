@@ -28,6 +28,7 @@ public class FreezeTimer : MonoBehaviour
     {
         if (other.CompareTag("Powerup2"))
         {
+            Debug.Log("nabunggo");
             FreezeTimerText.enabled = true;
             TimerSlider.gameObject.SetActive(true);
             StartCoroutine(Pickup(other));

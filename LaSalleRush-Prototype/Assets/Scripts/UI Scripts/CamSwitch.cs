@@ -51,8 +51,6 @@ public class CamSwitch : MonoBehaviour{
         canvas[15].SetActive(false);
         continueImage.SetActive(false);
         exitImage.SetActive(false);*/
-        FreezeTimerBar.SetActive(false);
-        Invisibility.SetActive(false);
         timer.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;

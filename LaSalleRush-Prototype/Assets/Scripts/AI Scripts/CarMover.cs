@@ -1,49 +1,46 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class CarMover : MonoBehaviour
 {
-    public List<Transform> waypoints; // List of waypoints for the car to navigate
-    public float stoppingDistance = 1f; // The distance at which the car stops near a waypoint
+    public Transform finalDestination;
 
     private NavMeshAgent agent;
-    private int currentWaypointIndex;
-    private int previousWaypointIndex; // New variable to store the previous waypoint index
+    private int currentCornerIndex;
 
-    void Start()
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.autoBraking = false; // Disable auto braking to ensure the car continues moving between waypoints
-
-        currentWaypointIndex = Random.Range(0, waypoints.Count); // Start at a random waypoint
-        SetDestinationToNextWaypoint();
+        agent.autoBraking = false;
+        SetNewPath(transform.position);
     }
 
-    void Update()
+    private void Update()
     {
-        // Check if the car has reached the current waypoint
-        if (!agent.pathPending && agent.remainingDistance <= stoppingDistance)
+        if (currentCornerIndex < agent.path.corners.Length)
         {
-            SetDestinationToNextWaypoint();
+            if (Vector3.Distance(transform.position, agent.path.corners[currentCornerIndex]) < agent.stoppingDistance)
+            {
+                currentCornerIndex++;
+                if (currentCornerIndex < agent.path.corners.Length)
+                {
+                    agent.SetDestination(agent.path.corners[currentCornerIndex]);
+                }
+                else
+                {
+                    Debug.Log("Final destination reached!");
+                }
+            }
         }
     }
 
-    void SetDestinationToNextWaypoint()
+    private void SetNewPath(Vector3 targetPosition)
     {
-        // Store the current waypoint index as the previous waypoint index
-        previousWaypointIndex = currentWaypointIndex;
+        agent.SetDestination(finalDestination.position);
+    }
 
-        // Cycle through the waypoints, excluding the previous waypoint index
-        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
-        while (currentWaypointIndex == previousWaypointIndex)
-        {
-            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
-        }
-
-        // Set the car's destination to the next waypoint
-        Vector3 nextWaypoint = waypoints[currentWaypointIndex].position;
-        agent.SetDestination(nextWaypoint);
+    public void SetFinalDestination()
+    {
+        SetNewPath(transform.position);
     }
 }
