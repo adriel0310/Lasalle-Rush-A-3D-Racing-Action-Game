@@ -85,7 +85,7 @@ public class Invisibility : MonoBehaviour
             // Update the fill amount of the slider
             SliderFillImage.fillAmount = (float)timer / countdown;
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(20);
         }
 
         // Disable the timer text

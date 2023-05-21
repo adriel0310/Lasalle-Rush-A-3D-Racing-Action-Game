@@ -119,8 +119,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        currentlevel = 4;
-        currentPassenger = 7;
+        //currentlevel = 3;
+        //currentPassenger = 3;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -420,6 +420,7 @@ public class GameManager : MonoBehaviour
         PickUpPoint.enabled = false;
         DropOffPoint.enabled = false;
         powerUpManagerScript.DeactivatePowerUps();
+        PlayerPrefs.SetInt("SavedLRCoins", currentLRCoins);
 
 
         //Compute and Show Scores in Text UI

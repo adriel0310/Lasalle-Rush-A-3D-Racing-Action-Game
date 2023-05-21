@@ -21,30 +21,41 @@ public class DirectionalArrow : MonoBehaviour
     }
 
     void Update()
+{
+    foreach (GameObject PickupPoint in PickupPoints)
     {
-        foreach(GameObject PickupPoint in PickupPoints)
+        if (PickupPoint.activeSelf)
         {
-            if (PickupPoint.activeSelf)
-            {
-                //Get Vector from current position to PickupPoint
-                Vector3 dirToPickupPoint = PickupPoint.transform.position - transform.position;
+            // Get the direction from the current position to the PickupPoint
+            Vector3 dirToPickupPoint = PickupPoint.transform.position - transform.position;
 
-                //Rotate the arrow to point in the direction of the PickupPoint
-                transform.rotation = Quaternion.LookRotation(dirToPickupPoint);
-            }
+            // Set the y-component of the direction to zero to avoid pointing down
+            dirToPickupPoint.y = 0f;
+
+            // Rotate the arrow to point in the direction of the PickupPoint
+            //Quaternion rot = Quaternion.LookRotation(dirToPickupPoint);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime);
+            transform.rotation = Quaternion.LookRotation(dirToPickupPoint);
         }
+    }
 
-        foreach(GameObject DropoffPoint in DropoffPoints)
+    foreach (GameObject DropoffPoint in DropoffPoints)
+    {
+        if (DropoffPoint.activeSelf)
         {
-            if (DropoffPoint.activeSelf)
-            {
-                //Get Vector from current position to DropoffPoint
-                Vector3 dirToDropoffPoint = DropoffPoint.transform.position - transform.position;
+            // Get the direction from the current position to the DropoffPoint
+            Vector3 dirToDropoffPoint = DropoffPoint.transform.position - transform.position;
 
-                //Rotate the arrow to point in the direction of the DropoffPoint
-                transform.rotation = Quaternion.LookRotation(dirToDropoffPoint);
-            }
+            // Set the y-component of the direction to zero to avoid pointing down
+            dirToDropoffPoint.y = 0f;
+
+            // Rotate the arrow to point in the direction of the DropoffPoint
+            //Quaternion rot = Quaternion.LookRotation(dirToDropoffPoint);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime);
+            transform.rotation = Quaternion.LookRotation(dirToDropoffPoint);
         }
+    }
+}
         //To check for every active GameObject
         /*Transform activePickupPoint = null;
         Transform activeDropoffPoint = null;
@@ -92,4 +103,3 @@ public class DirectionalArrow : MonoBehaviour
             
         }*/  
     }
-}

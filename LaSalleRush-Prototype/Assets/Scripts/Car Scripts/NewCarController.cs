@@ -16,6 +16,13 @@ public class NewCarController : MonoBehaviour
     private bool removeBreak;
     public float maxSpeed = 100f; //Speed Limiter
 
+    public Material brakeMaterial;
+    public Color brakeColor;
+    public Color reverseColor;
+    public float brakeColorIntensity;
+
+
+
     //public ParticleSystem pickupEffect;
 
     [SerializeField] private float motorForce;
@@ -66,7 +73,22 @@ public class NewCarController : MonoBehaviour
         {
             verticalInput = -1f;
         }
+
+        //Applying Brake Lights
+        if(brakeMaterial)
+        {
+            if(verticalInput == -1f)
+            {
+                brakeMaterial.EnableKeyword("_EMISSION");
+                brakeMaterial.SetColor("_EmissionColor",brakeColor * Mathf.Pow(2,brakeColorIntensity));
+            }
+            else
+            {
+                brakeMaterial.DisableKeyword("_EMISSION");
+                brakeMaterial.SetColor("_EmissionColor",brakeColor);
+            }
   
+        }
     }
 
     private void HandleMotor()
@@ -96,9 +118,11 @@ public class NewCarController : MonoBehaviour
         }
 
 
-        else if(directionCheck.z < 0 && verticalInput == -1 || verticalInput == 0)
+        else if(directionCheck.z < 0 && verticalInput == -1)
         {
             RemoveBreaking();
+            brakeMaterial.EnableKeyword("_EMISSION");
+            brakeMaterial.SetColor("_EmissionColor", reverseColor * Mathf.Pow(2,brakeColorIntensity));
             carRB.AddForce(-transform.forward * 100, ForceMode.Impulse);
             //Debug.Log("ATRAAAAAAAAASSSSSSSSSS");
         } 
@@ -122,6 +146,7 @@ public class NewCarController : MonoBehaviour
         frontLeftWheelCollider.brakeTorque = currentbreakForce;
         rearLeftWheelCollider.brakeTorque = currentbreakForce;
         rearRightWheelCollider.brakeTorque = currentbreakForce;
+
     }
 
 

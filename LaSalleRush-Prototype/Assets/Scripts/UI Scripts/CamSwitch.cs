@@ -309,6 +309,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[13].SetActive(false);
         canvas[16].SetActive(true);
         timer.enabled = false;
+        audioManagerScript.ToggleEngineSound(true);
       }
 
       public void SplashScreen(){
