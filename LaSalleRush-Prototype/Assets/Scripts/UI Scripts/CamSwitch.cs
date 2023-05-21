@@ -268,6 +268,7 @@ public class CamSwitch : MonoBehaviour{
         control.SetActive(true);
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);
+        cameras[2].SetActive(false);
         canvas[0].SetActive(false);
         canvas[1].SetActive(false);
         canvas[2].SetActive(true);
