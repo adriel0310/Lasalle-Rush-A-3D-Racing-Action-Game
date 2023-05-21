@@ -20,6 +20,7 @@ public class FreezeTimer : MonoBehaviour
     {
         newCarController = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCarController>();
         GameManager gameManagerScript = GetComponent<GameManager>();
+
         FreezeTimerText.enabled = false;
         TimerSlider.gameObject.SetActive(false);
     }

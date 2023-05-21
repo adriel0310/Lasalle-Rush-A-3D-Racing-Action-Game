@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using System.Linq;
 
 public class CamSwitch : MonoBehaviour{
@@ -17,8 +18,16 @@ public class CamSwitch : MonoBehaviour{
       public GameObject control; 
       public GameObject tutorialButton;
 
-      public GameObject FreezeTimerBar;
-      public GameObject Invisibility;
+
+      //FREEZETIMERBAR
+      public TextMeshProUGUI FreezeTimerText;
+      public Slider FreezeTimerSlider;
+      
+      //INVISIBILITYRBAR
+      public TextMeshProUGUI InvisibilityText;
+      public Slider InvisibilityTimerSlider;
+
+
       SpawnManager spawnManagerScript;
       public TutorialScript tutorialScript;
       public TextMeshProUGUI allRanksTextComponent;
@@ -51,6 +60,14 @@ public class CamSwitch : MonoBehaviour{
         canvas[15].SetActive(false);
         continueImage.SetActive(false);
         exitImage.SetActive(false);*/
+        FreezeTimerText.enabled = false;
+        FreezeTimerSlider.gameObject.SetActive(false);
+
+        InvisibilityText.enabled = false;
+        InvisibilityTimerSlider.gameObject.SetActive(false);
+
+        //FreezeTimerBar.SetActive(false);
+        //Invisibility.SetActive(false);
         timer.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;
