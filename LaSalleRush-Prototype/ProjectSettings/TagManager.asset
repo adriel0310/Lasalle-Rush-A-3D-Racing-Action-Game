@@ -3,50 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Powerup1
-  - Pickup
-  - Dropoff
-  - CTHM
-  - Chapel
-  - ICTC
-  - Square
-  - Severino De Las Alas Hall
-  - Ayuntamiento
-  - Clothing Warehouse
-  - ULS(Dropoff)
-  - Museo De La Salle
-  - Gate 3
-  - 'PCH '
-  - RCC
-  - Mila's Diner
-  - Gate 2
-  - Grandstand
-  - Gate 1(Dropoff)
-  - Gregoria Montoya Hall
-  - Waypoint
-  - Powerup2
-  - Human
-  - Powerup3
-  - WaypointUI
-  - stealingpoint
-  - sittingpoint
-  - pickuppoint
-  - waypoint
-  - Nitro
-  - Wheels
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Particle System
+  - 
   - Water
   - UI
-  - Navmesh
   - 
-  - Lighting
-  - Ground
-  - Postprocessing
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
