@@ -12,6 +12,7 @@ public class TutorialScript : MonoBehaviour
 
     public GameObject tutorialscreen;
     public GameObject[] tutorial;
+    private GameObject[] backupTutorial;
     public GameObject continueImage;
     public GameObject exitImage;
     public GameObject tutorialButton;
@@ -27,6 +28,8 @@ public class TutorialScript : MonoBehaviour
 
     public CamSwitch camSwitch;
     private AudioManager audioManagerScript;
+    
+
 
     private void Start()
     {
@@ -36,7 +39,7 @@ public class TutorialScript : MonoBehaviour
         originalRotation = player.transform.rotation;
         originalPosition = player.transform.position;
 
-        //tutorialPick.SetActive(true);
+        tutorialPick.SetActive(true);
     }
 
     private void Update()
@@ -45,11 +48,11 @@ public class TutorialScript : MonoBehaviour
         // Check for input during the tutorial
         if (currentTutorialIndex < tutorial.Length && !exitTutorial && tutorialscreen.activeSelf)
         {
-
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ProceedToNextTutorial();
             }
+
             if (Input.GetKeyDown(KeyCode.Y))
             {
                 ExitTutorial();
@@ -57,6 +60,7 @@ public class TutorialScript : MonoBehaviour
             }
         }
     }
+    
 
     private void OnTriggerEnter(Collider col)
         {
@@ -92,43 +96,34 @@ public class TutorialScript : MonoBehaviour
 
         if (tutorialButton.activeSelf)
         {
+            currentTutorialIndex = 0; // Reset the currentTutorialIndex to 0
+            Debug.Log(tutorial.Length);
             StartCoroutine(ShowNextTutorial());
         }
     }
 
     private void ProceedToNextTutorial()
     {
-        if (currentTutorialIndex < tutorial.Length)
+        if (currentTutorialIndex < tutorial.Length - 1)
         {
             tutorial[currentTutorialIndex].SetActive(false);
             continueImage.SetActive(false);
 
             currentTutorialIndex++;
 
-
-            if (currentTutorialIndex < tutorial.Length)
+            tutorial[currentTutorialIndex].SetActive(true);
+            continueImage.SetActive(true);
+            
+            if (currentTutorialIndex == tutorial.Length - 1)
             {
-                tutorial[currentTutorialIndex].SetActive(true);
-                continueImage.SetActive(true);
-                
-                if (currentTutorialIndex == tutorial.Length - 1)
-                {
-                    continueImage.SetActive(false);
-                    exitImage.SetActive(true);
-                }
-
-                if (currentTutorialIndex == 4 )
-                {
-                  tutorialPick.SetActive(true);
-                }
-                
-            }
-            else
-            {
-                ExitTutorial();
+                continueImage.SetActive(false);
+                exitImage.SetActive(true);
             }
         }
     }
+
+
+
 
     private void ExitTutorial()
     {
@@ -137,7 +132,7 @@ public class TutorialScript : MonoBehaviour
             tutorial[currentTutorialIndex].SetActive(false);
             continueImage.SetActive(false);
         }
-        currentTutorialIndex = 0;
+        ResetArray();
         exitTutorial = true;
 
         // Return to menu or perform desired action
@@ -148,6 +143,7 @@ public class TutorialScript : MonoBehaviour
 
     private IEnumerator ShowNextTutorial()
     {
+        Debug.Log("next tutorial");
         if (tutorial.Length > 0)
         {
             tutorial[0].SetActive(true);
@@ -174,4 +170,29 @@ public class TutorialScript : MonoBehaviour
         Time.timeScale = 0;
         audioManagerScript.ToggleEngineSound(false);
     }
+
+
+
+    public void ResetArray()
+    {
+        // Check if the currentTutorialIndex exceeds the tutorial length
+        if (currentTutorialIndex >= tutorial.Length)
+        {
+            // Reset the currentTutorialIndex to 0
+            currentTutorialIndex = 0;
+        }
+        
+        // Activate the first tutorial step
+        if (tutorial.Length > 0)
+        {
+            tutorial[0].SetActive(true);
+            continueImage.SetActive(true);
+
+            if (tutorial.Length == 1)
+            {
+                exitImage.SetActive(true);
+            }
+        }
+    }
+
 }

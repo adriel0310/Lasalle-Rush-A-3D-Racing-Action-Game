@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class PauseScreen : MonoBehaviour
 {
     public GameObject pauseui;
-    public GameObject ingamescreen;
     public GameObject optionsvolumeui;
     public GameObject optionscontrolsui;
+    public GameObject leavegamescreen;
     AudioManager audioManagerScript;
 
     void Start()
@@ -20,7 +20,6 @@ public class PauseScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!ingamescreen.activeSelf){
             if(Input.GetKeyDown(KeyCode.Escape)){
                 audioManagerScript.ToggleEngineSound(false);
                 Debug.Log("pause");
@@ -30,7 +29,7 @@ public class PauseScreen : MonoBehaviour
                 optionscontrolsui.SetActive(false);
             }
         }
-    }
+    
 
     public void ResumeBtn(){
             Debug.Log("resume");
@@ -60,6 +59,7 @@ public class PauseScreen : MonoBehaviour
     public void BackToResume(){
             Debug.Log("back");
             Time.timeScale = 0;
+            leavegamescreen.SetActive(false);
             pauseui.SetActive(true);
             optionsvolumeui.SetActive(false);
             optionscontrolsui.SetActive(false);

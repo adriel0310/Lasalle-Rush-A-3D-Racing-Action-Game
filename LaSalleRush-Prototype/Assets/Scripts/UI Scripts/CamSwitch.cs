@@ -166,7 +166,7 @@ public class CamSwitch : MonoBehaviour{
 
      public void Leaderboards(){
        Debug.Log("Leaderboards");
-      cameras[0].SetActive(false);
+       cameras[0].SetActive(false);
         cameras[1].SetActive(true);
         canvas[0].SetActive(false);
         canvas[1].SetActive(false);
@@ -189,6 +189,7 @@ public class CamSwitch : MonoBehaviour{
 
      public void Tutorial(){
        Debug.Log("Tutorial");
+       audioManagerScript.ToggleEngineSound(true);
         GameObject tutorialBtn = GameObject.Find("TutorialBtn");
          if (tutorialBtn != null)
          {
@@ -200,7 +201,6 @@ public class CamSwitch : MonoBehaviour{
                Debug.Log("access");
                Time.timeScale = 1;
                tutorialScript.StartTutorial();
-               tutorialScript.currentTutorialIndex = 0;
             }
 
             tutorialBtn.SetActive(false); // Set the TutorialBtn game object back to inactive
