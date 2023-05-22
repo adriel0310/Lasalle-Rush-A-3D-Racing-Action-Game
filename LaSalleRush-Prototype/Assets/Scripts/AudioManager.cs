@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 public class AudioManager: MonoBehaviour
@@ -14,19 +13,21 @@ public class AudioManager: MonoBehaviour
     [SerializeField] Slider volumeSlider; 
     [SerializeField] Slider sfxSlider; 
 
+    
+
+
     void Start()
     {
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
-            BGLoad();
         }
 
         if (!PlayerPrefs.HasKey("sfxVolume"))
         {
             PlayerPrefs.SetFloat("sfxVolume", 1);
-            SFXLoad();
         }
+        Load();
     }
 
 
@@ -69,21 +70,20 @@ public class AudioManager: MonoBehaviour
         SFXSave();
     }
 
-    private void BGLoad(){
+    private void Load(){
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
     }
 
     private void BGSave(){
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
-    private void SFXLoad(){
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
-    }
-
     private void SFXSave(){
         PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
     }
+
+    
 
 }
 

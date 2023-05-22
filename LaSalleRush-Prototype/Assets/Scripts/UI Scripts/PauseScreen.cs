@@ -7,27 +7,34 @@ using UnityEngine.UI;
 public class PauseScreen : MonoBehaviour
 {
     public GameObject pauseui;
+    public GameObject ingamescreen;
     public GameObject optionsvolumeui;
     public GameObject optionscontrolsui;
+    AudioManager audioManagerScript;
 
     void Start()
     {
+        audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            Debug.Log("pause");
-            Time.timeScale = 0;
-            pauseui.SetActive(true);
-            optionsvolumeui.SetActive(false);
-            optionscontrolsui.SetActive(false);
+        if(!ingamescreen.activeSelf){
+            if(Input.GetKeyDown(KeyCode.Escape)){
+                audioManagerScript.ToggleEngineSound(false);
+                Debug.Log("pause");
+                Time.timeScale = 0;
+                pauseui.SetActive(true);
+                optionsvolumeui.SetActive(false);
+                optionscontrolsui.SetActive(false);
+            }
         }
     }
 
     public void ResumeBtn(){
             Debug.Log("resume");
+            audioManagerScript.ToggleEngineSound(true);
             Time.timeScale = 1;
             pauseui.SetActive(false);
             optionsvolumeui.SetActive(false);

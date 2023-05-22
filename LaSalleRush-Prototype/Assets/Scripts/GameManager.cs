@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
     public GameObject LevelCompleteUI;
     public GameObject gameoverui;
     public GameObject leavegameui;
+    public GameObject ingamescreen;
     public GameObject FinalLevelCompleteUI;
     public GameObject InputNameUI;
     public GameObject GameCompletedUI;
@@ -121,8 +122,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 6;
+        currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -413,6 +414,8 @@ public class GameManager : MonoBehaviour
 
     public void FinalLevelComplete()
     {
+        timebonus15.SetActive(false);
+        ingamescreen.SetActive(false);
         //Compute and Show Scores in Text UI
         remainingTime = (int)countdowntimer;
         //score = 1000;

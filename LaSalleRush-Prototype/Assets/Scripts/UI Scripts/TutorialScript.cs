@@ -41,8 +41,9 @@ public class TutorialScript : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(tutorialscreen.activeSelf);
         // Check for input during the tutorial
-        if (currentTutorialIndex < tutorial.Length && !exitTutorial )
+        if (currentTutorialIndex < tutorial.Length && !exitTutorial && tutorialscreen.activeSelf)
         {
 
             if (Input.GetKeyDown(KeyCode.E))

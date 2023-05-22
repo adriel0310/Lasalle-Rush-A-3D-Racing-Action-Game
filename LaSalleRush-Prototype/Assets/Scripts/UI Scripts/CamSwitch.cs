@@ -210,6 +210,8 @@ public class CamSwitch : MonoBehaviour{
         control.SetActive(true);
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);
+        cameras[2].SetActive(false);
+        
         canvas[0].SetActive(false);
         canvas[1].SetActive(false);
         canvas[2].SetActive(false);
@@ -350,6 +352,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
-        //canvas[15].SetActive(false);
+        canvas[14].SetActive(false);
+        canvas[15].SetActive(false);
       }
 }
