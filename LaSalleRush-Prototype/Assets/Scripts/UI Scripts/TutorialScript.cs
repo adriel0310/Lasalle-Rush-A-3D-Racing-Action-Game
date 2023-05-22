@@ -41,7 +41,7 @@ public class TutorialScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(tutorialscreen.activeSelf);
+        //Debug.Log(tutorialscreen.activeSelf);
         // Check for input during the tutorial
         if (currentTutorialIndex < tutorial.Length && !exitTutorial && tutorialscreen.activeSelf)
         {
@@ -121,7 +121,6 @@ public class TutorialScript : MonoBehaviour
                 {
                   tutorialPick.SetActive(true);
                 }
-                
                 
             }
             else

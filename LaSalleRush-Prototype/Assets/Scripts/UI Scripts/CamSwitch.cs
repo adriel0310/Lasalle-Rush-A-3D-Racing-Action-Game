@@ -331,10 +331,10 @@ public class CamSwitch : MonoBehaviour{
       }
 
       public void SplashScreen(){
-          Debug.Log("SplashScreen");
+         Debug.Log("SplashScreen");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible =true;
-        control.SetActive(false);
+        control.SetActive(true);
         cameras[0].SetActive(false);
         cameras[1].SetActive(true);
         cameras[2].SetActive(true);
@@ -354,5 +354,6 @@ public class CamSwitch : MonoBehaviour{
         canvas[13].SetActive(false);
         canvas[14].SetActive(false);
         canvas[15].SetActive(false);
+      
       }
 }

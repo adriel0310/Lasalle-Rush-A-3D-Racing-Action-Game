@@ -118,12 +118,15 @@ public class NewCarController : MonoBehaviour
         }
 
 
-        else if(directionCheck.z < 0 && verticalInput == -1)
+        else if(directionCheck.z < 0 && verticalInput == -1 || verticalInput == 0)
         {
             RemoveBreaking();
-            brakeMaterial.EnableKeyword("_EMISSION");
-            brakeMaterial.SetColor("_EmissionColor", reverseColor * Mathf.Pow(2,brakeColorIntensity));
             carRB.AddForce(-transform.forward * 100, ForceMode.Impulse);
+            if(directionCheck.z < 0 && verticalInput == -1)
+            {
+                brakeMaterial.EnableKeyword("_EMISSION");
+                brakeMaterial.SetColor("_EmissionColor", reverseColor * Mathf.Pow(2,brakeColorIntensity));
+            }
             //Debug.Log("ATRAAAAAAAAASSSSSSSSSS");
         } 
 

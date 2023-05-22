@@ -122,8 +122,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        currentlevel = 6;
-        currentPassenger = 16;
+        //currentlevel = 6;
+        //currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -358,7 +358,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 1)
+        if(buildingtracker == 20)
         {
             FinalLevelComplete(); 
         }    
