@@ -17,6 +17,8 @@ public class Waypoint : MonoBehaviour
 
     public string Waypointid;
 
+    float volumevalue;
+
     GameObject waypointinteractUI = null; //empty initial value for storing
     GameObject activeUI;//Empty initial value to check for any active or inactive UI Game Objects
 
@@ -101,7 +103,8 @@ public class Waypoint : MonoBehaviour
         {
             UI.SetActive(false);
             audioManagerScript.ToggleEngineSound(true);
-            audioManagerScript.SetBackgroundMusicVolume(0.5f); //Between 0-1 only
+             //Between 0-1 only
+            audioManagerScript.LoadMusicVolume(volumevalue);
             Time.timeScale = 1f;
         }
         

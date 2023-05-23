@@ -22,7 +22,9 @@ public class TutorialScript : MonoBehaviour
     public float exitImageDelay = 3f;
 
     int currentTutorialIndex = 0;
-    private bool exitTutorial = false;
+    public bool exitTutorial = false;
+
+    public bool TutorialComplete = false;
 
     // Car Positions/Locations
     private Vector3 originalPosition;
@@ -41,26 +43,27 @@ public class TutorialScript : MonoBehaviour
         originalRotation = player.transform.rotation;
         originalPosition = player.transform.position;
 
-        tutorialPick.SetActive(true);
+        //tutorialPick.SetActive(true);
+
+        //currentTutorialIndex = 0;
     }
 
     private void Update()
     {
         //Debug.Log(tutorialscreen.activeSelf);
         // Check for input during the tutorial
-        if (currentTutorialIndex < tutorial.Length && !exitTutorial && tutorialscreen.activeSelf)
+        if (TutorialComplete == false  /*&& !exitTutorial  /*tutorialscreen.activeSelf*/)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                ProceedToNextTutorial();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                ExitTutorial();
-                exitImage.SetActive(false);
-            }
+            //if (Input.GetKeyDown(KeyCode.E))
+            //{
+            ProceedToNextTutorial();
         }
+
+        if(TutorialComplete == true /*&& !exitTutorial  /*tutorialscreen.activeSelf*/)
+        {
+            ExitTutorial();
+        }
+        
     }
     
 
@@ -94,53 +97,66 @@ public class TutorialScript : MonoBehaviour
 
     public void StartTutorial()
     {
-        Time.timeScale = 1;
 
         if (tutorialButton.activeSelf)
         {
-            currentTutorialIndex = 0; // Reset the currentTutorialIndex to 0
-            ResetTutorialArray();     // Reset the tutorial array
+            //currentTutorialIndex = 0; // Reset the currentTutorialIndex to 0
+            Debug.Log (TutorialComplete);
             StartCoroutine(ShowNextTutorial());
+            Time.timeScale = 1;
         }
     }
 
 
     private void ProceedToNextTutorial()
     {
-        if (currentTutorialIndex < tutorial.Length - 1)
+        //currentTutorialIndex = 0;
+        if( Input.GetKeyDown(KeyCode.E))
         {
-            tutorial[currentTutorialIndex].SetActive(false);
-            continueImage.SetActive(false);
-
-            currentTutorialIndex++;
-
-            tutorial[currentTutorialIndex].SetActive(true);
-            continueImage.SetActive(true);
-            
-            if (currentTutorialIndex == tutorial.Length - 1)
-            {
+            if (TutorialComplete == false)
+            {                
+                tutorial[currentTutorialIndex].SetActive(false);
                 continueImage.SetActive(false);
-                exitImage.SetActive(true);
+
+                currentTutorialIndex ++;
+                Debug.Log(currentTutorialIndex);
+
+                tutorial[currentTutorialIndex].SetActive(true);
+                continueImage.SetActive(true);
+            
+                if (currentTutorialIndex == tutorial.Length - 1)
+                {
+                    continueImage.SetActive(false);
+                    exitImage.SetActive(true);
+                    TutorialComplete = true;
+                    Debug.Log("Tutorial Completed " + TutorialComplete);
+                    currentTutorialIndex = 6;
+                }
             }
         }
     }
 
 
-
-
     private void ExitTutorial()
     {
-        if (currentTutorialIndex == tutorial.Length - 1)
-        {
-            tutorial[currentTutorialIndex].SetActive(false);
-            continueImage.SetActive(false);
-        }
-        
-        exitTutorial = true;
-        // Return to menu or perform desired action
-        Debug.Log("Returning to menu...");
+        if (Input.GetKeyDown(KeyCode.Y)){
 
-        ExitToMainMenu(camSwitch);
+            if (TutorialComplete == true )
+            {
+                tutorial[currentTutorialIndex].SetActive(false);
+                continueImage.SetActive(false);
+                exitImage.SetActive(false);  
+                TutorialComplete = false; //Reset boolean
+                currentTutorialIndex = 0;
+                Debug.Log ("Reverted back to " + TutorialComplete);
+            }
+
+            exitTutorial = true;
+            // Return to menu or perform desired action
+            Debug.Log("Returning to menu...");
+
+            ExitToMainMenu(camSwitch);
+        }
     }
 
     private IEnumerator ShowNextTutorial()
@@ -167,10 +183,16 @@ public class TutorialScript : MonoBehaviour
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
 
+        currentTutorialIndex = 0; // Reset the currentTutorialIndex to 0
+
+        camSwitch.tutorialButton.SetActive(true);
         tutorialscreen.SetActive(false);
+        tutorialPick.SetActive(false);
+        tutorialDrop.SetActive(false);
         camSwitch.SplashScreen();
         Time.timeScale = 0;
         audioManagerScript.ToggleEngineSound(false);
+
     }
 
     private void ResetTutorialArray()
@@ -180,6 +202,16 @@ public class TutorialScript : MonoBehaviour
             tutorial[i].SetActive(false);
         }
     }
+
+    public void AccessTutorialArray()
+    {
+        for (int i = 0; i < tutorial.Length; i++)
+        {
+            tutorial[i].SetActive(true);
+        }
+    }
+
+    
 
 
 

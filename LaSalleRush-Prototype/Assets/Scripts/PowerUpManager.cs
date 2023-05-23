@@ -10,7 +10,7 @@ public class PowerUpManager : MonoBehaviour
     void Start()
     {
         spinnerScript = GameObject.Find("Spinner").GetComponent<Spinner>();
-        DeactivatePowerUps();
+        ActivatePowerUps();
     }
 
     public void ActivatePowerUps()

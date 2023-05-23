@@ -63,6 +63,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameoverui;
     public GameObject leavegameui;
     public GameObject ingamescreen;
+    public GameObject freemode;
+
+    public GameObject freemodePauseScreen;
     public GameObject FinalLevelCompleteUI;
     public GameObject InputNameUI;
     public GameObject GameCompletedUI;
@@ -70,6 +73,8 @@ public class GameManager : MonoBehaviour
     public GameObject timebonus10;
     public GameObject timebonus15;
     public GameObject timebonus20;
+
+    public GameObject leavegamefreemode;
     
     //For Timer Variables
     public float countdowntimer = 10f;
@@ -198,17 +203,40 @@ public class GameManager : MonoBehaviour
         gameoverui.SetActive(false);
     }
 
+    public void LeaveGameFreeMode()
+    {
+        leavegamefreemode.SetActive(true);
+        gameoverui.SetActive(false);
+    }
+
     // babalik yung player sa start screen
     public void ExitToMainMenu(CamSwitch camSwitch)
     {
-        powerUpManagerScript.DeactivatePowerUps();
+        
         gameoverui.SetActive(false);
+        freemode.SetActive(false);
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
+        powerUpManagerScript.DeactivatePowerUps();
         audioManagerScript.ToggleEngineSound(false);
         ResetAllValues();
     }
+
+     public void ExitToMainMenuFreeMode(CamSwitch camSwitch)
+    {
+        
+        gameoverui.SetActive(false);
+        freemode.SetActive(false);
+        freemodePauseScreen.SetActive(false);
+        player.transform.rotation = originalRotation;
+        player.transform.position = originalPosition;
+        camSwitch.SplashScreen();
+        //powerUpManagerScript.DeactivatePowerUps();
+        audioManagerScript.ToggleEngineSound(false);
+        //ResetAllValues();
+    }
+
     
     public void ResetAllValues()
     {

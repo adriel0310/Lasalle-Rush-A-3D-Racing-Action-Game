@@ -190,6 +190,8 @@ public class CamSwitch : MonoBehaviour{
      public void Tutorial(){
        Debug.Log("Tutorial");
        audioManagerScript.ToggleEngineSound(true);
+      tutorialScript.TutorialComplete = false;
+      tutorialScript.exitTutorial = false;
         GameObject tutorialBtn = GameObject.Find("TutorialBtn");
          if (tutorialBtn != null)
          {
@@ -200,6 +202,11 @@ public class CamSwitch : MonoBehaviour{
             {
                Debug.Log("access");
                Time.timeScale = 1;
+               //tutorialScript.tutorialPick.SetActive(true);
+               //tutorialScript.AccessTutorialArray();
+               tutorialScript.tutorialPick.SetActive(true);
+               tutorialScript.tutorialDrop.SetActive(false);
+               tutorialScript.tutorialscreen.SetActive (true);
                tutorialScript.StartTutorial();
             }
 
@@ -311,6 +318,7 @@ public class CamSwitch : MonoBehaviour{
         control.SetActive(true);
         cameras[0].SetActive(true);
         cameras[1].SetActive(false);
+        cameras[2].SetActive(false);
         canvas[0].SetActive(false);
         canvas[1].SetActive(false);
         canvas[2].SetActive(false);
@@ -326,6 +334,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
         canvas[16].SetActive(true);
+        arrow.SetActive(false);
         timer.enabled = false;
         audioManagerScript.ToggleEngineSound(true);
       }
@@ -354,6 +363,11 @@ public class CamSwitch : MonoBehaviour{
         canvas[13].SetActive(false);
         canvas[14].SetActive(false);
         canvas[15].SetActive(false);
-      
+        //audioManagerScript.ToggleEngineSound(false);
+        //canvas[16].SetActive(false);
+        
+        //tutorialScript.tutorialPick.SetActive(false);
+        //tutorialScript.tutorialDrop.SetActive(false);
+        //tutorialScript.tutorialButton.SetActive(true);
       }
 }

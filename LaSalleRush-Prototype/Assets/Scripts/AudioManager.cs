@@ -70,12 +70,12 @@ public class AudioManager: MonoBehaviour
         SFXSave();
     }
 
-    private void Load(){
+    public void Load(){
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
     }
 
-    private void BGSave(){
+    public void BGSave(){
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
@@ -83,7 +83,14 @@ public class AudioManager: MonoBehaviour
         PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
     }
 
-    
+    public void LoadMusicVolume(float volume)
+    {
+        if (backgroundMusic != null)
+        {
+            volume = PlayerPrefs.GetFloat("musicVolume");
+            backgroundMusic.volume = volume;
+        }
+    }
 
 }
 
