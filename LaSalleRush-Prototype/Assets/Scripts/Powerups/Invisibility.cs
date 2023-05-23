@@ -90,7 +90,12 @@ public class Invisibility : MonoBehaviour
 
         // Disable the timer text
         InvisibilityText.enabled = false;
+        TimerSlider.value = TimerSlider.maxValue;
 
+        // Reset the fill amount of the slider
+        SliderFillImage.fillAmount = originalFillAmount;
+
+        TimerSlider.gameObject.SetActive(false);
 
         // Re-enable collisions between the player and the colliders with the specific tag
         foreach (GameObject colliderObject in collidersToIgnore)
