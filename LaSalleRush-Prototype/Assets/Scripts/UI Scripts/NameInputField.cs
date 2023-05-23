@@ -23,7 +23,7 @@ public class NameInputField : MonoBehaviour
         {
             return '\0'; // Reject the input
         }
-
+      
         return addedChar; // Accept the input
     }
 }

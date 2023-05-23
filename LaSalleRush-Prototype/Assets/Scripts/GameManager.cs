@@ -110,7 +110,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
         nameInputField.characterLimit = 10;
         powerUpManagerScript = GameObject.Find("PowerUpManager").GetComponent<PowerUpManager>();
         audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
@@ -127,8 +126,8 @@ public class GameManager : MonoBehaviour
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        //currentlevel = 6;
-        //currentPassenger = 16;
+        currentlevel = 6;
+        currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -247,7 +246,7 @@ public class GameManager : MonoBehaviour
         currentInGameScore = 0;
         currentPassenger = 0;
         currentlevel = 1;
-        countdowntimer = 300f;
+        countdowntimer = 600f;
         spawnManagerScript.despawnAll();
     }
 
@@ -387,7 +386,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 20)
+        if(buildingtracker == 1)
         {
             FinalLevelComplete(); 
         }    
@@ -489,12 +488,21 @@ public class GameManager : MonoBehaviour
 
         customizationLRCoins += LREarned;
         PlayerPrefs.SetInt("CustomizationLRCoins", customizationLRCoins);
+        PlayerPrefs.DeleteKey("CustomizationLRCoins");
+        PlayerPrefs.Save();
     }
 
     public void SubmitBtn()
     {
-        string playerName = nameInputField.text;
+         string playerName = nameInputField != null ? nameInputField.text : "";
 
+        if(string.IsNullOrEmpty(playerName))
+        {
+             return;
+        }
+        
+        else
+        {
         // Save the new player's score
         PlayerPrefs.SetInt(playerName, newScore);
 
@@ -547,6 +555,7 @@ public class GameManager : MonoBehaviour
         }
 
         Time.timeScale = 0;
+        }
     }
 
 

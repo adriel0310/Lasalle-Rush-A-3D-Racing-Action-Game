@@ -12,6 +12,7 @@ public class PauseScreen : MonoBehaviour
     public GameObject optionsvolumeui;
     public GameObject optionscontrolsui;
     public GameObject leavegamescreen;
+    public GameObject leavegamefreemode;
     public GameObject freemodepanel;
     public GameObject ingamepanel;
 
@@ -131,7 +132,7 @@ public class PauseScreen : MonoBehaviour
             {
                 Debug.Log("back");
                 Time.timeScale = 0;
-                leavegamescreen.SetActive(false);
+                leavegamefreemode.SetActive(false);
                 freemodepauseui.SetActive(true);
                 optionsvolumeui.SetActive(false);
                 optionscontrolsui.SetActive(false);

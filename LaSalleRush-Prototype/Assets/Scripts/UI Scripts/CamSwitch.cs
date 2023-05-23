@@ -37,6 +37,7 @@ public class CamSwitch : MonoBehaviour{
 
       AudioManager audioManagerScript;
       PowerUpManager powerUpManagerScript;
+      GameManager gameManagerScript;
 
     public void Start(){
         control.SetActive(false);
@@ -75,7 +76,8 @@ public class CamSwitch : MonoBehaviour{
         audioManagerScript = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         spawnManagerScript = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         tutorialScript = GameObject.Find("TutorialMode").GetComponent<TutorialScript>();
-    }
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameManager>();    
+        }
 
     void Update()
     {
@@ -307,7 +309,8 @@ public class CamSwitch : MonoBehaviour{
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);
         arrow.SetActive(true);
-        timer.enabled = true;
+        //timer.enabled = true;
+        gameManagerScript.ResumeCountdown();
         powerUpManagerScript.ActivatePowerUps();
         audioManagerScript.ToggleEngineSound(true);
         tutorialScript.tutorialDrop.SetActive(false);
@@ -336,6 +339,7 @@ public class CamSwitch : MonoBehaviour{
         canvas[16].SetActive(true);
         arrow.SetActive(false);
         timer.enabled = false;
+        gameManagerScript.PauseCountdown();  
         audioManagerScript.ToggleEngineSound(true);
       }
 

@@ -73,6 +73,8 @@ public class Waypoint : MonoBehaviour
             if(waypointinteractUI != null)
             {
                 waypointDetectUI.SetActive(false);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
                 print("VROOM VROOM SKKRRT SKKRRT INTERACTED WITH DA WAYPOINT FR FR " + waypointinteractUI);
                 
                 foreach (GameObject UI in waypointUI)
