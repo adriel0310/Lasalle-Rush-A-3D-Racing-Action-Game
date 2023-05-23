@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuitApp : MonoBehaviour
 {
+    public GameObject exitgameui;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,17 @@ public class QuitApp : MonoBehaviour
         
     }
 
+    public void ExitPopup(){
+        exitgameui.SetActive(true);
+    }
+
     public void QuitGame()
     {
         Application.Quit();
     }
+
+    public void DontQuit(){
+        exitgameui.SetActive(false);
+    }
+
 }

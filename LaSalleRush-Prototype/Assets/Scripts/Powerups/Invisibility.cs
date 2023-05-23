@@ -26,7 +26,7 @@ public class Invisibility : MonoBehaviour
         PlayerWheels = newCarController.GetComponentsInChildren<WheelCollider>();
 
         // Get an array of all the colliders with a specific tag    
-        collidersToIgnore = GameObject.FindGameObjectsWithTag("Human");
+        collidersToIgnore = GameObject.FindGameObjectsWithTag("AI");
 
         InvisibilityText.enabled = false;
         TimerSlider.gameObject.SetActive(false);
@@ -35,7 +35,7 @@ public class Invisibility : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collidersToIgnore = GameObject.FindGameObjectsWithTag("Human");
+        collidersToIgnore = GameObject.FindGameObjectsWithTag("AI");
     }
 
     void OnTriggerEnter(Collider other) //Function that get's called when we collide with something

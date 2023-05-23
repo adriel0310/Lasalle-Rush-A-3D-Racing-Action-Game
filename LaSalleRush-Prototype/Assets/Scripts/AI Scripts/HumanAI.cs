@@ -10,6 +10,8 @@ public class HumanAI : MonoBehaviour
     Vector3 destPoint;
     bool walkpointSet;
 
+    public GameObject collisionIndicator;
+
 
     [SerializeField] float range;
     [SerializeField] LayerMask groundLayer;
@@ -26,6 +28,15 @@ public class HumanAI : MonoBehaviour
     {
         animator.SetFloat("Move", agent.velocity.magnitude);
         Patrol();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Time.timeScale = 0;
+            collisionIndicator.SetActive(true);
+        }
     }
 
     void Patrol()

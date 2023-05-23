@@ -4,6 +4,7 @@ using UnityEngine.AI;
 public class CarMover : MonoBehaviour
 {
     public Transform finalDestination;
+    public GameObject collisionIndicator;
 
     private NavMeshAgent agent;
     private int currentCornerIndex;
@@ -14,6 +15,16 @@ public class CarMover : MonoBehaviour
         agent.autoBraking = false;
         SetNewPath(transform.position);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Time.timeScale = 0;
+            collisionIndicator.SetActive(true);
+        }
+    }
+
 
     private void Update()
     {
