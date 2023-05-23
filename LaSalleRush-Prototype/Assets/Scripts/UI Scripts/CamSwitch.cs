@@ -101,7 +101,6 @@ public class CamSwitch : MonoBehaviour{
         canvas[11].SetActive(false);
         canvas[12].SetActive(false);
         canvas[13].SetActive(false);*/
-        tutorialButton.SetActive(true);
      }
 
      public void Back(){
@@ -311,6 +310,7 @@ public class CamSwitch : MonoBehaviour{
         timer.enabled = true;
         powerUpManagerScript.ActivatePowerUps();
         audioManagerScript.ToggleEngineSound(true);
+        tutorialScript.tutorialDrop.SetActive(false);
       }
 
       public void Free_Mode(){
