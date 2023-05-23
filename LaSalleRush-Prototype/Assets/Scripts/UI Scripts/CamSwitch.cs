@@ -261,7 +261,7 @@ public class CamSwitch : MonoBehaviour{
       int rank = 1;
       foreach (var ps in playerScores)
       {
-         if (rank > 20)
+         if (rank > 15)
                break;
 
          string rankText = $"{rank}";

@@ -121,13 +121,13 @@ public class GameManager : MonoBehaviour
         originalPosition = player.transform.position;
         levels[currentlevel - 1].SetActive(true);
         LevelUI.text = "Level " + currentlevel;
-        Objective.text = "A student wants to attend mass in Our Lady of the Most Holy Rosary Chapel. You must drop off the student to the location in less than 20 seconds.";
+        Objective.text = "A student wants to attend mass in Our Lady of the Most Holy Rosary Chapel. You must drop off the student to the location within the time limit.";
         PickUpPoint.text = "Gate 1 Rotonda";
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
-        currentlevel = 6;
-        currentPassenger = 16;
+        //currentlevel = 6;
+       // currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -574,7 +574,7 @@ public class GameManager : MonoBehaviour
                 LevelUI.text = "Level 2";
                 break;
             case 3:
-                Objective.text = "A student is required to attend a seminar in Severino de las Alas Hall. The seminar starts in less than 30 seconds, you must drop off the student before time runs out.";
+                Objective.text = "A student is required to attend a seminar in Severino de las Alas Hall. The seminar starts in a bit, you must drop off the student before time runs out.";
                 //PickUpPoint.text = "COS building";
                 LevelUI.text = "Level 3";
                 break;
