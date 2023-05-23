@@ -52,14 +52,14 @@ public class TutorialScript : MonoBehaviour
     {
         //Debug.Log(tutorialscreen.activeSelf);
         // Check for input during the tutorial
-        if (TutorialComplete == false  /*&& !exitTutorial  /*tutorialscreen.activeSelf*/)
+        if (TutorialComplete == false && tutorialscreen.activeSelf/* !exitTutorial  */)
         {
             //if (Input.GetKeyDown(KeyCode.E))
             //{
             ProceedToNextTutorial();
         }
 
-        if(TutorialComplete == true /*&& !exitTutorial  /*tutorialscreen.activeSelf*/)
+        if(TutorialComplete == true && tutorialscreen.activeSelf/*&& !exitTutorial  /*tutorialscreen.activeSelf*/)
         {
             ExitTutorial();
         }

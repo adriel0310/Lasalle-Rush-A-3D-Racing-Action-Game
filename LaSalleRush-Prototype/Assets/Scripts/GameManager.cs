@@ -233,6 +233,7 @@ public class GameManager : MonoBehaviour
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
         //powerUpManagerScript.DeactivatePowerUps();
+        Debug.Log(audioManagerScript);
         audioManagerScript.ToggleEngineSound(false);
         //ResetAllValues();
     }
