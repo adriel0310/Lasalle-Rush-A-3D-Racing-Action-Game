@@ -63,6 +63,7 @@ public class TutorialScript : MonoBehaviour
         {
             ExitTutorial();
         }
+
         
     }
     
@@ -75,7 +76,9 @@ public class TutorialScript : MonoBehaviour
                 if (tutorialPick != null)
                 {
                     tutorialPick.SetActive(false);
-                    Debug.Log(tutorialButton.activeSelf);
+                    tutorialDrop.SetActive(true);
+                    Debug.Log("Tutorial drop is" +tutorialDrop.activeSelf);
+                    
                 }
                 if (tutorialDrop != null)
                 {
@@ -113,29 +116,29 @@ public class TutorialScript : MonoBehaviour
         //currentTutorialIndex = 0;
         if( Input.GetKeyDown(KeyCode.E))
         {
-            if (TutorialComplete == false)
-            {                
+            if (TutorialComplete == false && currentTutorialIndex < tutorial.Length)
+            {
                 tutorial[currentTutorialIndex].SetActive(false);
                 continueImage.SetActive(false);
 
-                currentTutorialIndex ++;
-                Debug.Log(currentTutorialIndex);
+                currentTutorialIndex++;
 
-                tutorial[currentTutorialIndex].SetActive(true);
-                continueImage.SetActive(true);
-            
+                if (currentTutorialIndex < tutorial.Length)
+                {
+                    tutorial[currentTutorialIndex].SetActive(true);
+                    continueImage.SetActive(true);
+                }
+
                 if (currentTutorialIndex == tutorial.Length - 1)
                 {
                     continueImage.SetActive(false);
                     exitImage.SetActive(true);
                     TutorialComplete = true;
-                    Debug.Log("Tutorial Completed " + TutorialComplete);
-                    currentTutorialIndex = 6;
+                    Debug.Log("Tutorial Completed: " + TutorialComplete);
                 }
             }
         }
     }
-
 
     private void ExitTutorial()
     {
