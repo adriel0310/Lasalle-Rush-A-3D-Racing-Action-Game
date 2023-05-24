@@ -103,6 +103,8 @@ public class GameManager : MonoBehaviour
     AudioManager audioManagerScript;
     PowerUpManager powerUpManagerScript;
 
+    public Rigidbody Car;
+
     // for scoreboard
     [SerializeField] TextMeshProUGUI scoreText;
     public TMP_InputField nameInputField;
@@ -120,14 +122,11 @@ public class GameManager : MonoBehaviour
         originalRotation = player.transform.rotation;
         originalPosition = player.transform.position;
         levels[currentlevel - 1].SetActive(true);
-        LevelUI.text = "Level " + currentlevel;
-        Objective.text = "A student wants to attend mass in Our Lady of the Most Holy Rosary Chapel. You must drop off the student to the location within the time limit.";
-        PickUpPoint.text = "Gate 1 Rotonda";
         currentCoins.text = currentLRCoins +" LR Coins" ;
         currentScore.text = "Score: " + totalScore;
         //player.GetComponent<Transform>();
         //currentlevel = 6;
-       // currentPassenger = 16;
+        //currentPassenger = 16;
         newScore = PlayerPrefs.GetInt("NewScore", 0);
 
         SaveCurrentData();
@@ -189,6 +188,7 @@ public class GameManager : MonoBehaviour
         LRCoins_earned = 0;
         Time.timeScale = 1;
         gameoverui.SetActive(false);
+        Car.velocity = Vector3.zero;
 
         //Load Data from SaveCurrentData() Function
         LoadPreviousData();
@@ -214,6 +214,7 @@ public class GameManager : MonoBehaviour
         
         gameoverui.SetActive(false);
         freemode.SetActive(false);
+        ObjectiveDisable();     
         player.transform.rotation = originalRotation;
         player.transform.position = originalPosition;
         camSwitch.SplashScreen();
@@ -236,19 +237,51 @@ public class GameManager : MonoBehaviour
         audioManagerScript.ToggleEngineSound(false);
         //ResetAllValues();
     }
+    public void ObjectiveDisable()
+    {
+        Objective.enabled = false;
+        LevelUI.enabled = false;    
+    }
+     public void ObjectiveEnable()
+    {
+        Objective.enabled = true;
+        LevelUI.enabled = true;    
+    }
 
     
     public void ResetAllValues()
     {
+        //PlayerPrefs.DeleteKey("SavedLRCoins");
+        //PlayerPrefs.DeleteKey("SavedGameScore");
+        //PlayerPrefs.DeleteKey("SavedCountdownTime");
+        //PlayerPrefs.DeleteKey("SavedCurrentLevel");
+        //PlayerPrefs.DeleteKey("SavedCurrentPassenger");
+
         currentLRCoins = 0;
+        currentCoins.text = currentLRCoins +" LR Coins" ;
+        LRCoins_earned = 0;
+        score = 0;
         remainingTime = 0;
         totalScore = 0;
+        currentScore.text = "Score: " + totalScore;
         currentInGameScore = 0;
         currentPassenger = 0;
         currentlevel = 1;
         countdowntimer = 600f;
+        ResetLevels();
         spawnManagerScript.despawnAll();
+
+
     }
+
+   public void ResetLevels()
+    {
+    for (int i = 0; i < levels.Length; i++)
+    {
+        levels[i].SetActive(false);
+    }
+    }
+
 
     public void SaveCurrentData()
     {
@@ -488,7 +521,7 @@ public class GameManager : MonoBehaviour
 
         customizationLRCoins += LREarned;
         PlayerPrefs.SetInt("CustomizationLRCoins", customizationLRCoins);
-        PlayerPrefs.DeleteKey("CustomizationLRCoins");
+        //PlayerPrefs.DeleteKey("CustomizationLRCoins");
         PlayerPrefs.Save();
     }
 
@@ -553,13 +586,21 @@ public class GameManager : MonoBehaviour
             playerNames += playerName + ",";
             PlayerPrefs.SetString("PlayerNames", playerNames);
         }
-
+        //PlayerPrefs.DeleteKey("PlayerNames");
+       
         Time.timeScale = 0;
         }
     }
 
+    public void LevelObjective1()
+    {
+        if(currentPassenger == 0)
+        LevelUI.text = "Level " + currentlevel;
+        Objective.text = "A student wants to attend mass in Our Lady of the Most Holy Rosary Chapel. You must drop off the student to the location within the time limit.";
+        PickUpPoint.text = "Gate 1 Rotonda";
+    }
 
-
+    
 
     public void LevelObjective(){
         switch(currentPassenger){

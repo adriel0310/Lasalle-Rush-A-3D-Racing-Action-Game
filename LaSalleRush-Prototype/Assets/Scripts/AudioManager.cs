@@ -10,7 +10,7 @@ public class AudioManager: MonoBehaviour
     public AudioSource backgroundMusic;
 
     //VOLUME SLIDER
-    [SerializeField] Slider volumeSlider; 
+    public Slider volumeSlider; 
     [SerializeField] Slider sfxSlider; 
 
     
@@ -75,11 +75,17 @@ public class AudioManager: MonoBehaviour
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
     }
 
+    public void LoadMusicVolume()
+    {
+        //volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        backgroundMusic.volume = volumeSlider.value;
+    }
+
     public void BGSave(){
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
-    private void SFXSave(){
+    public void SFXSave(){
         PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
     }
 

@@ -7,6 +7,9 @@ public class CarAudio : MonoBehaviour
     Rigidbody RB;
     public AudioSource EngineSource;
 
+    public AudioClip hornSound;
+    public AudioSource HornaudioSource;
+
     public int GearShiftLength;
     public float PitchBoost;
     public float PitchRange;
@@ -20,11 +23,17 @@ public class CarAudio : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody>();
+        HornaudioSource.clip = hornSound;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            HornaudioSource.PlayOneShot(hornSound);
+        }
+        
         float Speed = RB.velocity.magnitude;
         Temp1 = Speed / GearShiftLength;
         Temp2 = (int) Temp1;
@@ -33,4 +42,7 @@ public class CarAudio : MonoBehaviour
 
         EngineSource.pitch = Mathf.Lerp(EngineSource.pitch, PitchBoost + (PitchRange * Difference), time);
     }
+
+    
+
 }

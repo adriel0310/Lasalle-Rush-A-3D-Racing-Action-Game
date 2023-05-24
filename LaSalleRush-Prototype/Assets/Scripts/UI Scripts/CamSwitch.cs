@@ -311,6 +311,8 @@ public class CamSwitch : MonoBehaviour{
         arrow.SetActive(true);
         //timer.enabled = true;
         gameManagerScript.ResumeCountdown();
+        gameManagerScript.ObjectiveEnable();
+        gameManagerScript.LevelObjective1();
         powerUpManagerScript.ActivatePowerUps();
         audioManagerScript.ToggleEngineSound(true);
         tutorialScript.tutorialDrop.SetActive(false);

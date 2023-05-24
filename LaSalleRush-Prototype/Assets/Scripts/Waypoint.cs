@@ -106,7 +106,8 @@ public class Waypoint : MonoBehaviour
             UI.SetActive(false);
             audioManagerScript.ToggleEngineSound(true);
              //Between 0-1 only
-            audioManagerScript.LoadMusicVolume(volumevalue);
+            //volumevalue = audioManagerScript.volumeSlider.value;
+            audioManagerScript.LoadMusicVolume();
             Time.timeScale = 1f;
         }
         

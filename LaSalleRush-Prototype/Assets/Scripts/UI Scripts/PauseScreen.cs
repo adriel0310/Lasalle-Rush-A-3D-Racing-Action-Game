@@ -130,6 +130,8 @@ public class PauseScreen : MonoBehaviour
 
             if(freemodepanel.activeSelf)
             {
+                audioManagerScript.BGSave();
+                audioManagerScript.SFXSave();
                 Debug.Log("back");
                 Time.timeScale = 0;
                 leavegamefreemode.SetActive(false);
@@ -142,6 +144,8 @@ public class PauseScreen : MonoBehaviour
             
             if(ingamepanel.activeSelf)
             {
+                audioManagerScript.BGSave();
+                audioManagerScript.SFXSave();
                 Debug.Log("back");
                 Time.timeScale = 0;
                 leavegamescreen.SetActive(false);
