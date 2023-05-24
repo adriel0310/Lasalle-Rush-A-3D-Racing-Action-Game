@@ -202,6 +202,12 @@ public class GameManager : MonoBehaviour
         gameoverui.SetActive(false);
     }
 
+    public void DontLeave(){
+        leavegameui.SetActive(false);
+        gameoverui.SetActive(true);
+    }
+
+
     public void LeaveGameFreeMode()
     {
         leavegamefreemode.SetActive(true);
