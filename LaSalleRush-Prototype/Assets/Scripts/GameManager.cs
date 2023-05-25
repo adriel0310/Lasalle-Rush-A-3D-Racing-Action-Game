@@ -273,7 +273,7 @@ public class GameManager : MonoBehaviour
         currentInGameScore = 0;
         currentPassenger = 0;
         currentlevel = 1;
-        countdowntimer = 600f;
+        countdowntimer = 900f;
         ResetLevels();
         spawnManagerScript.despawnAll();
 
