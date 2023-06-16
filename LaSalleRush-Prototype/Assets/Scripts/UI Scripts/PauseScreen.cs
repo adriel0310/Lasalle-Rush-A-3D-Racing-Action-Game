@@ -16,6 +16,9 @@ public class PauseScreen : MonoBehaviour
     public GameObject freemodepanel;
     public GameObject ingamepanel;
 
+    public GameObject waypointui;
+    public GameObject[] timebonus;
+
     AudioManager audioManagerScript;
 
     void Start()
@@ -47,6 +50,11 @@ public class PauseScreen : MonoBehaviour
             audioManagerScript.ToggleEngineSound(false);
             Debug.Log("pause");
             Time.timeScale = 0;
+            waypointui.SetActive(false);
+            timebonus[0].SetActive(false);
+            timebonus[1].SetActive(false);
+            timebonus[2].SetActive(false);
+            timebonus[3].SetActive(false);
             pauseui.SetActive(true);
             optionsvolumeui.SetActive(false);
             optionscontrolsui.SetActive(false); 
@@ -127,6 +135,38 @@ public class PauseScreen : MonoBehaviour
     }    
 
     public void BackToResume(){
+
+            if(freemodepanel.activeSelf)
+            {
+                audioManagerScript.BGSave();
+                audioManagerScript.SFXSave();
+                Debug.Log("back");
+                Time.timeScale = 0;
+                leavegamefreemode.SetActive(false);
+                freemodepauseui.SetActive(true);
+                optionsvolumeui.SetActive(false);
+                optionscontrolsui.SetActive(false);
+
+            }
+
+            
+            if(ingamepanel.activeSelf)
+            {
+                audioManagerScript.BGSave();
+                audioManagerScript.SFXSave();
+                Debug.Log("back");
+                Time.timeScale = 0;
+                leavegamescreen.SetActive(false);
+                pauseui.SetActive(true);
+                optionsvolumeui.SetActive(false);
+                optionscontrolsui.SetActive(false);
+            }
+
+
+
+        }
+
+    public void DontExitGame(){
 
             if(freemodepanel.activeSelf)
             {
