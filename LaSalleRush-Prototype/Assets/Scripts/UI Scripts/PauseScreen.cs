@@ -36,6 +36,7 @@ public class PauseScreen : MonoBehaviour
             audioManagerScript.ToggleEngineSound(false);
             Debug.Log("pause");
             Time.timeScale = 0;
+            waypointui.SetActive(false);
             freemodepauseui.SetActive(true);
             optionsvolumeui.SetActive(false);
             optionscontrolsui.SetActive(false); 

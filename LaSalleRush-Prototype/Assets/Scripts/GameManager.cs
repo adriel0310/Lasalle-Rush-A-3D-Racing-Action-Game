@@ -204,7 +204,6 @@ public class GameManager : MonoBehaviour
 
     public void DontLeave(){
         leavegameui.SetActive(false);
-        gameoverui.SetActive(true);
     }
 
 
@@ -425,7 +424,7 @@ public class GameManager : MonoBehaviour
         buildingtracker++;
         print("BOB THE BUILDER TRACKER UWU "+ buildingtracker);
 
-        if(buildingtracker == 1)
+        if(buildingtracker == 20)
         {
             FinalLevelComplete(); 
         }    
